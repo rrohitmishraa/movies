@@ -25,7 +25,7 @@ export default function TwentySix() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
-          🎥 Movie Library
+          🎥 TwentySix Library
         </h1>
 
         {/* Search Bar */}
