@@ -7,7 +7,7 @@ export default function TwentySix() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/movies.json")
+    fetch("/twentysix.json")
       .then((response) => response.json())
       .then((data) => setMovies(data))
       .catch((error) => console.error("Error fetching movies:", error));
@@ -17,7 +17,7 @@ export default function TwentySix() {
   const filteredMovies = movies.filter(
     (movie) =>
       movie.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      movie.des.toLowerCase().includes(searchTerm.toLowerCase())
+      movie.tags.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -55,7 +55,7 @@ export default function TwentySix() {
         </div>
 
         {/* Movie Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredMovies.map((movie) => (
             <div
               key={movie.id}
@@ -70,7 +70,9 @@ export default function TwentySix() {
                 <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
                   {movie.name}
                 </h2>
-                <p className="mt-2 text-gray-600">{movie.des}</p>
+                <p className="mt-2 text-gray-600 text-[12px]">
+                  {"#" + movie.tags}
+                </p>
               </a>
             </div>
           ))}

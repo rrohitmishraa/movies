@@ -17,7 +17,7 @@ export default function Movies() {
   const filteredMovies = movies.filter(
     (movie) =>
       movie.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      movie.des.toLowerCase().includes(searchTerm.toLowerCase())
+      movie.tags.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -70,7 +70,7 @@ export default function Movies() {
                 <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
                   {movie.name}
                 </h2>
-                <p className="mt-2 text-gray-600">{movie.des}</p>
+                <p className="mt-2 text-gray-600">{"#" + movie.tags}</p>
               </a>
             </div>
           ))}

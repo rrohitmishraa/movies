@@ -1,0 +1,485 @@
+[
+  {
+    "seriesName": "Game of Thrones",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/UjrjsXP4p61sWdSi7",
+            "description": "The North Remembers"
+          },
+          {
+            "id": 2,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/koZvxsEesQVueeYn9",
+            "description": "The Kingsroad"
+          },
+          {
+            "id": 3,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/MGZy3QXeJVxK1Thq5",
+            "description": "Lord Snow"
+          },
+          {
+            "id": 4,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/3t2sfbpiaggUYA146",
+            "description": "Cripples, Bastards, and Broken Things"
+          },
+          {
+            "id": 5,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/mEcacqpLB7bAWvzP7",
+            "description": "The Wolf and the Lion"
+          },
+          {
+            "id": 6,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/9S114aMYhjB463Vj9",
+            "description": "A Golden Crown"
+          },
+          {
+            "id": 7,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/JVJrgaqYasRxHt7H9",
+            "description": "You Win or You Die"
+          },
+          {
+            "id": 8,
+            "title": "Episode 8",
+            "link": "https://photos.app.goo.gl/h5VW8sZm3LFZpmcu9",
+            "description": "The Pointy End"
+          },
+          {
+            "id": 9,
+            "title": "Episode 9",
+            "link": "https://photos.app.goo.gl/cQ65GuW8onpS9HB58",
+            "description": "Baelor"
+          },
+          {
+            "id": 10,
+            "title": "Episode 10",
+            "link": "https://photos.app.goo.gl/CMzDuzVngestutUx8",
+            "description": "Fire and Blood"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 11,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "description": "The North Remembers"
+          },
+          {
+            "id": 12,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "description": "The Kingsroad"
+          },
+          {
+            "id": 13,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "description": "Lord Snow"
+          },
+          {
+            "id": 14,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "description": "Cripples, Bastards, and Broken Things"
+          },
+          {
+            "id": 15,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "description": "The Wolf and the Lion"
+          },
+          {
+            "id": 16,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "description": "A Golden Crown"
+          },
+          {
+            "id": 17,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/SqStUvoHrEJRwKF26",
+            "description": "You Win or You Die"
+          },
+          {
+            "id": 18,
+            "title": "Episode 8",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "The Pointy End"
+          },
+          {
+            "id": 19,
+            "title": "Episode 9",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "Baelor"
+          },
+          {
+            "id": 20,
+            "title": "Episode 10",
+            "link": "https://photos.app.goo.gl/2M59kBC3vs7QHujD8",
+            "description": "Fire and Blood"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "id": 21,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "description": "The North Remembers"
+          },
+          {
+            "id": 22,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "description": "The Kingsroad"
+          },
+          {
+            "id": 23,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "description": "Lord Snow"
+          },
+          {
+            "id": 24,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "description": "Cripples, Bastards, and Broken Things"
+          },
+          {
+            "id": 25,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "description": "The Wolf and the Lion"
+          },
+          {
+            "id": 26,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "description": "A Golden Crown"
+          },
+          {
+            "id": 27,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/SqStUvoHrEJRwKF26",
+            "description": "You Win or You Die"
+          },
+          {
+            "id": 28,
+            "title": "Episode 8",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "The Pointy End"
+          },
+          {
+            "id": 29,
+            "title": "Episode 9",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "Baelor"
+          },
+          {
+            "id": 30,
+            "title": "Episode 10",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "Fire and Blood"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 4,
+        "episodes": [
+          {
+            "id": 31,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "description": "Two Swords"
+          },
+          {
+            "id": 32,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "description": "The Lion and the Rose"
+          },
+          {
+            "id": 33,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "description": "Breaker of Chains"
+          },
+          {
+            "id": 34,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "description": "Oathkeeper"
+          },
+          {
+            "id": 35,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "description": "First of His Name"
+          },
+          {
+            "id": 36,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "description": "The Laws of Gods and Men"
+          },
+          {
+            "id": 37,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/SqStUvoHrEJRwKF26",
+            "description": "Mockingbird"
+          },
+          {
+            "id": 38,
+            "title": "Episode 8",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "The Mountain and the Viper"
+          },
+          {
+            "id": 39,
+            "title": "Episode 9",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "The Watchers on the Wall"
+          },
+          {
+            "id": 40,
+            "title": "Episode 10",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "The Children"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 5,
+        "episodes": [
+          {
+            "id": 41,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "description": "The Wars to Come"
+          },
+          {
+            "id": 42,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "description": "The House of Black and White"
+          },
+          {
+            "id": 43,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "description": "High Sparrow"
+          },
+          {
+            "id": 44,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "description": "Sons of the Harpy"
+          },
+          {
+            "id": 45,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "description": "Kill the Boy"
+          },
+          {
+            "id": 46,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "description": "Unbowed, Unbent, Unbroken"
+          },
+          {
+            "id": 47,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/SqStUvoHrEJRwKF26",
+            "description": "The Gift"
+          },
+          {
+            "id": 48,
+            "title": "Episode 8",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "Hardhome"
+          },
+          {
+            "id": 49,
+            "title": "Episode 9",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "The Dance of Dragons"
+          },
+          {
+            "id": 50,
+            "title": "Episode 10",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "Mother's Mercy"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 6,
+        "episodes": [
+          {
+            "id": 51,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "description": "The Red Woman"
+          },
+          {
+            "id": 52,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "description": "Home"
+          },
+          {
+            "id": 53,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "description": "Oathbreaker"
+          },
+          {
+            "id": 54,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "description": "Book of the Stranger"
+          },
+          {
+            "id": 55,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "description": "The Door"
+          },
+          {
+            "id": 56,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "description": "Blood of My Blood"
+          },
+          {
+            "id": 57,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/SqStUvoHrEJRwKF26",
+            "description": "The Broken Man"
+          },
+          {
+            "id": 58,
+            "title": "Episode 8",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "No One"
+          },
+          {
+            "id": 59,
+            "title": "Episode 9",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "The Battle of the Bastards"
+          },
+          {
+            "id": 60,
+            "title": "Episode 10",
+            "link": "https://photos.app.goo.gl/WmV5DXvC5zxL9R9R7",
+            "description": "The Winds of Winter"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 7,
+        "episodes": [
+          {
+            "id": 61,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "description": "Dragonstone"
+          },
+          {
+            "id": 62,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "description": "Stormborn"
+          },
+          {
+            "id": 63,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "description": "The Queen's Justice"
+          },
+          {
+            "id": 64,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "description": "The Spoils of War"
+          },
+          {
+            "id": 65,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "description": "Eastwatch"
+          },
+          {
+            "id": 66,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "description": "Beyond the Wall"
+          },
+          {
+            "id": 67,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/SqStUvoHrEJRwKF26",
+            "description": "The Dragon and the Wolf"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 8,
+        "episodes": [
+          {
+            "id": 68,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "description": "Winterfell"
+          },
+          {
+            "id": 69,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "description": "A Knight of the Seven Kingdoms"
+          },
+          {
+            "id": 70,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "description": "The Long Night"
+          },
+          {
+            "id": 71,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "description": "The Last of the Starks"
+          },
+          {
+            "id": 72,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "description": "The Bells"
+          },
+          {
+            "id": 73,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "description": "The Iron Throne"
+          }
+        ]
+      }
+    ]
+  }
+]

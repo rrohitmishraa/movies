@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import handler from "../suggestions";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -16,7 +15,11 @@ export default function Home() {
   const navigate = useNavigate();
 
   const handleSearch = async () => {
-    if (searchQuery.trim() === "movies" || searchQuery.trim() === "26") {
+    if (
+      searchQuery.trim() === "movies" ||
+      searchQuery.trim() === "26" ||
+      searchQuery.trim() === "shows"
+    ) {
       navigate(`/${searchQuery.trim()}`);
     } else if (searchQuery.trim() === "wallpapers") {
       window.open(`https://photos.app.goo.gl/sxpqFZkwpoJxqMD36`);
@@ -56,37 +59,28 @@ export default function Home() {
   };
 
   const handleSuggestions = async () => {
-    const response = await handler({
-      method: "POST",
-      body: JSON.stringify({
-        userName: "John Doe",
-        movieSuggestion: "Inception",
-      }),
-    });
-    console.log(response);
-  };
+    const response = await fetch(
+      "https://movies-server-azure.vercel.app/suggestions",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ userName, movieSuggestion }),
+      }
+    );
 
-  // const handleSuggestionSubmit = async () => {
-  //   if (userName.trim() && movieSuggestion.trim()) {
-  //     try {
-  //       await fetch("http://localhost:5000/suggestions", {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({ userName, movieSuggestion }),
-  //       });
-  //       alert("Suggestion submitted successfully!");
-  //       setUserName("");
-  //       setMovieSuggestion("");
-  //       setShowSuggestionPopup(false);
-  //     } catch (error) {
-  //       alert("Error submitting suggestion.");
-  //     }
-  //   } else {
-  //     alert("Please fill out both fields.");
-  //   }
-  // };
+    if (response.ok) {
+      const result = await response.json();
+      alert(result.message);
+      setUserName("");
+      setMovieSuggestion("");
+      setShowSuggestionPopup(false);
+    } else {
+      const errorData = await response.json();
+      alert(`Error: ${errorData.error}`);
+    }
+  };
 
   return (
     <div
@@ -115,12 +109,12 @@ export default function Home() {
           >
             Search
           </button>
-          <button
+          {/*<button
             className="px-6 py-2 text-20 text-white bg-blue-400 rounded hover:bg-blue-600"
             onClick={() => setShowSuggestionPopup(true)}
           >
             Feedback
-          </button>
+          </button> */}
         </div>
       </div>
       {showSuggestionPopup && (
