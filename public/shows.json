@@ -1,5 +1,63 @@
 [
   {
+    "seriesName": "Pradeeps of Pitsburgh",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/jSaMLzr4PhBtZGGb7",
+            "description": "Arrival in Pitsberg"
+          },
+          {
+            "id": 2,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/Du3HWvNnsnTc4gw28",
+            "description": "The Family Gathering"
+          },
+          {
+            "id": 3,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/6hua5Y1d8AyQm8P98",
+            "description": "Secrets of the Basement"
+          },
+          {
+            "id": 4,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/szdW8h9gSSWoqyPVA",
+            "description": "The Forgotten Recipe"
+          },
+          {
+            "id": 5,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/1xLA2DUhzyVB8W4a6",
+            "description": "The Missing Necklace"
+          },
+          {
+            "id": 6,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/v1adu3acLxxj9Sk28",
+            "description": "The Unexpected Guest"
+          },
+          {
+            "id": 7,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/1Wpx8kU9o1k9LkTt7",
+            "description": "A Festival to Remember"
+          },
+          {
+            "id": 8,
+            "title": "Episode 8",
+            "link": "https://photos.app.goo.gl/1Bw8NsVcPeCSLx5Y8",
+            "description": "Betrayal at Pitsberg"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "seriesName": "Game of Thrones",
     "seasons": [
       {
@@ -398,43 +456,43 @@
           {
             "id": 61,
             "title": "Episode 1",
-            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "link": "https://photos.app.goo.gl/VzrM445pjqvYNuUm8",
             "description": "Dragonstone"
           },
           {
             "id": 62,
             "title": "Episode 2",
-            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "link": "https://photos.app.goo.gl/p1kFv475pN6dnrJw9",
             "description": "Stormborn"
           },
           {
             "id": 63,
             "title": "Episode 3",
-            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "link": "https://photos.app.goo.gl/CBbBdAtUAMiVL1fp9",
             "description": "The Queen's Justice"
           },
           {
             "id": 64,
             "title": "Episode 4",
-            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "link": "https://photos.app.goo.gl/Kz4nSWjC43GRRjJ6A",
             "description": "The Spoils of War"
           },
           {
             "id": 65,
             "title": "Episode 5",
-            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "link": "https://photos.app.goo.gl/TubvhYDWdA5uBp2Z9",
             "description": "Eastwatch"
           },
           {
             "id": 66,
             "title": "Episode 6",
-            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "link": "https://photos.app.goo.gl/SCrS792YGgLFdE6G8",
             "description": "Beyond the Wall"
           },
           {
             "id": 67,
             "title": "Episode 7",
-            "link": "https://photos.app.goo.gl/SqStUvoHrEJRwKF26",
+            "link": "https://photos.app.goo.gl/q49sbt4frevX94U1A",
             "description": "The Dragon and the Wolf"
           }
         ]
@@ -445,37 +503,37 @@
           {
             "id": 68,
             "title": "Episode 1",
-            "link": "https://photos.app.goo.gl/yYUj76fUZQr6uNNP6",
+            "link": "https://photos.app.goo.gl/oxXSywVybjiJYr728",
             "description": "Winterfell"
           },
           {
             "id": 69,
             "title": "Episode 2",
-            "link": "https://photos.app.goo.gl/m8uDJVtytcVrfXzu9",
+            "link": "https://photos.app.goo.gl/5Xxd57E79wSC9vmC9",
             "description": "A Knight of the Seven Kingdoms"
           },
           {
             "id": 70,
             "title": "Episode 3",
-            "link": "https://photos.app.goo.gl/2A27Zt9sc8XmFokR6",
+            "link": "https://photos.app.goo.gl/WwDfJmrPP32ka9VP8",
             "description": "The Long Night"
           },
           {
             "id": 71,
             "title": "Episode 4",
-            "link": "https://photos.app.goo.gl/T4kHtNxKPGNAiYX56",
+            "link": "https://photos.app.goo.gl/X8NyCeg22Z4fz8Mh7",
             "description": "The Last of the Starks"
           },
           {
             "id": 72,
             "title": "Episode 5",
-            "link": "https://photos.app.goo.gl/C7rt9B8378UByKWu5",
+            "link": "https://photos.app.goo.gl/eieqT2MoqxsCykWc7",
             "description": "The Bells"
           },
           {
             "id": 73,
             "title": "Episode 6",
-            "link": "https://photos.app.goo.gl/wmSnJnVdKoCEJwRv9",
+            "link": "https://photos.app.goo.gl/FYp2mbuWoNBDwhGd8",
             "description": "The Iron Throne"
           }
         ]

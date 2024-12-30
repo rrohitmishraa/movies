@@ -67,11 +67,18 @@ export default function Shows() {
           {filteredShows.map((show) => (
             <div
               key={show.seriesName}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200"
+              className={`${
+                selectedSeries === show
+                  ? "bg-blue-100 border-2 border-blue-500"
+                  : "bg-white"
+              } rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200`}
             >
               <a
                 href="#"
-                onClick={() => setSelectedSeries(show)}
+                onClick={() => {
+                  setSelectedSeries(show);
+                  setSelectedSeason(null); // Reset season when series changes
+                }}
                 className="block p-4 cursor-pointer"
               >
                 <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
@@ -92,7 +99,11 @@ export default function Shows() {
               {selectedSeries.seasons.map((season, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200"
+                  className={`${
+                    selectedSeason === season
+                      ? "bg-blue-100 border-2 border-blue-500"
+                      : "bg-white"
+                  } rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200`}
                 >
                   <a
                     href="#"
