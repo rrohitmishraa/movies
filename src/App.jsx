@@ -36,6 +36,7 @@ export default function App() {
           path="/shows"
           element={isAuthorized ? <Shows /> : <Navigate to="/" />}
         />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
