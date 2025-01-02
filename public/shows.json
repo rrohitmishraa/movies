@@ -1,5 +1,116 @@
 [
   {
+    "seriesName": "Squid Game",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/kmgysCALsWirgWyu8",
+            "description": "Red Light, Green Light"
+          },
+          {
+            "id": 2,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/BFra2qDYXbwFQGfM7",
+            "description": "Hell"
+          },
+          {
+            "id": 3,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/eDhQ5sRWBRxg59VZ6",
+            "description": "The Man with the Umbrella"
+          },
+          {
+            "id": 4,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/6FrgeQz4uk8sbx6S9",
+            "description": "Stick to the Team"
+          },
+          {
+            "id": 5,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/6WA1B2JYRhpgoKyPA",
+            "description": "A Fair World"
+          },
+          {
+            "id": 6,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/nNucczCKHkDUG5FA7",
+            "description": "Gganbu"
+          },
+          {
+            "id": 7,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/Xp6y9rtwtH2oA5Fq9",
+            "description": "VIPs"
+          },
+          {
+            "id": 8,
+            "title": "Episode 8",
+            "link": "https://photos.app.goo.gl/VA3Kt4MUY84kqHXN8",
+            "description": "Front Man"
+          },
+          {
+            "id": 9,
+            "title": "Episode 9",
+            "link": "https://photos.app.goo.gl/TCbRE3HWbqb2UHpf6",
+            "description": "One Lucky Day"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "title": "Episode 1",
+            "link": "https://photos.app.goo.gl/7m2sVfrLuLpg5ZbW9",
+            "description": "Bread and Lottery"
+          },
+          {
+            "id": 2,
+            "title": "Episode 2",
+            "link": "https://photos.app.goo.gl/EpHaG8dz92t81zE99",
+            "description": "Halloween Party"
+          },
+          {
+            "id": 3,
+            "title": "Episode 3",
+            "link": "https://photos.app.goo.gl/YWZ1NLawNzLwtr9GA",
+            "description": "001"
+          },
+          {
+            "id": 4,
+            "title": "Episode 4",
+            "link": "https://photos.app.goo.gl/BCzUMMo1CuT5WnpQA",
+            "description": "Six Legs"
+          },
+          {
+            "id": 5,
+            "title": "Episode 5",
+            "link": "https://photos.app.goo.gl/tkPBZjcs1ZxytSxw7",
+            "description": "One More Game"
+          },
+          {
+            "id": 6,
+            "title": "Episode 6",
+            "link": "https://photos.app.goo.gl/SBMtbCtzmLctChjg7",
+            "description": "O X"
+          },
+          {
+            "id": 7,
+            "title": "Episode 7",
+            "link": "https://photos.app.goo.gl/JDoJdQN8bWddTztYA",
+            "description": "Friend or Foe"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "seriesName": "Pradeeps of Pitsburgh",
     "seasons": [
       {
