@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Card from "../components/Cards";
 
 export default function Shows() {
   const [shows, setShows] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedSeries, setSelectedSeries] = useState(null);
+  const [selectedSeason, setSelectedSeason] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -30,9 +31,12 @@ export default function Shows() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 p-6">
       <div className="max-w-5xl mx-auto relative">
+        {/* Header */}
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
           📺 Show Library
         </h1>
+
+        {/* Search Bar */}
         <div className="relative mb-10">
           <input
             type="text"
@@ -57,11 +61,98 @@ export default function Shows() {
             />
           </svg>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        {/* Series List */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredShows.map((show) => (
-            <Card key={show.seriesName} data={show} />
+            <div
+              key={show.seriesName}
+              className={`${
+                selectedSeries === show
+                  ? "bg-blue-100 border-2 border-blue-500"
+                  : "bg-white"
+              } rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200`}
+            >
+              <a
+                href="#"
+                onClick={() => {
+                  setSelectedSeries(show);
+                  setSelectedSeason(null);
+                }}
+                className="block p-4 cursor-pointer"
+              >
+                <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
+                  {show.seriesName}
+                </h2>
+                <p className="text-gray-600 text-sm italic mt-2">#{show.tag}</p>
+              </a>
+            </div>
           ))}
         </div>
+
+        {/* Selected Series & Seasons */}
+        {selectedSeries && (
+          <div className="mt-10">
+            <h2 className="text-2xl font-bold mb-4">
+              {selectedSeries.seriesName}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {selectedSeries.seasons.map((season, index) => (
+                <div
+                  key={index}
+                  className={`${
+                    selectedSeason === season
+                      ? "bg-blue-100 border-2 border-blue-500"
+                      : "bg-white"
+                  } rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200`}
+                >
+                  <a
+                    href="#"
+                    onClick={() => setSelectedSeason(season)}
+                    className="block p-4 cursor-pointer"
+                  >
+                    <h3 className="text-xl font-medium text-gray-800 hover:text-red-400">
+                      Season {season.seasonNumber}
+                    </h3>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Selected Season & Episodes */}
+        {selectedSeason && (
+          <div className="mt-10">
+            <h2 className="text-2xl font-bold mb-4">
+              Season {selectedSeason.seasonNumber} - {selectedSeries.seriesName}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {selectedSeason.episodes.map((episode) => (
+                <div
+                  key={episode.id}
+                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200"
+                >
+                  <a
+                    href={episode.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-4"
+                  >
+                    <h3 className="text-xl font-medium text-gray-800 hover:text-red-400">
+                      {episode.episode}
+                    </h3>
+                    <p className="mt-2 text-gray-600 text-sm">
+                      {episode.title}
+                    </p>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* No Results Found */}
         {filteredShows.length === 0 && (
           <p className="text-center text-gray-500 mt-8">
             No shows found. Try searching something else!

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Card from "../components/Cards";
 
 export default function Movies() {
   const [movies, setMovies] = useState([]);
@@ -14,6 +13,7 @@ export default function Movies() {
       .catch((error) => console.error("Error fetching movies:", error));
   }, []);
 
+  // Filter movies based on name and tags
   const filteredMovies = movies.filter(
     (movie) =>
       movie.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -22,10 +22,13 @@ export default function Movies() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 p-6">
-      <div className="max-w-5xl mx-auto relative">
+      <div className="max-w-5xl mx-auto">
+        {/* Header */}
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
           🎥 Movie Library
         </h1>
+
+        {/* Search Bar */}
         <div className="relative mb-10">
           <input
             type="text"
@@ -50,11 +53,36 @@ export default function Movies() {
             />
           </svg>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        {/* Movie Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredMovies.map((movie) => (
-            <Card key={movie.id} data={movie} />
+            <div
+              key={movie.id}
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200"
+            >
+              <a
+                href={movie.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4"
+              >
+                <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
+                  {movie.name}
+                </h2>
+                <p className="mt-2 text-gray-600">
+                  {movie.tags
+                    .split(",") // Split tags into an array (assuming they are comma-separated)
+                    .map((tag) => `#${tag.trim()}`) // Add # to each tag
+                    .join(" ")}{" "}
+                  {/* Join them back with spaces */}
+                </p>
+              </a>
+            </div>
           ))}
         </div>
+
+        {/* No Results Found */}
         {filteredMovies.length === 0 && (
           <p className="text-center text-gray-500 mt-8">
             No movies found. Try searching something else!
