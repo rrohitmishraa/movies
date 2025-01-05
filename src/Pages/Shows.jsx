@@ -17,7 +17,9 @@ export default function Shows() {
 
   useEffect(() => {
     if (shows.length > 0 && !selectedSeries) {
-      setSelectedSeries(shows[0]); // Set the first series as default
+      const defaultSeries = shows[0]; // Set the first series as default
+      setSelectedSeries(defaultSeries); // Set the first series as selected
+      setSelectedSeason(defaultSeries.seasons[0]); // Set the first season of the selected series
     }
   }, [shows, selectedSeries]);
 
@@ -45,7 +47,7 @@ export default function Shows() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 p-6 overflow-hidden">
+    <div className="bg-gray-100 text-gray-900 p-6">
       <div className="max-w-5xl mx-auto relative">
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
           📺 Show Library
@@ -76,21 +78,22 @@ export default function Shows() {
           </svg>
         </div>
 
-        <div className="flex gap-4">
-          <div className="flex-none w-1/4 h-screen overflow-auto">
+        <div className="flex gap-4 h-full">
+          {/* Series Column */}
+          <div className="flex-none w-1/4 h-full overflow-auto px-4 pb-6">
             <h2 className="text-2xl font-bold mb-4">Series</h2>
             <div className="space-y-4">
               {filteredShows.map((show) => (
                 <div
                   key={show.seriesName}
-                  className={`p-4 bg-white rounded-lg border border-white shadow-lg ${
+                  className={`p-4 bg-white rounded-lg border-0 shadow-lg ${
                     selectedSeries === show
-                      ? "border-red-500 shadow-xl"
+                      ? "border-red-500 shadow-xl ring-2 ring-red-400"
                       : "hover:shadow-xl hover:border-red-300"
                   } cursor-pointer`}
                   onClick={() => {
                     setSelectedSeries(show);
-                    setSelectedSeason(null);
+                    setSelectedSeason(null); // Reset selected season when series is changed
                   }}
                 >
                   <h3 className="text-xl font-medium text-gray-800 hover:text-red-400">
@@ -104,7 +107,8 @@ export default function Shows() {
             </div>
           </div>
 
-          <div className="flex-none w-1/4 h-screen overflow-auto">
+          {/* Seasons Column */}
+          <div className="flex-none w-1/4 h-full overflow-auto px-4 pb-6">
             <h2 className="text-2xl font-bold mb-4">
               {selectedSeries ? `${selectedSeries.seriesName}` : "Seasons"}
             </h2>
@@ -113,9 +117,9 @@ export default function Shows() {
                 {selectedSeries.seasons.map((season, index) => (
                   <div
                     key={index}
-                    className={`p-4 bg-white rounded-lg border border-white shadow-lg ${
+                    className={`p-4 bg-white rounded-lg border-0 shadow-lg ${
                       selectedSeason === season
-                        ? "border-red-500 shadow-xl"
+                        ? "border-red-500 shadow-xl ring-2 ring-red-400"
                         : "hover:shadow-xl hover:border-red-300"
                     } cursor-pointer`}
                     onClick={() => setSelectedSeason(season)}
@@ -129,7 +133,8 @@ export default function Shows() {
             )}
           </div>
 
-          <div className="flex-auto w-1/2 h-screen overflow-auto">
+          {/* Episodes Column */}
+          <div className="flex-auto w-1/2 h-full overflow-y-scroll px-4 pb-6">
             <h2 className="text-2xl font-bold mb-4">
               {selectedSeason
                 ? `Season ${selectedSeason.seasonNumber}`
@@ -140,7 +145,7 @@ export default function Shows() {
                 {selectedSeason.episodes.map((episode) => (
                   <div
                     key={episode.id}
-                    className="p-4 bg-white rounded-lg border border-white shadow-lg hover:shadow-xl hover:border-red-300"
+                    className={`p-4 bg-white rounded-lg border-0 shadow-lg hover:shadow-xl hover:border-red-300`}
                   >
                     <a
                       href={episode.link}
