@@ -13,6 +13,22 @@ export default function TwentySix() {
       .catch((error) => console.error("Error fetching movies:", error));
   }, []);
 
+  // Helper function to convert Google Photos URL
+  const transformGooglePhotosLink = (url) => {
+    try {
+      if (!url.includes("photo/")) {
+        const key = new URL(url).searchParams.get("key");
+        if (key) {
+          return `https://photos.google.com/share/AF1QipObtUCKV_cLhEAGipipfKE-HSTsAjHJlsywJOthBGPTkJhaB6vuwT5moQtulwncrg/photo/AF1QipPqHu9rxRNPeazHW4K3cqC0k3kjX4xLSlr2JEcZ?key=${key}`;
+        }
+      }
+      return url;
+    } catch (error) {
+      console.error("Error transforming URL:", error);
+      return url;
+    }
+  };
+
   // Filter movies based on both name and description
   const filteredMovies = movies.filter(
     (movie) =>
@@ -65,14 +81,23 @@ export default function TwentySix() {
                 href={movie.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block p-4"
+                className="block"
               >
-                <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
-                  {movie.name}
-                </h2>
-                <p className="mt-2 text-gray-600 text-[12px]">
-                  {"#" + movie.tags}
-                </p>
+                {/* Thumbnail Image */}
+                <img
+                  src={transformGooglePhotosLink(movie.dp)}
+                  alt={movie.name}
+                  className="w-full h-48 object-cover"
+                />
+                {/* Movie Info */}
+                <div className="p-4">
+                  <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
+                    {movie.name}
+                  </h2>
+                  <p className="mt-2 text-gray-600 text-[12px]">
+                    {"#" + movie.tags}
+                  </p>
+                </div>
               </a>
             </div>
           ))}

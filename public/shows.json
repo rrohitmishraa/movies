@@ -1,63 +1,70 @@
 [
   {
-    "seriesName": "Squid Game",
+    "seriesName": "Ted Lasso",
+    "tag": "comedy sitcom",
     "seasons": [
       {
         "seasonNumber": 1,
         "episodes": [
           {
             "id": 1,
-            "title": "Episode 1",
-            "link": "https://photos.app.goo.gl/kmgysCALsWirgWyu8",
-            "description": "Red Light, Green Light"
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/Z3JiCE4SdJoEmP3G6",
+            "title": "Pilot"
           },
           {
             "id": 2,
-            "title": "Episode 2",
-            "link": "https://photos.app.goo.gl/BFra2qDYXbwFQGfM7",
-            "description": "Hell"
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/B7n6p2wTSgkBxGs26",
+            "title": "Biscuits"
           },
           {
             "id": 3,
-            "title": "Episode 3",
-            "link": "https://photos.app.goo.gl/eDhQ5sRWBRxg59VZ6",
-            "description": "The Man with the Umbrella"
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/uMBDhgK9AE3nf8r26",
+            "title": "Trent Crimm: The Independent"
           },
           {
             "id": 4,
-            "title": "Episode 4",
-            "link": "https://photos.app.goo.gl/6FrgeQz4uk8sbx6S9",
-            "description": "Stick to the Team"
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/cGTPCUFWMYZa21NcA",
+            "title": "For the Children"
           },
           {
             "id": 5,
-            "title": "Episode 5",
-            "link": "https://photos.app.goo.gl/6WA1B2JYRhpgoKyPA",
-            "description": "A Fair World"
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/hsYVtfKJaVQPU3Zj6",
+            "title": "Tan Lines"
           },
           {
             "id": 6,
-            "title": "Episode 6",
-            "link": "https://photos.app.goo.gl/nNucczCKHkDUG5FA7",
-            "description": "Gganbu"
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/zeqWMgvBma7JbuBz5",
+            "title": "Two Aces"
           },
           {
             "id": 7,
-            "title": "Episode 7",
-            "link": "https://photos.app.goo.gl/Xp6y9rtwtH2oA5Fq9",
-            "description": "VIPs"
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/xfWwZHhUGmxM8yuX8",
+            "title": "Make Rebecca Great Again"
           },
           {
             "id": 8,
-            "title": "Episode 8",
-            "link": "https://photos.app.goo.gl/VA3Kt4MUY84kqHXN8",
-            "description": "Front Man"
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/DDJ8LGDNFJjkVgHZ8",
+            "title": "The Diamond Dogs"
           },
           {
             "id": 9,
-            "title": "Episode 9",
-            "link": "https://photos.app.goo.gl/TCbRE3HWbqb2UHpf6",
-            "description": "One Lucky Day"
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/nbsMLax81LpwFm69A",
+            "title": "All Apologies"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/noTJxsqqJ5DKCApm8",
+            "title": "The Hope That Kills You"
           }
         ]
       },
@@ -66,45 +73,902 @@
         "episodes": [
           {
             "id": 1,
-            "title": "Episode 1",
-            "link": "https://photos.app.goo.gl/7m2sVfrLuLpg5ZbW9",
-            "description": "Bread and Lottery"
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/SknAvsbnn7MvMUCdA",
+            "title": "Goodbye Earl"
           },
           {
             "id": 2,
-            "title": "Episode 2",
-            "link": "https://photos.app.goo.gl/EpHaG8dz92t81zE99",
-            "description": "Halloween Party"
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/7rVrn9FxifYrfTE88",
+            "title": "Lavender"
           },
           {
             "id": 3,
-            "title": "Episode 3",
-            "link": "https://photos.app.goo.gl/YWZ1NLawNzLwtr9GA",
-            "description": "001"
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/XVwatXvJbjCDKnoy7",
+            "title": "Do the Right-est Thing"
           },
           {
             "id": 4,
-            "title": "Episode 4",
-            "link": "https://photos.app.goo.gl/BCzUMMo1CuT5WnpQA",
-            "description": "Six Legs"
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/Qq1d1zEBzW2uom1c8",
+            "title": "Carol of the Bells"
           },
           {
             "id": 5,
-            "title": "Episode 5",
-            "link": "https://photos.app.goo.gl/tkPBZjcs1ZxytSxw7",
-            "description": "One More Game"
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/x9ari6Tw2cQqo8Uq5",
+            "title": "Rainbow"
           },
           {
             "id": 6,
-            "title": "Episode 6",
-            "link": "https://photos.app.goo.gl/SBMtbCtzmLctChjg7",
-            "description": "O X"
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/9mVrcGCNEjituohE9",
+            "title": "The Signal"
           },
           {
             "id": 7,
-            "title": "Episode 7",
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/n1Z3wdMYPGviF3Qq8",
+            "title": "Headspace"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/mFhwqUaLGiUqnDzq6",
+            "title": "Man City"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/oj8gfkhkHqeAhT5Y6",
+            "title": "Beard After Hours"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/jFK4XUpSTDRPTCq49",
+            "title": "No Weddings and a Funeral"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/oYKa9XobPKjExegs6",
+            "title": "Midnight Train to Royston"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/cfEEqbKDgGYyafhK8",
+            "title": "Inverting the Pyramid of Success"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/puAhwppAgPoBc5u26",
+            "title": "Smells Like Mean Spirit"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/brEMmWfK7ckot27L8",
+            "title": "(I Don't Want to Go to) Chelsea"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/HAUsezZrKhAMT3NZA",
+            "title": "4-5-1"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/W9nyvZ4EKmogdMbx5",
+            "title": "Big Week"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/yrZ2REF9gFYgAbUK7",
+            "title": "Signs"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/MFXfdt6WzcRP8eN77",
+            "title": "Sunflowers"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/EQASUA7MK9u2DXeCA",
+            "title": "The Strings That Bind Us"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/wW7oowQLGBUGNTVZ6",
+            "title": "We'll Never Have Paris"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/nqtwa35zJicrhfYp7",
+            "title": "La Locker Room Aux Folles"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/Z6BDmwafU6KTkuho8",
+            "title": "International Break"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/psPJdm4uHJ6t77As8",
+            "title": "Mom City"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/qS8cvoEfcM38GTe49",
+            "title": "So Long, Farewell"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Space Force",
+    "tag": "comedy sitcom",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/dk9fZ7ayFWyPcACF6",
+            "title": "The Launch"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/CqTVZWAaTwAfeX3p9",
+            "title": "Save Epsilon 6!"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/M5Wh5cByMrt9vYQV6",
+            "title": "Mark and Mallory Go to Washington"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/1coGpKVea31S5zuy8",
+            "title": "Lunar Habitat"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/1Dr8UYoN4DGk4EyC7",
+            "title": "Space Flag"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/XXbNxp63YGgQ9MFD9",
+            "title": "The Spy"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/czMSKgr7yJyr9dtm6",
+            "title": "Edison Jaymes"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/TA7XQSnK68kfQ45y9",
+            "title": "Conjugal Visit"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/XyxRcc5cAV3FZdND9",
+            "title": "It’s Good to Be Back on the Moon"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/3tBwMTJkDXMKm2xA7",
+            "title": "Proportionate Response"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/nsFjB4XMwhc6ide27",
+            "title": "The Inquiry"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/7CXQqyVvvr7aUkBM9",
+            "title": "Budget Cuts"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/QfhRzxF9zRGoddvC6",
+            "title": "The Chinese Delegation"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/ZNgAAoQCE9KYEnT26",
+            "title": "The Europa Project"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/iq9g34Sd7FA57hmy9",
+            "title": "Mad (Buff) Confidence"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/RXh2tWuaFWoPbpi58",
+            "title": "The Doctor's Appointment"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/T8w3HL38uu8QvwDW9",
+            "title": "The Hack"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Invincible",
+    "tag": "cartoon",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/gyBzYPMS52fDGzsu8",
+            "title": "It's About Time"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/kaWGUi5MbuYkhqSR7",
+            "title": "Here Goes Nothing"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/u1j1xbZiidJeS9mY8",
+            "title": "Who You Calling Ugly?"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/qpUHTgBnUyYh8Rdn9",
+            "title": "Neil Armstrong, Eat Your Heart Out"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/GSeNF89CKjF4P98cA",
+            "title": "That Actually Hurt"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/g27XHwiUQ8DySkWc8",
+            "title": "You Look Kinda Dead"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/ktu35w4Ax9T8i7wQ9",
+            "title": "We Need to Talk"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/DBUntseuZ7D9Cv4x6",
+            "title": "Where I Really Come From"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/5nz3P4qbYPKDJTmF8",
+            "title": "A Lesson for Your Next Life"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/CrLTRjUY1zAojqnQ6",
+            "title": "In About Six Hours I Lose My Virginity to a Fish"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/7nHPPnB1tZo1v5nj7",
+            "title": "This Missive, This Machination!"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/QuUfqZ2AJCyT7CjEA",
+            "title": "It's Been a While"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/nJhoSTne5w6zkmvE7",
+            "title": "This Must Come As A Shock"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/eDE7wHhNoDLrK6bM7",
+            "title": "It's Not That Simple"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/4rNrgn6q3y5Y4PCi7",
+            "title": "I'm Not Going Anywhere"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/TW29AQmvLpSzBjoY6",
+            "title": "I Thought You Were Stronger"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Hellbound",
+    "tag": "Korean",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/GPKCT6pnrTmmi4iy9",
+            "title": "The First Revelation"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/zWTg8TdTmFaKAcBt5",
+            "title": "The Rise of the New Truth"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/rC6j1sZTSCWVG7cC7",
+            "title": "Hellbound"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/d8fgiu2PbrqJ8d1h8",
+            "title": "A Mother's Struggle"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/WL7QfThW9QEH44Jt8",
+            "title": "The Collapse"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/snj1PWkW73wz9YDV8",
+            "title": "New Beginnings"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "",
+            "title": "Episode #2.1"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "",
+            "title": "Episode #2.2"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "",
+            "title": "Episode #2.3"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "",
+            "title": "Episode #2.4"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "",
+            "title": "Episode #2.5"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "",
+            "title": "Episode #2.6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Ben 10",
+    "tag": "Cartoon",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/7g4xLWneW9mWAabR6",
+            "title": "And Then There Were 10: Ben discovers the Omnitrix."
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/HwVeGbHivrkhDV9T6",
+            "title": "Washington B.C.: Ben uses the Omnitrix to stop Dr. Animo."
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/kdSL81Jg51bv3mhX9",
+            "title": "The Krakken: Ben encounters a mysterious sea creature."
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/qaNgmkkqtpKZdPq29",
+            "title": "Permanent Retirement: Ben faces off against shape-shifting aliens."
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/NvMiqNVDQdvzVKPHA",
+            "title": "Hunted: Ben fights against alien bounty hunters."
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/zWV6U4xZnaZzX1SX9",
+            "title": "Tourist Trap: Ben battles a giant mutant rat."
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/fqsbcA3aFr3kNivx5",
+            "title": "Kevin 11: Ben meets Kevin, a kid with alien powers."
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/FFqEV2XHfcjLsKCd6",
+            "title": "The Alliance: Ben must stop a mutated gang leader."
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/YFAifhQ5suYVtKLm7",
+            "title": "Last Laugh: Ben fights Zombozo and his clown minions."
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/MHMC9Vgs3pYLn7vM9",
+            "title": "Lucky Girl: Gwen gains magic powers from a charm."
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/WnhbzwD1nTsZ1Uo49",
+            "title": "A Small Problem: Ben shrinks down to a tiny size."
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/4v9VJjATnUqVmKwx9",
+            "title": "Side Effects: Ben fights aliens while battling a cold."
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/qibyePoggvjskEn29",
+            "title": "Secrets: Ben uncovers the secrets of the Omnitrix."
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/3pC5wEMEo6JgCpUM7",
+            "title": "Truth: Ben discovers more about the Omnitrix."
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/NH6YRT1SfPszXWL76",
+            "title": "The Big Tick: Ben encounters a dangerous alien."
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/qGQb7wDBAp2bmNP68",
+            "title": "Framed: Ben is framed for crimes by Kevin."
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/bh17xxtrTRBwZr137",
+            "title": "Gwen 10: Gwen takes the Omnitrix in an alternate timeline."
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/snuNJsVxyQUtR6Yo6",
+            "title": "Grudge Match: Ben and Kevin are forced into an alien fight club."
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/3j9zPEW5tDtyF4xt9",
+            "title": "The Galactic Enforcers: Ben teams up with intergalactic heroes."
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/njHC9VTyMaeaEibX9",
+            "title": "Camp Fear: Ben faces off against mutant plants."
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/PdcYYeoMCBrwY8d9A",
+            "title": "Ultimate Weapon: Ben searches for a powerful ancient artifact."
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/Bv3YTa24453UYSt26",
+            "title": "Tough Luck: Ben battles a villain who can manipulate luck."
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/VH3Cqd1q5QiVg8uu7",
+            "title": "They Lurk Below: Ben fights a sea monster and discovers an underwater city."
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/Lc5SwCXBpNEeUEwZ7",
+            "title": "Ghostfreaked Out: Ghostfreak returns to haunt Ben."
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/U9jHt92BAaykdxyd6",
+            "title": "Dr. Animo and the Mutant Ray: Ben battles Dr. Animo's mutant creations. "
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/zZ12CDmDKkZr2eDr9",
+            "title": "Back with a Vengeance: Vilgax returns with Kevin for revenge on Ben."
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/dJNPkW5ztTDtHn2AA",
+            "title": "Ben 10,000: Ben meets his future self."
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/5tD6nao2CAHJVeFGA",
+            "title": "Midnight Madness: Ben is hypnotized into committing crimes."
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/zcWp4xFCQonkWRxBA",
+            "title": "A Change of Face: Ben and Gwen switch bodies."
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/C8PAhhTSNgat29Ly9",
+            "title": "Merry Christmas: Ben encounters a mysterious town trapped in an eternal Christmas."
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/5rmd8shTc78gkfFBA",
+            "title": "Benwolf: Ben battles a werewolf alien."
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/tAxCuob2JFJiF1B47",
+            "title": "Game Over: Ben and Gwen are trapped inside a video game."
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/knPxAd2CjHUxWVq78",
+            "title": "Super Alien Hero Buddy Adventures: Ben discovers a cartoon based on the Omnitrix aliens."
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/r2CHzf8ax23jZVhG6",
+            "title": "Under Wraps: Ben fights a mummy alien."
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/oHfUJbfikQVzEEAPA",
+            "title": "The Unnaturals: Ben battles an alien-controlled baseball team."
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/SrgeVxQzatcZ5zfAA",
+            "title": "Monster Weather: Ben faces a villain who controls the weather."
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/ia4FfQSwiNuuK1XT6",
+            "title": "The Return: Ghostfreak returns and plots revenge on Ben."
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/qCGsk73LCwx7R11s9",
+            "title": "Be Afraid of the Dark: Ben battles Ghostfreak in a final showdown."
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/6jKEgAZCSexDConh8",
+            "title": "The Visitor: Ben learns about Max's alien past."
+          }
+        ]
+      },
+      {
+        "seasonNumber": 4,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/PtsBnhKpttSALmQL8",
+            "title": "Perfect Day: Ben finds himself trapped in a simulated perfect world."
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/LmeRZMyNLXTxrgAEA",
+            "title": "Divided We Stand: Ben's Ditto form begins to multiply uncontrollably."
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/NCAcpqYe8h7cLtsF7",
+            "title": "Don't Drink the Water: Ben and Max turn into kids after being exposed to mystical water."
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/FE554NYnP6vYZ8vb8",
+            "title": "Big Fat Alien Wedding: Ben must prevent an alien wedding from being sabotaged."
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/36JNCmYaXCuSh5AR9",
+            "title": "Ben 4 Good Buddy: Ben battles trucker aliens who steal valuable cargo."
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/7qhUD2GRutveDdjr6",
+            "title": "Ready to Rumble: Ben enters an underground alien wrestling ring."
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/Bq2PvphWnJWZCsC89",
+            "title": "Ken 10: Ben meets his future son who struggles with the Omnitrix."
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/WT6WozTK1Q6gWBNPA",
+            "title": "Ben 10 vs. Negative 10 (Part 1): Ben faces off against the Negative 10, a team of villains."
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/HZuDJ5EyxSCxUise8",
+            "title": "Ben 10 vs. Negative 10 (Part 2): The final battle with the Negative 10 unfolds."
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/bQcpsfQ76fZdAmou5",
+            "title": "Goodbye and Good Riddance: Ben returns to school after his summer adventures."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Squid Game",
+    "tag": "Korean",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/kmgysCALsWirgWyu8",
+            "title": "Red Light, Green Light"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/BFra2qDYXbwFQGfM7",
+            "title": "Hell"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/eDhQ5sRWBRxg59VZ6",
+            "title": "The Man with the Umbrella"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/6FrgeQz4uk8sbx6S9",
+            "title": "Stick to the Team"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/6WA1B2JYRhpgoKyPA",
+            "title": "A Fair World"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/nNucczCKHkDUG5FA7",
+            "title": "Gganbu"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/Xp6y9rtwtH2oA5Fq9",
+            "title": "VIPs"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/VA3Kt4MUY84kqHXN8",
+            "title": "Front Man"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/TCbRE3HWbqb2UHpf6",
+            "title": "One Lucky Day"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/7m2sVfrLuLpg5ZbW9",
+            "title": "Bread and Lottery"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/EpHaG8dz92t81zE99",
+            "title": "Halloween Party"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/YWZ1NLawNzLwtr9GA",
+            "title": "001"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/BCzUMMo1CuT5WnpQA",
+            "title": "Six Legs"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/tkPBZjcs1ZxytSxw7",
+            "title": "One More Game"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/SBMtbCtzmLctChjg7",
+            "title": "O X"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/JDoJdQN8bWddTztYA",
-            "description": "Friend or Foe"
+            "title": "Friend or Foe"
           }
         ]
       }
@@ -112,57 +976,58 @@
   },
   {
     "seriesName": "Pradeeps of Pitsburgh",
+    "tag": "",
     "seasons": [
       {
         "seasonNumber": 1,
         "episodes": [
           {
             "id": 1,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/jSaMLzr4PhBtZGGb7",
-            "description": "Arrival in Pitsberg"
+            "title": "Arrival in Pitsberg"
           },
           {
             "id": 2,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/Du3HWvNnsnTc4gw28",
-            "description": "The Family Gathering"
+            "title": "The Family Gathering"
           },
           {
             "id": 3,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/6hua5Y1d8AyQm8P98",
-            "description": "Secrets of the Basement"
+            "title": "Secrets of the Basement"
           },
           {
             "id": 4,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/szdW8h9gSSWoqyPVA",
-            "description": "The Forgotten Recipe"
+            "title": "The Forgotten Recipe"
           },
           {
             "id": 5,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/1xLA2DUhzyVB8W4a6",
-            "description": "The Missing Necklace"
+            "title": "The Missing Necklace"
           },
           {
             "id": 6,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/v1adu3acLxxj9Sk28",
-            "description": "The Unexpected Guest"
+            "title": "The Unexpected Guest"
           },
           {
             "id": 7,
-            "title": "Episode 7",
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/1Wpx8kU9o1k9LkTt7",
-            "description": "A Festival to Remember"
+            "title": "A Festival to Remember"
           },
           {
             "id": 8,
-            "title": "Episode 8",
+            "episode": "Episode 8",
             "link": "https://photos.app.goo.gl/1Bw8NsVcPeCSLx5Y8",
-            "description": "Betrayal at Pitsberg"
+            "title": "Betrayal at Pitsberg"
           }
         ]
       }
@@ -170,69 +1035,70 @@
   },
   {
     "seriesName": "Game of Thrones",
+    "tag": "",
     "seasons": [
       {
         "seasonNumber": 1,
         "episodes": [
           {
             "id": 1,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/UjrjsXP4p61sWdSi7",
-            "description": "Winter Is Coming"
+            "title": "Winter Is Coming"
           },
           {
             "id": 2,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/koZvxsEesQVueeYn9",
-            "description": "The Kingsroad"
+            "title": "The Kingsroad"
           },
           {
             "id": 3,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/MGZy3QXeJVxK1Thq5",
-            "description": "Lord Snow"
+            "title": "Lord Snow"
           },
           {
             "id": 4,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/3t2sfbpiaggUYA146",
-            "description": "Cripples, Bastards, and Broken Things"
+            "title": "Cripples, Bastards, and Broken Things"
           },
           {
             "id": 5,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/mEcacqpLB7bAWvzP7",
-            "description": "The Wolf and the Lion"
+            "title": "The Wolf and the Lion"
           },
           {
             "id": 6,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/9S114aMYhjB463Vj9",
-            "description": "A Golden Crown"
+            "title": "A Golden Crown"
           },
           {
             "id": 7,
-            "title": "Episode 7",
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/JVJrgaqYasRxHt7H9",
-            "description": "You Win or You Die"
+            "title": "You Win or You Die"
           },
           {
             "id": 8,
-            "title": "Episode 8",
+            "episode": "Episode 8",
             "link": "https://photos.app.goo.gl/h5VW8sZm3LFZpmcu9",
-            "description": "The Pointy End"
+            "title": "The Pointy End"
           },
           {
             "id": 9,
-            "title": "Episode 9",
+            "episode": "Episode 9",
             "link": "https://photos.app.goo.gl/cQ65GuW8onpS9HB58",
-            "description": "Baelor"
+            "title": "Baelor"
           },
           {
             "id": 10,
-            "title": "Episode 10",
+            "episode": "Episode 10",
             "link": "https://photos.app.goo.gl/CMzDuzVngestutUx8",
-            "description": "Fire and Blood"
+            "title": "Fire and Blood"
           }
         ]
       },
@@ -241,63 +1107,63 @@
         "episodes": [
           {
             "id": 11,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/aN1LkfkkKoQSMx8cA",
-            "description": "The North Remembers"
+            "title": "The North Remembers"
           },
           {
             "id": 12,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/oj1x9MjnhremvfR16",
-            "description": "The Night Lands"
+            "title": "The Night Lands"
           },
           {
             "id": 13,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/CVg1dHbF5CcUXofy5",
-            "description": "What Is Dead May Never Die"
+            "title": "What Is Dead May Never Die"
           },
           {
             "id": 14,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/85hXUqXCJxcvK2Bx6",
-            "description": "Garden of Bones"
+            "title": "Garden of Bones"
           },
           {
             "id": 15,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/sZvxiKrvjeabKD1c7",
-            "description": "The Ghost of Harrenhal"
+            "title": "The Ghost of Harrenhal"
           },
           {
             "id": 16,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/S4smaYNPgftGeYeT7",
-            "description": "The Old Gods and the New"
+            "title": "The Old Gods and the New"
           },
           {
             "id": 17,
-            "title": "Episode 7",
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/3cYbY7ZB7M9a2Eav9",
-            "description": "A Man Without Honor"
+            "title": "A Man Without Honor"
           },
           {
             "id": 18,
-            "title": "Episode 8",
+            "episode": "Episode 8",
             "link": "https://photos.app.goo.gl/ntefwMVcZkxjZuDF9",
-            "description": "The Prince of Winterfell"
+            "title": "The Prince of Winterfell"
           },
           {
             "id": 19,
-            "title": "Episode 9",
+            "episode": "Episode 9",
             "link": "https://photos.app.goo.gl/jB4hWeEqjpUFe5AD9",
-            "description": "Blackwater"
+            "title": "Blackwater"
           },
           {
             "id": 20,
-            "title": "Episode 10",
+            "episode": "Episode 10",
             "link": "https://photos.app.goo.gl/2M59kBC3vs7QHujD8",
-            "description": "Valar Morghulis"
+            "title": "Valar Morghulis"
           }
         ]
       },
@@ -306,63 +1172,63 @@
         "episodes": [
           {
             "id": 21,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/pTnHD7JEKpWJ4Dqg8",
-            "description": "Valar Dohaeris"
+            "title": "Valar Dohaeris"
           },
           {
             "id": 22,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/VL7TGkjEhijKmyVK8",
-            "description": "Dark Wings, Dark Words"
+            "title": "Dark Wings, Dark Words"
           },
           {
             "id": 23,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/6FtRLrz6YppqEPWC9",
-            "description": "Walk of Punishment"
+            "title": "Walk of Punishment"
           },
           {
             "id": 24,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/VPYdxF2z4D5KUSbbA",
-            "description": "And Now His Watch Is Ended"
+            "title": "And Now His Watch Is Ended"
           },
           {
             "id": 25,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/4HDiC7vQ66D5qovu9",
-            "description": "Kissed by Fire"
+            "title": "Kissed by Fire"
           },
           {
             "id": 26,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/ugvng3LUX2Cc2PaX6",
-            "description": "The Climb"
+            "title": "The Climb"
           },
           {
             "id": 27,
-            "title": "Episode 7",
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/qPmXdQFSNeuEVH6m7",
-            "description": "The Bear and the Maiden Fair"
+            "title": "The Bear and the Maiden Fair"
           },
           {
             "id": 28,
-            "title": "Episode 8",
+            "episode": "Episode 8",
             "link": "https://photos.app.goo.gl/zKbvF47cAiV6KJpo8",
-            "description": "Second Sons"
+            "title": "Second Sons"
           },
           {
             "id": 29,
-            "title": "Episode 9",
+            "episode": "Episode 9",
             "link": "https://photos.app.goo.gl/n2uH1VhFmkZAp1UU6",
-            "description": "The Rains of Castamere"
+            "title": "The Rains of Castamere"
           },
           {
             "id": 30,
-            "title": "Episode 10",
+            "episode": "Episode 10",
             "link": "https://photos.app.goo.gl/YFdnS3S2BmcFLq9D6",
-            "description": "Mhysa"
+            "title": "Mhysa"
           }
         ]
       },
@@ -371,63 +1237,63 @@
         "episodes": [
           {
             "id": 31,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/rNCQqPLBwRNtvmZv8",
-            "description": "Two Swords"
+            "title": "Two Swords"
           },
           {
             "id": 32,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/o95cUBsfGLgkmxe39",
-            "description": "The Lion and the Rose"
+            "title": "The Lion and the Rose"
           },
           {
             "id": 33,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/6Sq4vcpKUrykYkqF9",
-            "description": "Breaker of Chains"
+            "title": "Breaker of Chains"
           },
           {
             "id": 34,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/DZ7aiu79jagxKv9a9",
-            "description": "Oathkeeper"
+            "title": "Oathkeeper"
           },
           {
             "id": 35,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/NWMDLtQ3YyR7v7VT6",
-            "description": "First of His Name"
+            "title": "First of His Name"
           },
           {
             "id": 36,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/MAMikXf37YNyAqsE9",
-            "description": "The Laws of Gods and Men"
+            "title": "The Laws of Gods and Men"
           },
           {
             "id": 37,
-            "title": "Episode 7",
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/Buu5cw6wCFuiiabMA",
-            "description": "Mockingbird"
+            "title": "Mockingbird"
           },
           {
             "id": 38,
-            "title": "Episode 8",
+            "episode": "Episode 8",
             "link": "https://photos.app.goo.gl/55XV2rRX3otUtdFS6",
-            "description": "The Mountain and the Viper"
+            "title": "The Mountain and the Viper"
           },
           {
             "id": 39,
-            "title": "Episode 9",
+            "episode": "Episode 9",
             "link": "https://photos.app.goo.gl/WriPyagdH7T5YWdKA",
-            "description": "The Watchers on the Wall"
+            "title": "The Watchers on the Wall"
           },
           {
             "id": 40,
-            "title": "Episode 10",
+            "episode": "Episode 10",
             "link": "https://photos.app.goo.gl/Z1YcTNck8ndYT1pc6",
-            "description": "The Children"
+            "title": "The Children"
           }
         ]
       },
@@ -436,63 +1302,63 @@
         "episodes": [
           {
             "id": 41,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/h5QoJwyit1mUGhvY9",
-            "description": "The Wars to Come"
+            "title": "The Wars to Come"
           },
           {
             "id": 42,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/wWr6oCC9fUeuKpcW8",
-            "description": "The House of Black and White"
+            "title": "The House of Black and White"
           },
           {
             "id": 43,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/XaA3XNtoa7Qkenwg9",
-            "description": "High Sparrow"
+            "title": "High Sparrow"
           },
           {
             "id": 44,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/aSzAaruANJevdbAo7",
-            "description": "Sons of the Harpy"
+            "title": "Sons of the Harpy"
           },
           {
             "id": 45,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/5is62ZsVe4YQvQZL9",
-            "description": "Kill the Boy"
+            "title": "Kill the Boy"
           },
           {
             "id": 46,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/whYfBaD2Y3s5WTaa8",
-            "description": "Unbowed, Unbent, Unbroken"
+            "title": "Unbowed, Unbent, Unbroken"
           },
           {
             "id": 47,
-            "title": "Episode 7",
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/T7QgUYAdApGsPZoi6",
-            "description": "The Gift"
+            "title": "The Gift"
           },
           {
             "id": 48,
-            "title": "Episode 8",
+            "episode": "Episode 8",
             "link": "https://photos.app.goo.gl/qDMipK7z7TJWxgwWA",
-            "description": "Hardhome"
+            "title": "Hardhome"
           },
           {
             "id": 49,
-            "title": "Episode 9",
+            "episode": "Episode 9",
             "link": "https://photos.app.goo.gl/fSPJkUwuc1mRUSjd7",
-            "description": "The Dance of Dragons"
+            "title": "The Dance of Dragons"
           },
           {
             "id": 50,
-            "title": "Episode 10",
+            "episode": "Episode 10",
             "link": "https://photos.app.goo.gl/DTy4Fsb8XYZFbnfE8",
-            "description": "Mother's Mercy"
+            "title": "Mother's Mercy"
           }
         ]
       },
@@ -501,63 +1367,63 @@
         "episodes": [
           {
             "id": 51,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/JFQokeKqNNFz2HRBA",
-            "description": "The Red Woman"
+            "title": "The Red Woman"
           },
           {
             "id": 52,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/2sCnweZ6CMrteg7D6",
-            "description": "Home"
+            "title": "Home"
           },
           {
             "id": 53,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/q7yZt6nLX4ARb7JFA",
-            "description": "Oathbreaker"
+            "title": "Oathbreaker"
           },
           {
             "id": 54,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/U8pifcfoFfvGW1DP8",
-            "description": "Book of the Stranger"
+            "title": "Book of the Stranger"
           },
           {
             "id": 55,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/gd1E2PURPiBTBvSk9",
-            "description": "The Door"
+            "title": "The Door"
           },
           {
             "id": 56,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/6xGiwtu5AhBqWLzd6",
-            "description": "Blood of My Blood"
+            "title": "Blood of My Blood"
           },
           {
             "id": 57,
-            "title": "Episode 7",
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/qf4yAiVvU3pv53o4A",
-            "description": "The Broken Man"
+            "title": "The Broken Man"
           },
           {
             "id": 58,
-            "title": "Episode 8",
+            "episode": "Episode 8",
             "link": "https://photos.app.goo.gl/Y7drLUh27ffLkZZ69",
-            "description": "No One"
+            "title": "No One"
           },
           {
             "id": 59,
-            "title": "Episode 9",
+            "episode": "Episode 9",
             "link": "https://photos.app.goo.gl/iaVGYiFtDfzdxDbe9",
-            "description": "The Battle of the Bastards"
+            "title": "The Battle of the Bastards"
           },
           {
             "id": 60,
-            "title": "Episode 10",
+            "episode": "Episode 10",
             "link": "https://photos.app.goo.gl/HXo4tKAZpanqG39X8",
-            "description": "The Winds of Winter"
+            "title": "The Winds of Winter"
           }
         ]
       },
@@ -566,45 +1432,45 @@
         "episodes": [
           {
             "id": 61,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/VzrM445pjqvYNuUm8",
-            "description": "Dragonstone"
+            "title": "Dragonstone"
           },
           {
             "id": 62,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/p1kFv475pN6dnrJw9",
-            "description": "Stormborn"
+            "title": "Stormborn"
           },
           {
             "id": 63,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/CBbBdAtUAMiVL1fp9",
-            "description": "The Queen's Justice"
+            "title": "The Queen's Justice"
           },
           {
             "id": 64,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/Kz4nSWjC43GRRjJ6A",
-            "description": "The Spoils of War"
+            "title": "The Spoils of War"
           },
           {
             "id": 65,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/TubvhYDWdA5uBp2Z9",
-            "description": "Eastwatch"
+            "title": "Eastwatch"
           },
           {
             "id": 66,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/SCrS792YGgLFdE6G8",
-            "description": "Beyond the Wall"
+            "title": "Beyond the Wall"
           },
           {
             "id": 67,
-            "title": "Episode 7",
+            "episode": "Episode 7",
             "link": "https://photos.app.goo.gl/q49sbt4frevX94U1A",
-            "description": "The Dragon and the Wolf"
+            "title": "The Dragon and the Wolf"
           }
         ]
       },
@@ -613,39 +1479,39 @@
         "episodes": [
           {
             "id": 68,
-            "title": "Episode 1",
+            "episode": "Episode 1",
             "link": "https://photos.app.goo.gl/oxXSywVybjiJYr728",
-            "description": "Winterfell"
+            "title": "Winterfell"
           },
           {
             "id": 69,
-            "title": "Episode 2",
+            "episode": "Episode 2",
             "link": "https://photos.app.goo.gl/5Xxd57E79wSC9vmC9",
-            "description": "A Knight of the Seven Kingdoms"
+            "title": "A Knight of the Seven Kingdoms"
           },
           {
             "id": 70,
-            "title": "Episode 3",
+            "episode": "Episode 3",
             "link": "https://photos.app.goo.gl/WwDfJmrPP32ka9VP8",
-            "description": "The Long Night"
+            "title": "The Long Night"
           },
           {
             "id": 71,
-            "title": "Episode 4",
+            "episode": "Episode 4",
             "link": "https://photos.app.goo.gl/X8NyCeg22Z4fz8Mh7",
-            "description": "The Last of the Starks"
+            "title": "The Last of the Starks"
           },
           {
             "id": 72,
-            "title": "Episode 5",
+            "episode": "Episode 5",
             "link": "https://photos.app.goo.gl/eieqT2MoqxsCykWc7",
-            "description": "The Bells"
+            "title": "The Bells"
           },
           {
             "id": 73,
-            "title": "Episode 6",
+            "episode": "Episode 6",
             "link": "https://photos.app.goo.gl/FYp2mbuWoNBDwhGd8",
-            "description": "The Iron Throne"
+            "title": "The Iron Throne"
           }
         ]
       }

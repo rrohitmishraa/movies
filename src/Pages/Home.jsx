@@ -18,6 +18,8 @@ export default function Home({ authorizeNavigation }) {
       // Navigate to valid route
       authorizeNavigation(); // Authorize navigation
       navigate(`/${trimmedQuery}`);
+    } else if (trimmedQuery === "wallpapers") {
+      window.open("https://photos.app.goo.gl/sxpqFZkwpoJxqMD36");
     } else {
       // Query the dictionary API for other inputs
       try {
