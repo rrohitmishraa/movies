@@ -15,6 +15,22 @@ export default function Shows() {
       .catch((error) => console.error("Error fetching shows:", error));
   }, []);
 
+  useEffect(() => {
+    if (shows.length > 0 && !selectedSeries) {
+      setSelectedSeries(shows[0]); // Set the first series as default
+    }
+  }, [shows, selectedSeries]);
+
+  useEffect(() => {
+    if (
+      selectedSeries &&
+      selectedSeries.seasons.length > 0 &&
+      !selectedSeason
+    ) {
+      setSelectedSeason(selectedSeries.seasons[0]); // Set the first season of the selected series
+    }
+  }, [selectedSeries, selectedSeason]);
+
   const filteredShows = shows.filter(
     (show) =>
       show.seriesName.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -29,14 +45,12 @@ export default function Shows() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 p-6">
+    <div className="min-h-screen bg-gray-100 text-gray-900 p-6 overflow-hidden">
       <div className="max-w-5xl mx-auto relative">
-        {/* Header */}
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
           📺 Show Library
         </h1>
 
-        {/* Search Bar */}
         <div className="relative mb-10">
           <input
             type="text"
@@ -62,97 +76,93 @@ export default function Shows() {
           </svg>
         </div>
 
-        {/* Series List */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredShows.map((show) => (
-            <div
-              key={show.seriesName}
-              className={`${
-                selectedSeries === show
-                  ? "bg-blue-100 border-2 border-blue-500"
-                  : "bg-white"
-              } rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200`}
-            >
-              <a
-                href="#"
-                onClick={() => {
-                  setSelectedSeries(show);
-                  setSelectedSeason(null);
-                }}
-                className="block p-4 cursor-pointer"
-              >
-                <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
-                  {show.seriesName}
-                </h2>
-                <p className="text-gray-600 text-sm italic mt-2">#{show.tag}</p>
-              </a>
-            </div>
-          ))}
-        </div>
-
-        {/* Selected Series & Seasons */}
-        {selectedSeries && (
-          <div className="mt-10">
-            <h2 className="text-2xl font-bold mb-4">
-              {selectedSeries.seriesName}
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {selectedSeries.seasons.map((season, index) => (
+        <div className="flex gap-4">
+          <div className="flex-none w-1/4 h-screen overflow-auto">
+            <h2 className="text-2xl font-bold mb-4">Series</h2>
+            <div className="space-y-4">
+              {filteredShows.map((show) => (
                 <div
-                  key={index}
-                  className={`${
-                    selectedSeason === season
-                      ? "bg-blue-100 border-2 border-blue-500"
-                      : "bg-white"
-                  } rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200`}
+                  key={show.seriesName}
+                  className={`p-4 bg-white rounded-lg border border-white shadow-lg ${
+                    selectedSeries === show
+                      ? "border-red-500 shadow-xl"
+                      : "hover:shadow-xl hover:border-red-300"
+                  } cursor-pointer`}
+                  onClick={() => {
+                    setSelectedSeries(show);
+                    setSelectedSeason(null);
+                  }}
                 >
-                  <a
-                    href="#"
+                  <h3 className="text-xl font-medium text-gray-800 hover:text-red-400">
+                    {show.seriesName}
+                  </h3>
+                  <p className="text-gray-600 text-sm italic mt-2">
+                    #{show.tag}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex-none w-1/4 h-screen overflow-auto">
+            <h2 className="text-2xl font-bold mb-4">
+              {selectedSeries ? `${selectedSeries.seriesName}` : "Seasons"}
+            </h2>
+            {selectedSeries && (
+              <div className="space-y-4">
+                {selectedSeries.seasons.map((season, index) => (
+                  <div
+                    key={index}
+                    className={`p-4 bg-white rounded-lg border border-white shadow-lg ${
+                      selectedSeason === season
+                        ? "border-red-500 shadow-xl"
+                        : "hover:shadow-xl hover:border-red-300"
+                    } cursor-pointer`}
                     onClick={() => setSelectedSeason(season)}
-                    className="block p-4 cursor-pointer"
                   >
                     <h3 className="text-xl font-medium text-gray-800 hover:text-red-400">
                       Season {season.seasonNumber}
                     </h3>
-                  </a>
-                </div>
-              ))}
-            </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-        )}
 
-        {/* Selected Season & Episodes */}
-        {selectedSeason && (
-          <div className="mt-10">
+          <div className="flex-auto w-1/2 h-screen overflow-auto">
             <h2 className="text-2xl font-bold mb-4">
-              Season {selectedSeason.seasonNumber} - {selectedSeries.seriesName}
+              {selectedSeason
+                ? `Season ${selectedSeason.seasonNumber}`
+                : "Episodes"}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {selectedSeason.episodes.map((episode) => (
-                <div
-                  key={episode.id}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200"
-                >
-                  <a
-                    href={episode.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block p-4"
+            {selectedSeason && (
+              <div className="space-y-4">
+                {selectedSeason.episodes.map((episode) => (
+                  <div
+                    key={episode.id}
+                    className="p-4 bg-white rounded-lg border border-white shadow-lg hover:shadow-xl hover:border-red-300"
                   >
-                    <h3 className="text-xl font-medium text-gray-800 hover:text-red-400">
-                      {episode.episode}
-                    </h3>
-                    <p className="mt-2 text-gray-600 text-sm">
-                      {episode.title}
-                    </p>
-                  </a>
-                </div>
-              ))}
-            </div>
+                    <a
+                      href={episode.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-xl font-medium text-gray-800 hover:text-red-400"
+                    >
+                      <span className="text-gray-600 text-sm">
+                        #{episode.episode}
+                      </span>
+                      <br />
+                      <span className="font-medium text-gray-800">
+                        {episode.title}
+                      </span>
+                    </a>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-        )}
+        </div>
 
-        {/* No Results Found */}
         {filteredShows.length === 0 && (
           <p className="text-center text-gray-500 mt-8">
             No shows found. Try searching something else!

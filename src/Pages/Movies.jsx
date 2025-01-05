@@ -55,30 +55,31 @@ export default function Movies() {
         </div>
 
         {/* Movie Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-[10px]">
           {filteredMovies.map((movie) => (
-            <div
+            <a
+              href={movie.url}
+              target="_blank"
+              rel="noopener noreferrer"
               key={movie.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition duration-200"
+              className="block p-4 bg-white h-[260px] w-[250px] rounded-lg border-4 border-white shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-200 relative hover:z-10 cursor-pointer hover:border-red-300"
             >
-              <a
-                href={movie.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block p-4"
-              >
-                <h2 className="text-xl font-medium text-gray-800 hover:text-red-400">
-                  {movie.name}
-                </h2>
-                <p className="mt-2 text-gray-600">
-                  {movie.tags
-                    .split(",") // Split tags into an array (assuming they are comma-separated)
-                    .map((tag) => `#${tag.trim()}`) // Add # to each tag
-                    .join(" ")}{" "}
-                  {/* Join them back with spaces */}
-                </p>
-              </a>
-            </div>
+              {/* Movie Name */}
+              <h2 className="text-xl font-medium text-gray-800 hover:text-red-400 mb-2 border-b border-gray-300 pb-3">
+                {movie.name}
+              </h2>
+
+              {/* Movie Tags */}
+              <p className="mt-2 text-gray-600">
+                {movie.tags
+                  .split(",") // Split tags into an array (assuming they are comma-separated)
+                  .map((tag, idx) => (
+                    <span key={idx} className="inline-block mr-2">
+                      #{tag.trim()}
+                    </span>
+                  ))}
+              </p>
+            </a>
           ))}
         </div>
 
