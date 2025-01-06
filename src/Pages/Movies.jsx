@@ -32,6 +32,7 @@ export default function Movies() {
   );
 
   const totalPages = Math.ceil(filteredMovies.length / moviesPerPage);
+
   const handlePagination = (pageNumber) => setCurrentPage(pageNumber);
 
   useEffect(() => {
@@ -50,6 +51,36 @@ export default function Movies() {
     if (url) {
       window.open(url, "_blank", "noopener,noreferrer");
     }
+  };
+
+  const renderPageNumbers = () => {
+    const visiblePageNumbers = 5; // Show at most 5 page numbers at a time
+    const pages = [];
+    const startPage = Math.max(
+      Math.min(
+        currentPage - Math.floor(visiblePageNumbers / 2),
+        totalPages - visiblePageNumbers + 1
+      ),
+      1
+    );
+    const endPage = Math.min(startPage + visiblePageNumbers - 1, totalPages);
+
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(
+        <button
+          key={i}
+          className={`px-3 py-2 rounded-md ${
+            currentPage === i
+              ? "bg-red-500 text-white"
+              : "bg-gray-200 text-gray-800 hover:bg-red-400"
+          }`}
+          onClick={() => handlePagination(i)}
+        >
+          {i}
+        </button>
+      );
+    }
+    return pages;
   };
 
   return (
@@ -72,7 +103,7 @@ export default function Movies() {
         >
           <button
             onClick={() => navigate("/")}
-            className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-blue-500"
+            className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-500"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +125,7 @@ export default function Movies() {
             placeholder="Search movies..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full sm:w-96 px-5 py-3 pl-12 rounded-full shadow-md bg-white text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+            className="w-full sm:w-96 px-5 py-3 pl-12 rounded-full shadow-md bg-white text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
           />
         </motion.div>
 
@@ -118,11 +149,9 @@ export default function Movies() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 onClick={() => handleCardClick(movie.url)}
               >
-                {/* Movie Number */}
                 <span className="absolute top-2 left-3 text-xs font-semibold text-gray-500 bg-gray-200 rounded-[6px] h-[25px] px-2 flex justify-center items-center">
                   {indexOfFirstMovie + index + 1}
                 </span>
-
                 <h2 className="text-xl font-medium text-gray-800 hover:text-red-400 mt-6 mb-2 border-b border-gray-300 pb-2">
                   {movie.name}
                 </h2>
@@ -157,28 +186,58 @@ export default function Movies() {
         </motion.div>
 
         <motion.div
-          className="mt-8 flex justify-center space-x-4 items-center"
+          className="mt-8 flex flex-wrap justify-center items-center space-x-2 max-w-[800px] mx-auto"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <p className="text-gray-600">
-            Page {currentPage} of {totalPages} | Showing {filteredMovies.length}{" "}
-            results
-          </p>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index}
-              className={`px-4 py-2 rounded-lg ${
-                currentPage === index + 1
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-200 text-gray-800 hover:bg-blue-400"
-              }`}
-              onClick={() => handlePagination(index + 1)}
-            >
-              {index + 1}
-            </button>
-          ))}
+          <button
+            onClick={() => handlePagination(1)}
+            disabled={currentPage === 1}
+            className={`px-3 py-2 rounded ${
+              currentPage === 1
+                ? "bg-gray-300"
+                : "bg-gray-200 hover:bg-gray-300"
+            }`}
+          >
+            First
+          </button>
+          <button
+            className={`px-3 py-2 rounded ${
+              currentPage === 1
+                ? "bg-gray-300"
+                : "bg-gray-200 hover:bg-gray-300"
+            }`}
+            onClick={() => handlePagination(Math.max(currentPage - 1, 1))}
+            disabled={currentPage === 1}
+          >
+            Previous
+          </button>
+          {renderPageNumbers()}
+          <button
+            className={`px-3 py-2 rounded ${
+              currentPage === totalPages
+                ? "bg-gray-300"
+                : "bg-gray-200 hover:bg-gray-300"
+            }`}
+            onClick={() =>
+              handlePagination(Math.min(currentPage + 1, totalPages))
+            }
+            disabled={currentPage === totalPages}
+          >
+            Next
+          </button>
+          <button
+            className={`px-3 py-2 rounded ${
+              currentPage === totalPages
+                ? "bg-gray-300"
+                : "bg-gray-200 hover:bg-gray-300"
+            }`}
+            onClick={() => handlePagination(totalPages)}
+            disabled={currentPage === totalPages}
+          >
+            Last
+          </button>
         </motion.div>
       </div>
     </div>

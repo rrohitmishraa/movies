@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
 
 export default function Shows() {
   const [shows, setShows] = useState([]);
@@ -57,16 +57,75 @@ export default function Shows() {
     indexOfLastSeries
   );
 
-  const handleNextPage = () => {
-    if (currentPage < Math.ceil(filteredShows.length / seriesPerPage)) {
-      setCurrentPage(currentPage + 1);
-    }
+  const totalPages = Math.ceil(filteredShows.length / seriesPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
   };
 
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
+  const renderPagination = () => {
+    const pages = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pages.push(
+        <button
+          key={i}
+          onClick={() => handlePageChange(i)}
+          className={`px-3 py-2 rounded-md ${
+            currentPage === i
+              ? "bg-red-500 text-white"
+              : "bg-gray-200 text-gray-800 hover:bg-red-400"
+          }`}
+        >
+          {i}
+        </button>
+      );
     }
+
+    return (
+      <div className="flex justify-center items-center flex-wrap gap-2 mt-6">
+        <button
+          onClick={() => handlePageChange(1)}
+          disabled={currentPage === 1}
+          className={`px-3 py-2 rounded ${
+            currentPage === 1 ? "bg-gray-300" : "bg-gray-200 hover:bg-gray-300"
+          }`}
+        >
+          First
+        </button>
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+          className={`px-3 py-2 rounded ${
+            currentPage === 1 ? "bg-gray-300" : "bg-gray-200 hover:bg-gray-300"
+          }`}
+        >
+          Previous
+        </button>
+        {pages}
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className={`px-3 py-2 rounded ${
+            currentPage === totalPages
+              ? "bg-gray-300"
+              : "bg-gray-200 hover:bg-gray-300"
+          }`}
+        >
+          Next
+        </button>
+        <button
+          onClick={() => handlePageChange(totalPages)}
+          disabled={currentPage === totalPages}
+          className={`px-3 py-2 rounded ${
+            currentPage === totalPages
+              ? "bg-gray-300"
+              : "bg-gray-200 hover:bg-gray-300"
+          }`}
+        >
+          Last
+        </button>
+      </div>
+    );
   };
 
   return (
@@ -82,7 +141,7 @@ export default function Shows() {
             placeholder="Search shows..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full sm:w-96 mx-auto block px-5 py-3 rounded-full shadow-md bg-white text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+            className="w-full sm:w-96 mx-auto block px-5 py-3 rounded-full shadow-md bg-white text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -101,67 +160,39 @@ export default function Shows() {
           </svg>
         </div>
 
-        <div className="">
-          {/* Series Row */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold mb-4">Series</h2>
-            <motion.div className="w-full flex flex-wrap gap-6">
-              {currentSeries.map((show, index) => (
-                <motion.div
-                  key={show.seriesName}
-                  className={`flex-grow basis-1/2 sm:basis-1/3 lg:basis-1/4 bg-white p-6 rounded-lg border-0 shadow-lg ${
-                    selectedSeries === show
-                      ? "border-red-500 shadow-xl ring-2 ring-red-400"
-                      : "hover:shadow-xl hover:border-red-300"
-                  } cursor-pointer`}
-                  onClick={() => {
-                    setSelectedSeries(show);
-                    setSelectedSeason(null);
-                  }}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <h3 className="text-base sm:text-lg font-medium text-gray-800 hover:text-red-400">
-                    {indexOfFirstSeries + index + 1}. {show.seriesName}
-                  </h3>
-                  <p className="text-gray-600 text-xs italic mt-2">
-                    #{show.tag}
-                  </p>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* Pagination */}
-            <div className="mt-6 flex justify-center items-center space-x-4">
-              <button
-                className={`bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded ${
-                  currentPage === 1 ? "cursor-not-allowed" : ""
-                }`}
-                onClick={handlePrevPage}
-                disabled={currentPage === 1}
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold mb-4">Series</h2>
+          <motion.div className="w-full flex flex-wrap gap-6">
+            {currentSeries.map((show, index) => (
+              <motion.div
+                key={show.seriesName}
+                className={`flex-grow basis-1/2 sm:basis-1/3 lg:basis-1/4 bg-white p-6 rounded-lg border-0 shadow-lg ${
+                  selectedSeries === show
+                    ? "border-red-500 shadow-xl ring-2 ring-red-400"
+                    : "hover:shadow-xl hover:border-red-300"
+                } cursor-pointer`}
+                onClick={() => {
+                  setSelectedSeries(show);
+                  setSelectedSeason(null);
+                }}
+                whileHover={{ scale: 1.05 }}
               >
-                {currentPage - 1}
-              </button>
-              <span className="text-gray-600">|</span>
-              <button
-                className={`bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded ${
-                  currentPage * seriesPerPage >= filteredShows.length
-                    ? "cursor-not-allowed"
-                    : ""
-                }`}
-                onClick={handleNextPage}
-                disabled={currentPage * seriesPerPage >= filteredShows.length}
-              >
-                {currentPage + 1}
-              </button>
-            </div>
-          </div>
+                <h3 className="text-base sm:text-lg font-medium text-gray-800 hover:text-red-400">
+                  {indexOfFirstSeries + index + 1}. {show.seriesName}
+                </h3>
+                <p className="text-gray-600 text-xs italic mt-2">#{show.tag}</p>
+              </motion.div>
+            ))}
+          </motion.div>
 
-          {/* Seasons Row */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold mb-4">
-              {selectedSeries ? `${selectedSeries.seriesName}` : "Seasons"}
-            </h2>
-            {selectedSeries && (
+          {renderPagination()}
+
+          {/* Seasons Section */}
+          {selectedSeries && (
+            <div>
+              <h2 className="text-2xl font-bold mb-4 mt-6">
+                {selectedSeries.seriesName}
+              </h2>
               <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {selectedSeries.seasons.map((season, index) => (
                   <motion.div
@@ -180,20 +211,20 @@ export default function Shows() {
                   </motion.div>
                 ))}
               </motion.div>
-            )}
-          </div>
+            </div>
+          )}
 
-          {/* Episodes Row */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold mb-4 mt-6">
-              Season {selectedSeason?.seasonNumber}
-            </h2>
-            {selectedSeason && (
+          {/* Episodes Section */}
+          {selectedSeason && (
+            <div>
+              <h2 className="text-2xl font-bold mb-4 mt-6">
+                Season {selectedSeason.seasonNumber}
+              </h2>
               <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {selectedSeason.episodes.map((episode) => (
                   <motion.div
                     key={episode.id}
-                    className={`p-6 bg-white rounded-lg border-0 shadow-lg hover:shadow-xl hover:border-red-300`}
+                    className="p-6 bg-white rounded-lg border-0 shadow-lg hover:shadow-xl hover:border-red-300"
                     whileHover={{ scale: 1.05 }}
                   >
                     <a
@@ -213,8 +244,8 @@ export default function Shows() {
                   </motion.div>
                 ))}
               </motion.div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
         {filteredShows.length === 0 && (
