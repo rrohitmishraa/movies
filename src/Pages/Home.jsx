@@ -36,7 +36,7 @@ export default function Home({ authorizeNavigation }) {
         setPopupContent("An error occurred while fetching the meaning.");
       }
 
-      setShowPopup(true); // Show popup with result
+      setShowPopup(true);
     }
   };
 

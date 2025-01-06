@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion"; // Import Framer Motion
 
 export default function Shows() {
   const [shows, setShows] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSeries, setSelectedSeries] = useState(null);
   const [selectedSeason, setSelectedSeason] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [seriesPerPage] = useState(6);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,7 +20,7 @@ export default function Shows() {
 
   useEffect(() => {
     if (shows.length > 0 && !selectedSeries) {
-      const defaultSeries = shows[0]; // Set the first series as default
+      const defaultSeries = shows[0];
       setSelectedSeries(defaultSeries);
       setSelectedSeason(defaultSeries.seasons[0]);
     }
@@ -46,6 +49,26 @@ export default function Shows() {
       )
   );
 
+  // Get current series
+  const indexOfLastSeries = currentPage * seriesPerPage;
+  const indexOfFirstSeries = indexOfLastSeries - seriesPerPage;
+  const currentSeries = filteredShows.slice(
+    indexOfFirstSeries,
+    indexOfLastSeries
+  );
+
+  const handleNextPage = () => {
+    if (currentPage < Math.ceil(filteredShows.length / seriesPerPage)) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
   return (
     <div className="bg-gray-100 text-gray-900 p-4 sm:p-6">
       <div className="max-w-5xl mx-auto relative">
@@ -53,47 +76,40 @@ export default function Shows() {
           📺 Show Library
         </h1>
 
-        <div className="flex items-center justify-center mb-10 relative">
-          {/* Back Button */}
-          <button
-            onClick={() => navigate("/")}
-            className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-blue-500"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M8 16l-4-4m0 0l4-4m-4 4h16"
-              />
-            </svg>
-          </button>
-
-          {/* Search Bar */}
+        <div className="relative mb-6 sm:mb-10">
           <input
             type="text"
             placeholder="Search shows..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full sm:w-96 px-5 py-3 pl-12 rounded-full shadow-md bg-white text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+            className="w-full sm:w-96 mx-auto block px-5 py-3 rounded-full shadow-md bg-white text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
           />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute top-3 left-3 w-6 h-6 text-gray-400 cursor-pointer"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            onClick={() => navigate("/")}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M8 16l-4-4m0 0l4-4m-4 4h16"
+            />
+          </svg>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 h-full">
-          {/* Series Column */}
-          <div className="flex-none w-full sm:w-1/4 h-full overflow-auto px-4 pb-6 bg-gray-50 rounded-lg shadow-md">
+        <div className="">
+          {/* Series Row */}
+          <div className="space-y-6">
             <h2 className="text-2xl font-bold mb-4">Series</h2>
-            <div className="space-y-4">
-              {filteredShows.map((show) => (
-                <div
+            <motion.div className="w-full flex flex-wrap gap-6">
+              {currentSeries.map((show, index) => (
+                <motion.div
                   key={show.seriesName}
-                  className={`p-4 bg-white rounded-lg border-0 shadow-lg ${
+                  className={`flex-grow basis-1/2 sm:basis-1/3 lg:basis-1/4 bg-white p-6 rounded-lg border-0 shadow-lg ${
                     selectedSeries === show
                       ? "border-red-500 shadow-xl ring-2 ring-red-400"
                       : "hover:shadow-xl hover:border-red-300"
@@ -102,65 +118,91 @@ export default function Shows() {
                     setSelectedSeries(show);
                     setSelectedSeason(null);
                   }}
+                  whileHover={{ scale: 1.05 }}
                 >
-                  <h3 className="text-lg sm:text-xl font-medium text-gray-800 hover:text-red-400">
-                    {show.seriesName}
+                  <h3 className="text-base sm:text-lg font-medium text-gray-800 hover:text-red-400">
+                    {indexOfFirstSeries + index + 1}. {show.seriesName}
                   </h3>
-                  <p className="text-gray-600 text-sm italic mt-2">
+                  <p className="text-gray-600 text-xs italic mt-2">
                     #{show.tag}
                   </p>
-                </div>
+                </motion.div>
               ))}
+            </motion.div>
+
+            {/* Pagination */}
+            <div className="mt-6 flex justify-center items-center space-x-4">
+              <button
+                className={`bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded ${
+                  currentPage === 1 ? "cursor-not-allowed" : ""
+                }`}
+                onClick={handlePrevPage}
+                disabled={currentPage === 1}
+              >
+                {currentPage - 1}
+              </button>
+              <span className="text-gray-600">|</span>
+              <button
+                className={`bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded ${
+                  currentPage * seriesPerPage >= filteredShows.length
+                    ? "cursor-not-allowed"
+                    : ""
+                }`}
+                onClick={handleNextPage}
+                disabled={currentPage * seriesPerPage >= filteredShows.length}
+              >
+                {currentPage + 1}
+              </button>
             </div>
           </div>
 
-          {/* Seasons Column */}
-          <div className="flex-none w-full sm:w-1/4 h-full overflow-auto px-4 pb-6 bg-gray-50 rounded-lg shadow-md">
+          {/* Seasons Row */}
+          <div className="space-y-6">
             <h2 className="text-2xl font-bold mb-4">
               {selectedSeries ? `${selectedSeries.seriesName}` : "Seasons"}
             </h2>
             {selectedSeries && (
-              <div className="space-y-4">
+              <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {selectedSeries.seasons.map((season, index) => (
-                  <div
+                  <motion.div
                     key={index}
-                    className={`p-4 bg-white rounded-lg border-0 shadow-lg ${
+                    className={`p-6 bg-white rounded-lg border-0 shadow-lg ${
                       selectedSeason === season
                         ? "border-red-500 shadow-xl ring-2 ring-red-400"
                         : "hover:shadow-xl hover:border-red-300"
                     } cursor-pointer`}
                     onClick={() => setSelectedSeason(season)}
+                    whileHover={{ scale: 1.05 }}
                   >
-                    <h3 className="text-lg sm:text-xl font-medium text-gray-800 hover:text-red-400">
+                    <h3 className="text-base sm:text-lg font-medium text-gray-800 hover:text-red-400">
                       Season {season.seasonNumber}
                     </h3>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             )}
           </div>
 
-          {/* Episodes Column */}
-          <div className="flex-auto w-full sm:w-1/2 h-full overflow-y-scroll px-4 pb-6 bg-gray-50 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-4">
-              {selectedSeason
-                ? `Season ${selectedSeason.seasonNumber}`
-                : "Episodes"}
+          {/* Episodes Row */}
+          <div className="space-y-6">
+            <h2 className="text-2xl font-bold mb-4 mt-6">
+              Season {selectedSeason?.seasonNumber}
             </h2>
             {selectedSeason && (
-              <div className="space-y-4">
+              <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {selectedSeason.episodes.map((episode) => (
-                  <div
+                  <motion.div
                     key={episode.id}
-                    className={`p-4 bg-white rounded-lg border-0 shadow-lg hover:shadow-xl hover:border-red-300`}
+                    className={`p-6 bg-white rounded-lg border-0 shadow-lg hover:shadow-xl hover:border-red-300`}
+                    whileHover={{ scale: 1.05 }}
                   >
                     <a
                       href={episode.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block text-lg sm:text-xl font-medium text-gray-800 hover:text-red-400"
+                      className="block text-base sm:text-lg font-medium text-gray-800 hover:text-red-400"
                     >
-                      <span className="text-gray-600 text-sm">
+                      <span className="text-gray-600 text-xs">
                         #{episode.episode}
                       </span>
                       <br />
@@ -168,9 +210,9 @@ export default function Shows() {
                         {episode.title}
                       </span>
                     </a>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             )}
           </div>
         </div>

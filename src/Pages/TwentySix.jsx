@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 export default function TwentySix() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [moviesPerPage] = useState(20); // 20 movies per page
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -19,6 +21,18 @@ export default function TwentySix() {
       movie.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       movie.tags.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  // Pagination logic
+  const indexOfLastMovie = currentPage * moviesPerPage;
+  const indexOfFirstMovie = indexOfLastMovie - moviesPerPage;
+  const currentMovies = filteredMovies.slice(
+    indexOfFirstMovie,
+    indexOfLastMovie
+  );
+  const totalPages = Math.ceil(filteredMovies.length / moviesPerPage);
+
+  // Pagination controls
+  const handlePagination = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 p-4 sm:p-6">
@@ -63,7 +77,7 @@ export default function TwentySix() {
 
         {/* Movie Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-          {filteredMovies.map((movie) => (
+          {currentMovies.map((movie) => (
             <div
               key={movie.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:-translate-y-1 transition duration-200"
@@ -94,6 +108,28 @@ export default function TwentySix() {
             No movies found. Try searching something else!
           </p>
         )}
+
+        {/* Pagination Controls */}
+        <div className="mt-8 flex justify-center space-x-4 items-center">
+          <p className="text-gray-600">
+            Page {currentPage} of {totalPages} | Showing {filteredMovies.length}{" "}
+            results
+          </p>
+          <br />
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index}
+              className={`px-4 py-2 rounded-lg ${
+                currentPage === index + 1
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-200 text-gray-800 hover:bg-blue-400"
+              }`}
+              onClick={() => handlePagination(index + 1)}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
