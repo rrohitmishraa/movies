@@ -231,8 +231,16 @@ export default function Shows() {
                       href={episode.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block text-base sm:text-lg font-medium text-gray-800 hover:text-red-400"
+                      className="block text-base sm:text-lg font-medium text-gray-800 hover:text-red-400 relative"
                     >
+                      {!episode.link && (
+                        <span
+                          className="material-icons-outlined text-gray-500 absolute bottom-4 right-4"
+                          title="No link available"
+                        >
+                          link_off
+                        </span>
+                      )}
                       <span className="text-gray-600 text-xs">
                         #{episode.episode}
                       </span>

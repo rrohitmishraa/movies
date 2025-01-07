@@ -1,5 +1,306 @@
 [
   {
+    "seriesName": "Matsya Kaand",
+    "tag": "hindi",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/6NpAVcogaHZ1qtSf9",
+            "title": "Abhimanyu"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/qKK42fwhPaBN3usN8",
+            "title": "Bhasmasur"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/VnZrVHLQb1gkQAmY9",
+            "title": "Mohini Avatar"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/AuLUX8XcPQnedLuu6",
+            "title": "Karan"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/o96Q4qkVqRF17Gj38",
+            "title": "Agayat Vas"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/QnS4vDt7ZFE5RsRCA",
+            "title": "Yuyutsu"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/khEK4SG6bCcqjTmJA",
+            "title": "Chausar"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/kCarfHdYHSDjS8Ah8",
+            "title": "Ashwatthama"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/UDzhK2iWwjNfJamg8",
+            "title": "Pitama Bhishm"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/LbBVNfxZCCkyYM9Q8",
+            "title": "Ranchode"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/1mBmCmP4qpivZmsJA",
+            "title": "Apayas Nasti Vikalpa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Scam 1992 - The Harshad Mehta Story",
+    "tag": "hindi",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/b6sRTsrPaY8vt5NB8",
+            "title": "Risk Se Ishq"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/6s7SKDYnQBuZckbFA",
+            "title": "Cobra Killer"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/YGaBH75xmKfJa1bj9",
+            "title": "Paise Ki Dukaan"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/5qoBbT6y2uGyx23e9",
+            "title": "Harshad Mehta Is A Liar"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/yDMbjcWwXpvAUd8Q8",
+            "title": "Dalal Street Ka Dariya"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/PcLH47ruSparZeFV9",
+            "title": "Stop Press"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/U4fU7FVM3opkD7yS9",
+            "title": "Dalal Street Ka Gunda"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/y4p2bRYb3DnHJ3TM9",
+            "title": "Matador"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/wTdvCDSrdaruc8Mx9",
+            "title": "Ek Crore Ka Suitcase"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/wXjighbvzhhdeGCY6",
+            "title": "Main History Banana Chahta Hoon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Breathe",
+    "tag": "hindi r-madhavan 2018",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/EbtJFsmtfQm2sFrWA",
+            "title": "The Promise"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/D9tNvJv8QRCn23we8",
+            "title": "The Hunt Begins"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/nWGRZuiS1i6Zheza7",
+            "title": "Safety First"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/eSjAxtqqhSnLSxBGA",
+            "title": "The Audition"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/1w5AhQExq8uXrXHk8",
+            "title": "Bad Fish"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/uqbgbyguWXSentXC6",
+            "title": "Blind Man’s Bluff"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/4UFtYRBQtBzjcqLv7",
+            "title": "It’s in the Eyes"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/DVhutwL1WeNhAtFr5",
+            "title": "Body Parts"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "JL50",
+    "tag": "hindi",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/cUG5zQGmpWjNLEn47",
+            "title": "The Crash"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/Ar72z5jZd5qJYNew6",
+            "title": "The Investigation"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/G97TKjec8UJ8tmNU7",
+            "title": "The Conspiracy"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/xCk5qnBg3LNyT5Lv8",
+            "title": "The Truth"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Afsos",
+    "tag": "comedy sitcom hindi",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/cSGUqP3goBzMmSwg9",
+            "title": "The End is the Beginning"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/5PLkvJx6CQidqBV5A",
+            "title": "My Name is Nakul"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/woCc5UH87vtToAYH6",
+            "title": "Survivors"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/CSfMVZxdtZ773WyPA",
+            "title": "Detour"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/PXAdjN2AksbrNuMv6",
+            "title": "Buddha"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/RkKpTFD2mJ5vdL1M7",
+            "title": "An Immortal Human"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/mgbY4FmJuDMHScTR7",
+            "title": "Not So Shanti"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/xnYwQ6YFoXJV8mQBA",
+            "title": "A Final Exit"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "seriesName": "Brooklyn Nine-Nine",
     "tag": "comedy sitcom",
     "seasons": [
@@ -9,14 +310,277 @@
           {
             "id": 1,
             "episode": "Episode 1",
-            "link": "",
+            "link": "https://photos.app.goo.gl/FKAkWa4dtsU6bdQM6",
             "title": "Pilot"
           },
           {
             "id": 2,
             "episode": "Episode 2",
-            "link": "",
-            "title": "Biscuits"
+            "link": "https://photos.app.goo.gl/t5JnPikXQzicRE7V6",
+            "title": "The Tagger"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/CBYqUWMLgi4ZPpex6",
+            "title": "The Slump"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/9CEervmy55tf88zv5",
+            "title": "M.E. Time"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/ekfTX9mNPcP9Q9A58",
+            "title": "The Vulture"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/p4aRqBcNWF3T5PY66",
+            "title": "Halloween"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/4JbXD39bkxyniY7j6",
+            "title": "48 Hours"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/Dxvqz5oEgyWAAiSi9",
+            "title": "Old School"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/FKNMthcyYocA8q3E8",
+            "title": "Sal's Pizza"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/SX89bmsMSJMeTM3o8",
+            "title": "Thanksgiving"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/nTZ19ji99AypJjmB7",
+            "title": "Christmas"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/QQWgVNMMsZojcQgn9",
+            "title": "Pontiac Bandit"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/fxcfRCRPpTzVhoj59",
+            "title": "The Bet"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/1WP9cLQ7Z7tXaGvE9",
+            "title": "The Ebony Falcon"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/sqaVNPJxnpUJRYoi7",
+            "title": "Operation: Broken Feather"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/kbdegkKVDKfW59nFA",
+            "title": "The Party"
+          },
+          {
+            "id": 17,
+            "episode": "Episode 17",
+            "link": "https://photos.app.goo.gl/fm1ZD89m2AjEjnwU8",
+            "title": "Full Boyle"
+          },
+          {
+            "id": 18,
+            "episode": "Episode 18",
+            "link": "https://photos.app.goo.gl/1pqiRPJdgVJDGNiT8",
+            "title": "The Apartment"
+          },
+          {
+            "id": 19,
+            "episode": "Episode 19",
+            "link": "https://photos.app.goo.gl/VZbRoHbkxxHCUUgY6",
+            "title": "Tactical Village"
+          },
+          {
+            "id": 20,
+            "episode": "Episode 20",
+            "link": "https://photos.app.goo.gl/Cp2c88PBNCQVH6yq7",
+            "title": "Fancy Brudgom"
+          },
+          {
+            "id": 21,
+            "episode": "Episode 21",
+            "link": "https://photos.app.goo.gl/LDm8XEGR4iG6yHxJ8",
+            "title": "Unsolvable"
+          },
+          {
+            "id": 22,
+            "episode": "Episode 22",
+            "link": "https://photos.app.goo.gl/KJdKYm2PZsqEbHqt6",
+            "title": "Charges and Specs"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/J4ykdPgBzTkhkEQP7",
+            "title": "Undercover"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/ZJ6vCo3TZqPtto6w9",
+            "title": "Chocolate Milk"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/phJjd9wD2VxQp5y18",
+            "title": "The Jimmy Jab Games"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/Tp26Y7hcnEPxKBqH8",
+            "title": "Halloween II"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/JBNMnUdjG21YZG7d7",
+            "title": "The Mole"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/VHjgU244zXKasAPA9",
+            "title": "Jake and Sophia"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/9wpXH7G1d2ky3zZz7",
+            "title": "Lockdown"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/mo1YbP5tctfnGXXJ7",
+            "title": "USPIS"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/j1qZqBUcgZoSdssW7",
+            "title": "The Road Trip"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/Cug5a7CTFxNVC6cx6",
+            "title": "The Pontiac Bandit Returns"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/qigu7qaoFbsqrWcz5",
+            "title": "Stakeout"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/vrFmAChat63oKp8G8",
+            "title": "Beach House"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/6NZn9zius5KaH82y9",
+            "title": "Payback"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/w4omPnYC6WHBTcmSA",
+            "title": "Defense Rests"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/f3stT2ez3AXqGrCS7",
+            "title": "Windbreaker City"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/qdVBoHsjjZmepHMq7",
+            "title": "The Wednesday Incident"
+          },
+          {
+            "id": 17,
+            "episode": "Episode 17",
+            "link": "https://photos.app.goo.gl/HNg3VJJDCSb3BEfB9",
+            "title": "Boyle-Linetti Wedding"
+          },
+          {
+            "id": 18,
+            "episode": "Episode 18",
+            "link": "https://photos.app.goo.gl/cLf4ZweZtnxyJdHu8",
+            "title": "Captain Peralta"
+          },
+          {
+            "id": 19,
+            "episode": "Episode 19",
+            "link": "https://photos.app.goo.gl/dHmsGUR6CPuiFkVE6",
+            "title": "Sabotage"
+          },
+          {
+            "id": 20,
+            "episode": "Episode 20",
+            "link": "https://photos.app.goo.gl/fpznDXKRyhaziiUy8",
+            "title": "AC/DC"
+          },
+          {
+            "id": 21,
+            "episode": "Episode 21",
+            "link": "https://photos.app.goo.gl/H1yyqVcgTA7LgMyN7",
+            "title": "Det. Dave Majors"
+          },
+          {
+            "id": 22,
+            "episode": "Episode 22",
+            "link": "https://photos.app.goo.gl/AomasrXvgysNobXZ7",
+            "title": "The Chopper"
+          },
+          {
+            "id": 23,
+            "episode": "Episode 23",
+            "link": "https://photos.app.goo.gl/wGv7xDGpn89k7xLw8",
+            "title": "Johnny and Dora"
           }
         ]
       }
