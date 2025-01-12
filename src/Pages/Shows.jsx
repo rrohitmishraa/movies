@@ -177,9 +177,12 @@ export default function Shows() {
                 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <h3 className="text-base sm:text-lg font-medium text-gray-800 hover:text-red-400">
-                  {indexOfFirstSeries + index + 1}. {show.seriesName}
-                </h3>
+                <span className="top-2 left-3 text-xs font-semibold text-gray-500 bg-gray-200 rounded-[6px] h-[25px] w-[40px] flex justify-center items-center">
+                  {indexOfFirstSeries + index + 1}
+                </span>
+                <h2 className="text-xl font-medium text-gray-800 hover:text-red-400 mt-6 mb-2 border-b border-gray-300 pb-2">
+                  {show.seriesName}
+                </h2>
                 <p className="text-gray-600 text-xs italic mt-2">#{show.tag}</p>
               </motion.div>
             ))}

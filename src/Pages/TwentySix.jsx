@@ -86,7 +86,7 @@ export default function TwentySix() {
 
         {/* Movie Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-          {currentMovies.map((movie) => (
+          {currentMovies.map((movie, index) => (
             <div
               key={movie.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:-translate-y-1 transition duration-200"
@@ -99,7 +99,11 @@ export default function TwentySix() {
               >
                 {/* Movie Info */}
                 <div className="p-4">
-                  <h2 className="text-lg sm:text-xl font-medium text-gray-800 hover:text-red-400">
+                  {/* Serial Number and Movie Name */}
+                  <span className="absolute top-2 left-3 text-xs font-semibold text-gray-500 bg-gray-200 rounded-[6px] h-[25px] px-2 flex justify-center items-center">
+                    {indexOfFirstMovie + index + 1}
+                  </span>
+                  <h2 className="text-xl font-medium text-gray-800 hover:text-red-400 mt-6 mb-2 border-b border-gray-300 pb-2">
                     {movie.name}
                   </h2>
                   <p className="mt-1 text-gray-600 text-sm sm:text-[12px]">

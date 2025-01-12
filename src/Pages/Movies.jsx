@@ -11,6 +11,7 @@ export default function Movies() {
   );
   const navigate = useNavigate();
 
+  // Fetch movies from JSON
   useEffect(() => {
     fetch("/movies.json")
       .then((response) => response.json())
@@ -18,23 +19,27 @@ export default function Movies() {
       .catch((error) => console.error("Error fetching movies:", error));
   }, []);
 
+  // Filter movies based on the search term
   const filteredMovies = movies.filter(
     (movie) =>
       movie.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       movie.tags.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // Pagination logic
   const indexOfLastMovie = currentPage * moviesPerPage;
   const indexOfFirstMovie = indexOfLastMovie - moviesPerPage;
   const currentMovies = filteredMovies.slice(
     indexOfFirstMovie,
     indexOfLastMovie
   );
-
   const totalPages = Math.ceil(filteredMovies.length / moviesPerPage);
 
-  const handlePagination = (pageNumber) => setCurrentPage(pageNumber);
+  const handlePagination = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
+  // Handle window resize for responsive moviesPerPage
   useEffect(() => {
     const handleResize = () => {
       setMoviesPerPage(window.innerWidth <= 768 ? 10 : 20);
@@ -43,6 +48,7 @@ export default function Movies() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Reset to first page on search
   useEffect(() => {
     setCurrentPage(1);
   }, [searchTerm]);
@@ -54,7 +60,7 @@ export default function Movies() {
   };
 
   const renderPageNumbers = () => {
-    const visiblePageNumbers = 5; // Show at most 5 page numbers at a time
+    const visiblePageNumbers = 5;
     const pages = [];
     const startPage = Math.max(
       Math.min(
@@ -86,6 +92,7 @@ export default function Movies() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 p-6">
       <div className="max-w-5xl mx-auto">
+        {/* Header */}
         <motion.h1
           className="text-4xl font-bold text-center mb-8 text-gray-800"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -95,6 +102,7 @@ export default function Movies() {
           🎥 Movie Library
         </motion.h1>
 
+        {/* Search Bar */}
         <motion.div
           className="flex items-center justify-center mb-10 relative"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -129,6 +137,7 @@ export default function Movies() {
           />
         </motion.div>
 
+        {/* Movie Grid */}
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -142,7 +151,7 @@ export default function Movies() {
           {currentMovies.length > 0 ? (
             currentMovies.map((movie, index) => (
               <motion.div
-                key={movie.id}
+                key={`${movie.id}-${index}`} // Unique key
                 className="block h-[220px] p-4 bg-white rounded-lg border-4 border-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-200 cursor-pointer hover:border-red-300 relative"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -162,7 +171,6 @@ export default function Movies() {
                     </span>
                   ))}
                 </p>
-
                 {!movie.url && (
                   <span
                     className="material-icons-outlined text-gray-500 absolute bottom-4 right-4"
@@ -185,6 +193,7 @@ export default function Movies() {
           )}
         </motion.div>
 
+        {/* Pagination */}
         <motion.div
           className="mt-8 flex flex-wrap justify-center items-center space-x-2 max-w-[800px] mx-auto"
           initial={{ opacity: 0, scale: 0.9 }}
