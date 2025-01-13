@@ -8,15 +8,20 @@ export default function Home({ authorizeNavigation }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [popupContent, setPopupContent] = useState("");
+  const [showFeedbackForm, setShowFeedbackForm] = useState(false);
+  const [feedback, setFeedback] = useState({
+    suggestions: "",
+    name: "",
+    ip: "",
+  });
   const navigate = useNavigate();
 
   const predefinedRoutes = ["movies", "26", "shows"];
 
   const handleSearch = async () => {
     const trimmedQuery = searchQuery.trim().toLowerCase();
-
     if (predefinedRoutes.includes(trimmedQuery)) {
-      authorizeNavigation(); // Authorize navigation
+      authorizeNavigation();
       navigate(`/${trimmedQuery}`);
     } else if (trimmedQuery === "wallpapers") {
       window.open("https://photos.app.goo.gl/sxpqFZkwpoJxqMD36");
@@ -35,7 +40,6 @@ export default function Home({ authorizeNavigation }) {
       } catch (error) {
         setPopupContent("An error occurred while fetching the meaning.");
       }
-
       setShowPopup(true);
     }
   };
@@ -49,6 +53,35 @@ export default function Home({ authorizeNavigation }) {
   const handleOutsideClick = (e) => {
     if (e.target.id === "popup-container") {
       setShowPopup(false);
+    }
+  };
+
+  const handleFeedbackSubmit = async () => {
+    try {
+      const ipResponse = await fetch("https://api.ipify.org/?format=json");
+      const ipData = await ipResponse.json();
+
+      const IP = ipData.ip;
+
+      // Add the IP address to the feedback object
+      const feedbackWithIp = {
+        ...feedback,
+        ipAddress: IP,
+      };
+
+      await fetch(`https://movies-server-xfjy.onrender.com/feedback`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(feedbackWithIp),
+      });
+      alert("Feedback submitted successfully!");
+      setFeedback({ suggestions: "", name: "", ip: "" });
+      setShowFeedbackForm(false);
+    } catch (error) {
+      console.error("Error submitting feedback:", error);
+      alert("Failed to submit feedback. Please try again later.");
     }
   };
 
@@ -122,6 +155,73 @@ export default function Home({ authorizeNavigation }) {
           </div>
         </motion.div>
       )}
+
+      {/* Feedback Button and Form */}
+      <motion.div
+        className="fixed bottom-4 right-4"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ type: "spring", stiffness: 260, damping: 20 }}
+        onClick={(e) => e.stopPropagation()} // Prevent triggering outside click handler
+      >
+        {!showFeedbackForm && (
+          <button
+            className="absolute bg-blue-500 bottom-0 right-0 cursor-pointer text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowFeedbackForm(true);
+            }}
+          >
+            Feedback
+          </button>
+        )}
+
+        {showFeedbackForm && (
+          <motion.div
+            className="bg-white p-4 rounded-lg shadow-lg w-80"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              Feedback Form
+            </h3>
+            <textarea
+              className="w-full p-2 border rounded-md mb-2"
+              placeholder="Enter your suggestions"
+              value={feedback.suggestions}
+              onChange={(e) =>
+                setFeedback({ ...feedback, suggestions: e.target.value })
+              }
+            />
+            <input
+              type="text"
+              className="w-full p-2 border rounded-md mb-4"
+              placeholder="Your Name"
+              value={feedback.name}
+              onChange={(e) =>
+                setFeedback({ ...feedback, name: e.target.value })
+              }
+            />
+            <div className="flex justify-between">
+              <button
+                className="bg-gray-300 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-400 transition-all"
+                onClick={() => setShowFeedbackForm(false)}
+              >
+                Cancel
+              </button>
+              <button
+                className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-all"
+                onClick={handleFeedbackSubmit}
+              >
+                Submit
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </motion.div>
 
       {/* Footer */}
       <Footer />
