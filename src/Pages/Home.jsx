@@ -5,10 +5,13 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Home({ authorizeNavigation }) {
+  const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [popupContent, setPopupContent] = useState("");
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
+  const [submitPopupContent, setSubmitPopupContent] = useState("");
+  const [showSubmitPopup, setShowSubmitPopup] = useState(false);
   const [feedback, setFeedback] = useState({
     suggestions: "",
     name: "",
@@ -58,6 +61,7 @@ export default function Home({ authorizeNavigation }) {
 
   const handleFeedbackSubmit = async () => {
     try {
+      setLoading(true); // Set loading to true
       const ipResponse = await fetch("https://api.ipify.org/?format=json");
       const ipData = await ipResponse.json();
 
@@ -70,18 +74,26 @@ export default function Home({ authorizeNavigation }) {
       };
 
       await fetch(`https://movies-server-xfjy.onrender.com/feedback`, {
+        // await fetch(`http://localhost:5001/feedback`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(feedbackWithIp),
       });
-      alert("Feedback submitted successfully!");
+
+      setSubmitPopupContent("Feedback submitted successfully!");
+      setShowSubmitPopup(true);
       setFeedback({ suggestions: "", name: "", ip: "" });
       setShowFeedbackForm(false);
     } catch (error) {
       console.error("Error submitting feedback:", error);
-      alert("Failed to submit feedback. Please try again later.");
+      setSubmitPopupContent(
+        "Failed to submit feedback. Please try again later."
+      );
+      setShowSubmitPopup(true);
+    } finally {
+      setLoading(false); // Reset loading state
     }
   };
 
@@ -156,6 +168,38 @@ export default function Home({ authorizeNavigation }) {
         </motion.div>
       )}
 
+      {/* Submit Popup */}
+      {showSubmitPopup && (
+        <motion.div
+          id="popup-container"
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
+          transition={{
+            type: "spring",
+            damping: 25,
+            stiffness: 300,
+            duration: 0.5,
+          }}
+        >
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-xs w-full mx-4">
+            <h3 className="text-center text-xl font-semibold text-gray-800">
+              THANKS
+            </h3>
+            <p className="mt-2 text-center text-gray-700">
+              {submitPopupContent}
+            </p>
+            <button
+              className="mt-4 px-4 py-2 w-full bg-red-500 text-white rounded-lg hover:bg-red-700 transition-all"
+              onClick={() => setShowSubmitPopup(false)}
+            >
+              Close
+            </button>
+          </div>
+        </motion.div>
+      )}
+
       {/* Feedback Button and Form */}
       <motion.div
         className="fixed bottom-4 right-4"
@@ -213,10 +257,15 @@ export default function Home({ authorizeNavigation }) {
                 Cancel
               </button>
               <button
-                className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-all"
+                className={`bg-green-500 text-white px-4 py-2 rounded-md transition-all ${
+                  loading
+                    ? "opacity-50 cursor-not-allowed"
+                    : "hover:bg-green-700"
+                }`}
                 onClick={handleFeedbackSubmit}
+                disabled={loading} // Disable button when loading
               >
-                Submit
+                {loading ? "Sending..." : "Submit"}
               </button>
             </div>
           </motion.div>
