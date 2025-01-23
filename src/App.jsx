@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Pages/Home";
 import Movies from "./Pages/Movies";
 import TwentySix from "./Pages/TwentySix";
@@ -18,7 +13,7 @@ export default function App() {
   };
 
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -38,6 +33,6 @@ export default function App() {
         />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }

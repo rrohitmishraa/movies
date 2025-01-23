@@ -2401,114 +2401,139 @@
           {
             "id": 1,
             "episode": "Episode 1",
-            "link": "",
+            "link": "https://photos.app.goo.gl/6GxsjrDAhoM8AFBq7",
             "title": "New Captain"
           },
           {
             "id": 2,
             "episode": "Episode 2",
-            "link": "",
+            "link": "https://photos.app.goo.gl/yXfJWNJ229LeBhiQ8",
             "title": "The Funeral"
           },
           {
             "id": 3,
             "episode": "Episode 3",
-            "link": "",
+            "link": "https://photos.app.goo.gl/TfZ6Rn4QjsQrEoyv6",
             "title": "Boyle's Hunch"
           },
           {
             "id": 4,
             "episode": "Episode 4",
-            "link": "",
+            "link": "https://photos.app.goo.gl/ihFdm1aUpb4b1MZQ7",
             "title": "The Oolong Slayer"
           },
           {
             "id": 5,
             "episode": "Episode 5",
-            "link": "",
+            "link": "https://photos.app.goo.gl/3BuyBeDe3PvjKMy87",
             "title": "Halloween III"
           },
           {
             "id": 6,
             "episode": "Episode 6",
-            "link": "",
+            "link": "https://photos.app.goo.gl/uQSM74DHcRLuKLqE8",
             "title": "Into the Woods"
           },
           {
             "id": 7,
             "episode": "Episode 7",
-            "link": "",
+            "link": "https://photos.app.goo.gl/YgoiR2rrh6yM6HMD6",
             "title": "The Mattress"
           },
-          { "id": 8, "episode": "Episode 8", "link": "", "title": "Ava" },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/WZPQ1ShGXtyJLsFP6",
+            "title": "Ava"
+          },
           {
             "id": 9,
             "episode": "Episode 9",
-            "link": "",
+            "link": "https://photos.app.goo.gl/JhAqjmr5ZvYoYCrFA",
             "title": "The Swedes"
           },
           {
             "id": 10,
             "episode": "Episode 10",
-            "link": "",
+            "link": "https://photos.app.goo.gl/SfG8FQqS2SoVP6t47",
             "title": "Yippie Kayak"
           },
           {
             "id": 11,
             "episode": "Episode 11",
-            "link": "",
+            "link": "https://photos.app.goo.gl/VYRiFQrKXNE9A7Yn7",
             "title": "Hostage Situation"
           },
-          { "id": 12, "episode": "Episode 12", "link": "", "title": "9 Days" },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/7X6GcoMnJRc2RM5X8",
+            "title": "9 Days"
+          },
           {
             "id": 13,
             "episode": "Episode 13",
-            "link": "",
+            "link": "https://photos.app.goo.gl/i6Lr4BmCdhyz5Cmo7",
             "title": "The Cruise"
           },
           {
             "id": 14,
             "episode": "Episode 14",
-            "link": "",
+            "link": "https://photos.app.goo.gl/Ey18MANF2nj9X8BT9",
             "title": "Karen Peralta"
           },
-          { "id": 15, "episode": "Episode 15", "link": "", "title": "The 9-8" },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/FGZKVGQvfoakebPp9",
+            "title": "The 9-8"
+          },
           {
             "id": 16,
             "episode": "Episode 16",
-            "link": "",
+            "link": "https://photos.app.goo.gl/uAH4ykCmM9Sam2gN6",
             "title": "House Mouses"
           },
           {
             "id": 17,
             "episode": "Episode 17",
-            "link": "",
+            "link": "https://photos.app.goo.gl/FNde3Fest8hDaSXr8",
             "title": "Adrian Pimento"
           },
-          { "id": 18, "episode": "Episode 18", "link": "", "title": "Cheddar" },
+          {
+            "id": 18,
+            "episode": "Episode 18",
+            "link": "https://photos.app.goo.gl/KevkMpv6GPqS7ubP9",
+            "title": "Cheddar"
+          },
           {
             "id": 19,
             "episode": "Episode 19",
-            "link": "",
+            "link": "https://photos.app.goo.gl/6sBN97H3wZgm5c1YA",
             "title": "Terry Kitties"
           },
           {
             "id": 20,
             "episode": "Episode 20",
-            "link": "",
+            "link": "https://photos.app.goo.gl/vKCg9Q3hkNUCcMLF6",
             "title": "Paranoia"
           },
           {
             "id": 21,
             "episode": "Episode 21",
-            "link": "",
+            "link": "https://photos.app.goo.gl/kYLznTeBEs1ZkFoE7",
             "title": "Maximum Security"
           },
-          { "id": 22, "episode": "Episode 22", "link": "", "title": "Bureau" },
+          {
+            "id": 22,
+            "episode": "Episode 22",
+            "link": "https://photos.app.goo.gl/1BsqwC9VzPanntGH7",
+            "title": "Bureau"
+          },
           {
             "id": 23,
             "episode": "Episode 23",
-            "link": "",
+            "link": "https://photos.app.goo.gl/awprVd8fwErFsru17",
             "title": "Greg and Larry"
           }
         ]
@@ -2519,123 +2544,127 @@
           {
             "id": 1,
             "episode": "Episode 1",
-            "link": "",
+            "link": "https://photos.app.goo.gl/UDBJtYWcpBzcB4E27",
             "title": "Coral Palms: Part One"
           },
           {
             "id": 2,
             "episode": "Episode 2",
-            "link": "",
+            "link": "https://photos.app.goo.gl/C3WLkrvtDTsBqKK88",
             "title": "Coral Palms: Part Two"
           },
           {
             "id": 3,
             "episode": "Episode 3",
-            "link": "",
+            "link": "https://photos.app.goo.gl/ehyoJcbXJdgfE3Wh9",
             "title": "Coral Palms: Part Three"
           },
           {
             "id": 4,
             "episode": "Episode 4",
-            "link": "",
+            "link": "https://photos.app.goo.gl/CCUSJnFc3Jt5Kqb77",
             "title": "The Night Shift"
           },
           {
             "id": 5,
             "episode": "Episode 5",
-            "link": "",
+            "link": "https://photos.app.goo.gl/dSu27C6VpY5UMT8w9",
             "title": "Halloween IV"
           },
           {
             "id": 6,
             "episode": "Episode 6",
-            "link": "",
+            "link": "https://photos.app.goo.gl/awNWKWg4TWZSFvXz8",
             "title": "Monster in the Closet"
           },
           {
             "id": 7,
             "episode": "Episode 7",
-            "link": "",
+            "link": "https://photos.app.goo.gl/1x3454tBso9wrJEG8",
             "title": "Mr. Santiago"
           },
           {
             "id": 8,
             "episode": "Episode 8",
-            "link": "",
+            "link": "https://photos.app.goo.gl/chRmduHSGESkz3HN8",
             "title": "Skyfire Cycle"
           },
           {
             "id": 9,
             "episode": "Episode 9",
-            "link": "",
+            "link": "https://photos.app.goo.gl/Q3RpJh9GKe6FYFFB8",
             "title": "The Overmining"
           },
           {
             "id": 10,
             "episode": "Episode 10",
-            "link": "",
+            "link": "https://photos.app.goo.gl/GwirN3wvn5sobreG6",
             "title": "Captain Latvia"
           },
           {
             "id": 11,
-            "episode": "Episode 11",
-            "link": "",
-            "title": "The Fugitive: Part One"
+            "episode": "Episode 11 - 12",
+            "link": "https://photos.app.goo.gl/jyQ4YDkMsuMppZ3U9",
+            "title": "The Fugitive"
           },
           {
             "id": 12,
-            "episode": "Episode 12",
-            "link": "",
-            "title": "The Fugitive: Part Two"
-          },
-          {
-            "id": 13,
             "episode": "Episode 13",
-            "link": "",
+            "link": "https://photos.app.goo.gl/J1WqZ3dezXWZKb6r7",
             "title": "The Audit"
           },
           {
-            "id": 14,
+            "id": 13,
             "episode": "Episode 14",
-            "link": "",
+            "link": "https://photos.app.goo.gl/wKBfq1ZKo2fLYinH7",
             "title": "Serve & Protect"
           },
           {
-            "id": 15,
+            "id": 14,
             "episode": "Episode 15",
-            "link": "",
+            "link": "https://photos.app.goo.gl/AkRCWT4zKoW9sWmE8",
             "title": "The Last Ride"
           },
-          { "id": 16, "episode": "Episode 16", "link": "", "title": "Moo Moo" },
-          { "id": 17, "episode": "Episode 17", "link": "", "title": "Cop-Con" },
           {
-            "id": 18,
+            "id": 15,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/nGRbC1cC44pjpzfT9",
+            "title": "Moo Moo"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 17",
+            "link": "https://photos.app.goo.gl/u2tJukfudtNSzbsk9",
+            "title": "Cop-Con"
+          },
+          {
+            "id": 17,
             "episode": "Episode 18",
-            "link": "",
+            "link": "https://photos.app.goo.gl/tdcmmMdwPmkibMHj6",
             "title": "Chasing Amy"
           },
           {
-            "id": 19,
+            "id": 18,
             "episode": "Episode 19",
-            "link": "",
+            "link": "https://photos.app.goo.gl/Voa2zTXxesGjhnGN6",
             "title": "Your Honor"
           },
           {
-            "id": 20,
+            "id": 19,
             "episode": "Episode 20",
-            "link": "",
+            "link": "https://photos.app.goo.gl/n8nQk1FtkjAhNeeq8",
             "title": "The Slaughterhouse"
           },
           {
-            "id": 21,
+            "id": 20,
             "episode": "Episode 21",
-            "link": "",
+            "link": "https://photos.app.goo.gl/4u8mzuHtVYkv5hCw7",
             "title": "The Bank Job"
           },
           {
-            "id": 22,
+            "id": 21,
             "episode": "Episode 22",
-            "link": "",
+            "link": "https://photos.app.goo.gl/FNDbGEXsdeA94w5N7",
             "title": "Crime & Punishment"
           }
         ]
@@ -2646,98 +2675,133 @@
           {
             "id": 1,
             "episode": "Episode 1",
-            "link": "",
-            "title": "The Big House: Part One"
+            "link": "https://photos.app.goo.gl/JPiBmVkydkcG3RqP9",
+            "title": "The Big House: Part 1"
           },
           {
             "id": 2,
             "episode": "Episode 2",
-            "link": "",
-            "title": "The Big House: Part Two"
+            "link": "https://photos.app.goo.gl/qPhHrLxYiKiXpwX68",
+            "title": "The Big House: Part 2"
           },
-          { "id": 3, "episode": "Episode 3", "link": "", "title": "Kicks" },
-          { "id": 4, "episode": "Episode 4", "link": "", "title": "HalloVeen" },
-          { "id": 5, "episode": "Episode 5", "link": "", "title": "Bad Beat" },
-          { "id": 6, "episode": "Episode 6", "link": "", "title": "The Venue" },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/2XpvRyXFKhra55hd6",
+            "title": "Kicks"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/6o8MVVMYhRRh79Kb7",
+            "title": "HalloVeen"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/ZhueEGvQJzCUTPtw8",
+            "title": "Bad Beat"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/1pKptnDg5dnq8PMv7",
+            "title": "The Venue"
+          },
           {
             "id": 7,
             "episode": "Episode 7",
-            "link": "",
+            "link": "https://photos.app.goo.gl/FTNqS8QmzntTpHrJA",
             "title": "Two Turkeys"
           },
           {
             "id": 8,
             "episode": "Episode 8",
-            "link": "",
+            "link": "https://photos.app.goo.gl/YXnszQPYf1izp1Gv5",
             "title": "Return to Skyfire"
           },
-          { "id": 9, "episode": "Episode 9", "link": "", "title": "99" },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/LGLFrYphUkxmVxey5",
+            "title": "99"
+          },
           {
             "id": 10,
             "episode": "Episode 10",
-            "link": "",
+            "link": "https://photos.app.goo.gl/VPg3CmkdCAoHNSqE9",
             "title": "Game Night"
           },
           {
             "id": 11,
             "episode": "Episode 11",
-            "link": "",
+            "link": "https://photos.app.goo.gl/VoaDXrFHj1f3LRSW6",
             "title": "The Favor"
           },
           {
             "id": 12,
             "episode": "Episode 12",
-            "link": "",
+            "link": "https://photos.app.goo.gl/6ALDa1Kd4wheZ9MH9",
             "title": "Safe House"
           },
           {
             "id": 13,
             "episode": "Episode 13",
-            "link": "",
+            "link": "https://photos.app.goo.gl/cErmhBcb3WJU67RQ7",
             "title": "The Negotiation"
           },
-          { "id": 14, "episode": "Episode 14", "link": "", "title": "The Box" },
-          { "id": 15, "episode": "Episode 15", "link": "", "title": "DFW" },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/ZvhKJ2KCSJSeMwFw7",
+            "title": "The Box"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/qV53soECTdpwHsKW6",
+            "title": "DFW"
+          },
           {
             "id": 16,
             "episode": "Episode 16",
-            "link": "",
+            "link": "https://photos.app.goo.gl/rfCPonhR4NTZhgzQ6",
             "title": "NutriBoom"
           },
           {
             "id": 17,
             "episode": "Episode 17",
-            "link": "",
+            "link": "https://photos.app.goo.gl/qwz5UM7rjm6TcDpD7",
             "title": "Ding Dong"
           },
           {
             "id": 18,
             "episode": "Episode 18",
-            "link": "",
+            "link": "https://photos.app.goo.gl/TAGxfzjjRdmUeggC7",
             "title": "Gray Star Mutual"
           },
           {
             "id": 19,
             "episode": "Episode 19",
-            "link": "",
+            "link": "https://photos.app.goo.gl/bfNzaakQPEmsC3Z59",
             "title": "Bachelor/ette Party"
           },
           {
             "id": 20,
             "episode": "Episode 20",
-            "link": "",
+            "link": "https://photos.app.goo.gl/3paMJDR11BUEfSjU8",
             "title": "Show Me Going"
           },
           {
             "id": 21,
             "episode": "Episode 21",
-            "link": "",
+            "link": "https://photos.app.goo.gl/dg8jM2FTUGjTQcm87",
             "title": "White Whale"
           },
           {
             "id": 22,
             "episode": "Episode 22",
-            "link": "",
+            "link": "https://photos.app.goo.gl/aBoofRpUBxGSeMJ17",
             "title": "Jake & Amy"
           }
         ]
@@ -2745,97 +2809,112 @@
       {
         "seasonNumber": 6,
         "episodes": [
-          { "id": 1, "episode": "Episode 1", "link": "", "title": "Honeymoon" },
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/2fVs7qhp6iho518G7",
+            "title": "Honeymoon"
+          },
           {
             "id": 2,
             "episode": "Episode 2",
-            "link": "",
+            "link": "https://photos.app.goo.gl/uHsUcN8XLVAxDV3b6",
             "title": "Hitchcock & Scully"
           },
           {
             "id": 3,
             "episode": "Episode 3",
-            "link": "",
+            "link": "https://photos.app.goo.gl/m57Za6FumQfPtGEN6",
             "title": "The Tattler"
           },
           {
             "id": 4,
             "episode": "Episode 4",
-            "link": "",
+            "link": "https://photos.app.goo.gl/XLaDEaAMQPBwkTnF7",
             "title": "Four Movements"
           },
           {
             "id": 5,
             "episode": "Episode 5",
-            "link": "",
+            "link": "https://photos.app.goo.gl/6To5SYhr2G6LrjEm9",
             "title": "A Tale of Two Bandits"
           },
           {
             "id": 6,
             "episode": "Episode 6",
-            "link": "",
+            "link": "https://photos.app.goo.gl/QG8YaiubjHz454ti7",
             "title": "The Crime Scene"
           },
           {
             "id": 7,
             "episode": "Episode 7",
-            "link": "",
+            "link": "https://photos.app.goo.gl/staZDtRJq8F1dXfE8",
             "title": "The Honeypot"
           },
           {
             "id": 8,
             "episode": "Episode 8",
-            "link": "",
+            "link": "https://photos.app.goo.gl/WNz9Yy3NPPT7fPZX7",
             "title": "He Said, She Said"
           },
           {
             "id": 9,
             "episode": "Episode 9",
-            "link": "",
+            "link": "https://photos.app.goo.gl/d2N4mPzKfwhAR8bQ7",
             "title": "The Golden Child"
           },
-          { "id": 10, "episode": "Episode 10", "link": "", "title": "Gintars" },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/Dxs9FnSCvkNvymKZ6",
+            "title": "Gintars"
+          },
           {
             "id": 11,
             "episode": "Episode 11",
-            "link": "",
+            "link": "https://photos.app.goo.gl/L4dEKpYvGJhuUmVt5",
             "title": "The Therapist"
           },
           {
             "id": 12,
             "episode": "Episode 12",
-            "link": "",
+            "link": "https://photos.app.goo.gl/ezxtAAvwVzEAh1CQA",
             "title": "Casecation"
           },
           {
             "id": 13,
             "episode": "Episode 13",
-            "link": "",
+            "link": "https://photos.app.goo.gl/8U9vCrexYQHxa9UJ7",
             "title": "The Bimbo"
           },
           {
             "id": 14,
             "episode": "Episode 14",
-            "link": "",
+            "link": "https://photos.app.goo.gl/EWSC7Z86c55gtwLr9",
             "title": "Ticking Clocks"
           },
           {
             "id": 15,
             "episode": "Episode 15",
-            "link": "",
+            "link": "https://photos.app.goo.gl/WRzgKuvtBBqi2rS86",
             "title": "Return of the King"
           },
           {
             "id": 16,
             "episode": "Episode 16",
-            "link": "",
+            "link": "https://photos.app.goo.gl/u4zYH6Q3WpMzzNc27",
             "title": "Cinco de Mayo"
           },
-          { "id": 17, "episode": "Episode 17", "link": "", "title": "Sicko" },
+          {
+            "id": 17,
+            "episode": "Episode 17",
+            "link": "https://photos.app.goo.gl/FWixi2VevGdkJx6D7",
+            "title": "Sicko"
+          },
           {
             "id": 18,
             "episode": "Episode 18",
-            "link": "",
+            "link": "https://photos.app.goo.gl/nhEcEiW9Sqkcr6ch6",
             "title": "Suicide Squad"
           }
         ]
@@ -2843,42 +2922,82 @@
       {
         "seasonNumber": 7,
         "episodes": [
-          { "id": 1, "episode": "Episode 1", "link": "", "title": "Manhunter" },
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/XWkVZgYt9HEeXhq56",
+            "title": "Manhunter"
+          },
           {
             "id": 2,
             "episode": "Episode 2",
-            "link": "",
+            "link": "https://photos.app.goo.gl/MqerzcJarJSfxSCW8",
             "title": "Captain Kim"
           },
-          { "id": 3, "episode": "Episode 3", "link": "", "title": "Pimemento" },
-          { "id": 4, "episode": "Episode 4", "link": "", "title": "Debbie" },
-          { "id": 5, "episode": "Episode 5", "link": "", "title": "Twilight" },
-          { "id": 6, "episode": "Episode 6", "link": "", "title": "Trying" },
-          { "id": 7, "episode": "Episode 7", "link": "", "title": "Ding Dong" },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/jU3ztbCvNgEjnFLf9",
+            "title": "Pimemento"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/Dh1FKhpScE2xZzAt7",
+            "title": "Debbie"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/19MursL5yqNwSMQX6",
+            "title": "Twilight"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/dRMpXd4vM8vy1UzZ7",
+            "title": "Trying"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/KLtuLjrUsUrq51Ut5",
+            "title": "Ding Dong"
+          },
           {
             "id": 8,
             "episode": "Episode 8",
-            "link": "",
+            "link": "https://photos.app.goo.gl/jdVBdLcCFSqKuK6D7",
             "title": "The Takeback"
           },
-          { "id": 9, "episode": "Episode 9", "link": "", "title": "Dillman" },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/sBPFDTPXKbttPjvz9",
+            "title": "Dillman"
+          },
           {
             "id": 10,
             "episode": "Episode 10",
-            "link": "",
+            "link": "https://photos.app.goo.gl/88GBkt5qBGzSXwHX7",
             "title": "Admiral Peralta"
           },
           {
             "id": 11,
             "episode": "Episode 11",
-            "link": "",
+            "link": "https://photos.app.goo.gl/xpyWfqEpiUSgRE9fA",
             "title": "Valloweaster"
           },
-          { "id": 12, "episode": "Episode 12", "link": "", "title": "Ransom" },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/3bsCBNL6iTpCerpU7",
+            "title": "Ransom"
+          },
           {
             "id": 13,
             "episode": "Episode 13",
-            "link": "",
+            "link": "https://photos.app.goo.gl/bfeC3ZH5PGNdNYRz9",
             "title": "Lights Out"
           }
         ]
@@ -2889,42 +3008,62 @@
           {
             "id": 1,
             "episode": "Episode 1",
-            "link": "",
+            "link": "https://photos.app.goo.gl/ycoSoww4PgcD3NTX7",
             "title": "The Good Ones"
           },
           {
             "id": 2,
             "episode": "Episode 2",
-            "link": "",
+            "link": "https://photos.app.goo.gl/mjMngptgmDVNHwxA7",
             "title": "The Lake House"
           },
-          { "id": 3, "episode": "Episode 3", "link": "", "title": "Blue Flu" },
-          { "id": 4, "episode": "Episode 4", "link": "", "title": "Balancing" },
-          { "id": 5, "episode": "Episode 5", "link": "", "title": "PB&J" },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/BVmL8CMedrp6dkku7",
+            "title": "Blue Flu"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/cb1ArYf8XpRdoQB57",
+            "title": "Balancing"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/fNWMh4hLTveexCGD7",
+            "title": "PB&J"
+          },
           {
             "id": 6,
             "episode": "Episode 6",
-            "link": "",
+            "link": "https://photos.app.goo.gl/BHfAdHfMegUpuLiB8",
             "title": "The Set Up"
           },
           {
             "id": 7,
             "episode": "Episode 7",
-            "link": "",
+            "link": "https://photos.app.goo.gl/zqW7BAj4Yi8JL9ju6",
             "title": "Game of Boyles"
           },
-          { "id": 8, "episode": "Episode 8", "link": "", "title": "Renewal" },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/2az5pWykZX34vmaY6",
+            "title": "Renewal"
+          },
           {
             "id": 9,
             "episode": "Episode 9",
-            "link": "",
-            "title": "The Last Day: Part One"
+            "link": "https://photos.app.goo.gl/gvxUfbW7NNn5RdbUA",
+            "title": "The Last Day: Part 1"
           },
           {
             "id": 10,
             "episode": "Episode 10",
-            "link": "",
-            "title": "The Last Day: Part Two"
+            "link": "https://photos.app.goo.gl/sJKspfiMguSd8j2F9",
+            "title": "The Last Day: Part 2"
           }
         ]
       }
