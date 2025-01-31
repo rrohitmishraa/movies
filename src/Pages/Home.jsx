@@ -19,7 +19,7 @@ export default function Home({ authorizeNavigation }) {
   });
   const navigate = useNavigate();
 
-  const predefinedRoutes = ["movies", "26", "shows"];
+  const predefinedRoutes = ["26", "shows", "ocag", "yudh"];
 
   const handleSearch = async () => {
     const trimmedQuery = searchQuery.trim().toLowerCase();
