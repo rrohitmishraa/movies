@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
@@ -12,6 +12,7 @@ export default function Home({ authorizeNavigation }) {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [submitPopupContent, setSubmitPopupContent] = useState("");
   const [showSubmitPopup, setShowSubmitPopup] = useState(false);
+  const [predefinedRoutes, setPredefinedRoutes] = useState([]);
   const [feedback, setFeedback] = useState({
     suggestions: "",
     name: "",
@@ -19,17 +20,64 @@ export default function Home({ authorizeNavigation }) {
   });
   const navigate = useNavigate();
 
-  const predefinedRoutes = ["26", "shows", "ocag", "yudh"];
+  // Fetch movie codes from the JSON file
+  useEffect(() => {
+    fetch("/movieCodes.json")
+      .then((response) => response.json())
+      .then((data) => setPredefinedRoutes(data.movieCodes))
+      .catch((error) => console.error("Error loading movie codes:", error));
+  }, []);
+
+  const isCodeExpired = (expiryDate) => {
+    const currentDate = new Date();
+    const expiry = new Date(expiryDate);
+
+    // Log the current and expiry date to debug
+    console.log("Current Date:", currentDate.toISOString()); // Logs in ISO format
+    console.log("Expiry Date:", expiry.toISOString()); // Logs in ISO format
+
+    // Ensure that the expiry date is a valid date before comparing
+    if (isNaN(expiry)) {
+      console.error("Invalid expiry date:", expiryDate);
+      return true; // If invalid, consider it expired
+    }
+
+    // Compare the current date with the expiry date
+    return currentDate > expiry;
+  };
 
   const handleSearch = async () => {
     const trimmedQuery = searchQuery.trim().toLowerCase();
-    if (predefinedRoutes.includes(trimmedQuery)) {
-      authorizeNavigation();
-      navigate(`/${trimmedQuery}`);
-    } else if (trimmedQuery === "wallpapers") {
-      window.open("https://photos.app.goo.gl/sxpqFZkwpoJxqMD36");
-    } else {
-      try {
+
+    try {
+      // Fetch movie codes from the JSON file
+      const movieCodesResponse = await fetch("/movieCodes.json");
+      const movieCodesData = await movieCodesResponse.json();
+
+      // Check if the query matches any movie code
+      const matchedCode = movieCodesData.movieCodes.find(
+        (code) => code.code.toLowerCase() === trimmedQuery
+      );
+
+      if (matchedCode) {
+        // If the code is found, check if it's expired
+        const isExpired = isCodeExpired(matchedCode.expiryDate);
+
+        // Log the result of expiry check for debugging
+        console.log(`Is code "${matchedCode.code}" expired? ${isExpired}`);
+
+        if (isExpired) {
+          setPopupContent("This code has expired.");
+        } else {
+          // Authorize navigation and navigate to the corresponding page
+          authorizeNavigation();
+          navigate(`/${matchedCode.code}`);
+        }
+      } else if (trimmedQuery === "wallpapers") {
+        // Open the link for wallpapers
+        window.open("https://photos.app.goo.gl/sxpqFZkwpoJxqMD36");
+      } else {
+        // Perform a dictionary search if the query doesn't match any movie code
         const response = await fetch(
           `https://api.dictionaryapi.dev/api/v2/entries/en/${trimmedQuery}`
         );
@@ -40,11 +88,12 @@ export default function Home({ authorizeNavigation }) {
         } else {
           setPopupContent(data[0].meanings[0].definitions[0].definition);
         }
-      } catch (error) {
-        setPopupContent("An error occurred while fetching the meaning.");
       }
-      setShowPopup(true);
+    } catch (error) {
+      setPopupContent("An error occurred while searching.");
     }
+
+    setShowPopup(true);
   };
 
   const handleKeyPress = (event) => {
