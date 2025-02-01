@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export default function Movies() {
+export default function Movies({ authorizeNavigation }) {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -92,6 +92,13 @@ export default function Movies() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 p-6">
       <div className="max-w-5xl mx-auto">
+        <button
+          onClick={() => navigate("/shows")}
+          className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 transition"
+        >
+          Shows
+        </button>
+
         {/* Header */}
         <motion.h1
           className="text-4xl font-bold text-center mb-8 text-gray-800"
