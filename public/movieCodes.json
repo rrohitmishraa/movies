@@ -2,19 +2,28 @@
   "movieCodes": [
     {
       "code": "26",
-      "expiryDate": "5024-12-31T23:59:59Z"
+      "expiryDate": "5025-12-31T23:59:59Z",
+      "status": "active"
     },
     {
-      "code": "shows",
-      "expiryDate": "5025-10-31T23:59:59Z"
+      "code": "mittaly",
+      "expiryDate": "5025-10-31T23:59:59Z",
+      "status": "active"
+    },
+    {
+      "code": "rohit",
+      "expiryDate": "5025-10-31T23:59:59Z",
+      "status": "active"
     },
     {
       "code": "ocag",
-      "expiryDate": "2025-06-31T23:59:59Z"
+      "expiryDate": "2025-06-31T23:59:59Z",
+      "status": "not"
     },
     {
       "code": "yudh",
-      "expiryDate": "2025-06-31T23:59:59Z"
+      "expiryDate": "2025-06-31T23:59:59Z",
+      "status": "active"
     }
   ]
 }
