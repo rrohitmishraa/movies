@@ -1,5 +1,720 @@
 [
   {
+    "seriesName": "Suits",
+    "tag": "",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/4YYpSUNxxjV2MU696",
+            "title": "Pilot"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/ki9fW8DhZiL7ECkF6",
+            "title": "Errors and Omissions"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/ydv7DyaKnUaEaSnH8",
+            "title": "Inside Track"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/xHdb9ePutggNPV9e6",
+            "title": "Dirty Little Secrets"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/kzaWdN1AUfo2Pjxv8",
+            "title": "Bail Out"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/416FiDELPYMmFih38",
+            "title": "Tricks of the Trade"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/yB5eED9zKZKFD9mx6",
+            "title": "Play the Man"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/HjUk1edereNVpJDC9",
+            "title": "Identity Crisis"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/DYkFFUNrDU6G486e9",
+            "title": "Undefeated"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/zYhmJSA7ntEygJKu9",
+            "title": "Shelf Life"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/sv6jJZEREzA1sTmP6",
+            "title": "Rules of the Game"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/ENhhhDkuQHaFRJ3X8",
+            "title": "Dog Fight"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/BGi334e9ks7VoMSU6",
+            "title": "She Knows"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/vQQZuXi6rp9HxQWx9",
+            "title": "The Choice"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/uby6gcm1f4qu4nzu9",
+            "title": "Meet the New Boss"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/u7Zv5oVBmzKDUJG39",
+            "title": "Discovery"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/Wyz86SciARPopFK86",
+            "title": "Break Point"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/fCWDVGzjXRHoJyyn9",
+            "title": "All In"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/d55HgUDjfpggqDiM9",
+            "title": "Sucker Punch"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/kRr3sUAmRyCHmDRn9",
+            "title": "Rewind"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/Fmue9apJnnT8XAQC9",
+            "title": "Asterisk"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/7nzH6AGxt2KBsPvW8",
+            "title": "High Noon"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/ajPN6v49KLwFGrfR6",
+            "title": "Blind-Sided"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/dpNGJewwccBnYdNL7",
+            "title": "Blood in the Water"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/x6XQx3H7V3AGNyqX9",
+            "title": "Zane vs. Zane"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/d9bJ2zdhYaQ1ZLFs7",
+            "title": "He's Back"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/Nk25iymtUFtjknx67",
+            "title": "Normandy"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/pq8qFbUjFJqtdhbz6",
+            "title": "War"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/RQxAkfmkFnq6tazq5",
+            "title": "The Arrangement"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/xGEoeNaTqUfagBnd8",
+            "title": "I Want You to Want Me"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/jEqnRqw7f58TZvqu8",
+            "title": "Unfinished Business"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/qPYAA8s9KrcWBSro8",
+            "title": "Conflict of Interest"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/HkHhDSgiZXvqPcV29",
+            "title": "Shadow of a Doubt"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/ProPqeUBEC5eDTjRA",
+            "title": "The Other Time"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/wVfqpVqn8tF57ysX6",
+            "title": "She's Mine"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/S6NomWUfvahFSVHv9",
+            "title": "Endgame"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/fsP4VadQWHKVU2AWA",
+            "title": "Bad Faith"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/RYhFH39o2pDyX1PG8",
+            "title": "Stay"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/jUPdffFec6HUTiuu9",
+            "title": "Buried Secrets"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/7rGBAouULEtQSCAr5",
+            "title": "Yesterday’s Gone"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/fXtQSXyeGtTq6DCj6",
+            "title": "Moot Point"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/HPi4fPgNid8aA9Zt7",
+            "title": "Heartburn"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/gLmWeN1K73jFzmD89",
+            "title": "Know When to Fold 'Em"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/regmMD1jaVEAGW4H7",
+            "title": "No Way Out"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 4,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/zMp3f7zuuDrRpwzW7",
+            "title": "One-Two-Three Go..."
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/Tt6cC3fZoFnaWgXG8",
+            "title": "Breakfast, Lunch and Dinner"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/XpHuBDBypVKC6K9B9",
+            "title": "Two in the Knees"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/CP46o23ULA5ywtcQ9",
+            "title": "Leveraged"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/u3D3dkVrTkV6UpQH6",
+            "title": "Pound of Flesh"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/N5dpPAFKnZTSRcMD6",
+            "title": "Litt the Hell Up"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/Baa5qd71rFZSQ9W4A",
+            "title": "We're Done"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/K3toyRz6UvTNvbWJ7",
+            "title": "Exposure"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/N3gLEZeRD38Av9UD8",
+            "title": "Gone"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/KmpgBcmsKU8CaAfD6",
+            "title": "This Is Rome"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/giZmZuyi6RxzQQWA9",
+            "title": "Enough Is Enough"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/CG7znvQ2iAP9om3PA",
+            "title": "Respect"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/bEf1BgCE2c2GsrS99",
+            "title": "Fork in the Road"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/iv6kEEDCkM7vkHS86",
+            "title": "Derailed"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/9anCKAUeV8yASYYd8",
+            "title": "Intent"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/w9gBT5r4K285ADsZ8",
+            "title": "Not Just a Pretty Face"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 5,
+        "episodes": [
+          { "id": 1, "episode": "Episode 1", "link": "", "title": "Denial" },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "",
+            "title": "Compensation"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "",
+            "title": "No Refills"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "",
+            "title": "Toe to Toe"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "",
+            "title": "Toe the Line"
+          },
+          { "id": 6, "episode": "Episode 6", "link": "", "title": "Privilege" },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "",
+            "title": "Hitting Home"
+          },
+          { "id": 8, "episode": "Episode 8", "link": "", "title": "Mea Culpa" },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "",
+            "title": "Uninvited Guests"
+          },
+          { "id": 10, "episode": "Episode 10", "link": "", "title": "Faith" },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "",
+            "title": "Blowback"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "",
+            "title": "Live to Fight…"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "",
+            "title": "God’s Green Earth"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "",
+            "title": "Self Defense"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "",
+            "title": "Tick Tock"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "",
+            "title": "25th Hour"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 6,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "",
+            "title": "To Trouble"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "",
+            "title": "Accounts Payable"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "",
+            "title": "Back on the Map"
+          },
+          { "id": 4, "episode": "Episode 4", "link": "", "title": "Turn" },
+          { "id": 5, "episode": "Episode 5", "link": "", "title": "Trust" },
+          { "id": 6, "episode": "Episode 6", "link": "", "title": "Spain" },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "",
+            "title": "Shake the Trees"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "",
+            "title": "Borrowed Time"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "",
+            "title": "The Hand That Feeds You"
+          },
+          { "id": 10, "episode": "Episode 10", "link": "", "title": "P.S.L." },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "",
+            "title": "She’s Gone"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "",
+            "title": "The Painting"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "",
+            "title": "Teeth, Nose, Teeth"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "",
+            "title": "Admission of Guilt"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "",
+            "title": "Quid Pro Quo"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "",
+            "title": "Character and Fitness"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 7,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "",
+            "title": "Skin in the Game"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "",
+            "title": "The Statue"
+          },
+          { "id": 3, "episode": "Episode 3", "link": "", "title": "Mudmare" },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "",
+            "title": "Divide and Conquer"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "",
+            "title": "Brooklyn Housing"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "",
+            "title": "Home to Roost"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "",
+            "title": "Full Disclosure"
+          },
+          { "id": 8, "episode": "Episode 8", "link": "", "title": "100" },
+          { "id": 9, "episode": "Episode 9", "link": "", "title": "Shame" },
+          { "id": 10, "episode": "Episode 10", "link": "", "title": "Donna" },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "",
+            "title": "Hard Truths"
+          },
+          { "id": 12, "episode": "Episode 12", "link": "", "title": "Bad Man" },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "",
+            "title": "Inevitable"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "",
+            "title": "Pulling the Goalie"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "",
+            "title": "Tiny Violin"
+          },
+          { "id": 16, "episode": "Episode 16", "link": "", "title": "Good-Bye" }
+        ]
+      },
+      {
+        "seasonNumber": 8,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "",
+            "title": "Right-Hand Man"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "",
+            "title": "Pecking Order"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "",
+            "title": "Promises, Promises"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "",
+            "title": "Revenue Per Square Foot"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "",
+            "title": "Good Mudding"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "",
+            "title": "Cats, Ballet, Harvey Specter"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "",
+            "title": "Sour Grapes"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "",
+            "title": "Coral Gables"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "",
+            "title": "Motion to Delay"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "",
+            "title": "Managing Partner"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 9,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "",
+            "title": "Everything’s Changed"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "",
+            "title": "Special Master"
+          },
+          { "id": 3, "episode": "Episode 3", "link": "", "title": "Windmills" },
+          { "id": 4, "episode": "Episode 4", "link": "", "title": "Cairo" },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "",
+            "title": "If the Shoe Fits"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "",
+            "title": "Whatever It Takes"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "seriesName": "Death Note",
     "tag": "anime",
     "seasons": [
