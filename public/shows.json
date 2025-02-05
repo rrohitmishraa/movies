@@ -1,5 +1,425 @@
 [
   {
+    "seriesName": "13 Reasons Why",
+    "tag": "tv-series",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/iNYUEMoCZY3sgL3i9",
+            "title": "Tape 1, Side A"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/eaBPgjetH1deErGH8",
+            "title": "Tape 1, Side B"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/wsAmoDXTYwrM9SYH8",
+            "title": "Tape 2, Side A"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/PtqrHxR9TVZBN7t77",
+            "title": "Tape 2, Side B"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/bUHGW4EhsQ9MdPgB9",
+            "title": "Tape 3, Side A"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/rWjDkmTMsDun6bce9",
+            "title": "Tape 3, Side B"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/3sQq77Lyd45KDsBeA",
+            "title": "Tape 4, Side A"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/cuDr8uRu2ZHbQDYG6",
+            "title": "Tape 4, Side B"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/P3X9xYZoTtpGJB879",
+            "title": "Tape 5, Side A"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/uZtbXdUdThV5Wr1k6",
+            "title": "Tape 5, Side B"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/xowLwznJXxfaUMXd9",
+            "title": "Tape 6, Side A"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/nb7CHBeoLcFXZCC79",
+            "title": "Tape 6, Side B"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/6AE9EF1e1dmSApG19",
+            "title": "Tape 7, Side A"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Solo Leveling",
+    "tag": "anime hindi",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/jfmN2x9wB9fHnUCi6",
+            "title": "I’m the Weakest"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/aKTSctfz3ADCi6VU7",
+            "title": "The Dark Side of the Dungeon"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/Tv52uAwdNz54Ym1C7",
+            "title": "The Awakening"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/Nhf4ez6zKW4zPp5f7",
+            "title": "The S-Rank Dungeon"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/YxS8hBwMpJSLgKqv8",
+            "title": "The Awakening Continues"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/xALAjGaPHreePA7z5",
+            "title": "The Dungeon Incident"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/r7qYdcSX4A9HgcDU6",
+            "title": "A New Beginning"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/c45nW7vpeGs8JA4E6",
+            "title": "The Rank A Dungeon"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/SmC3EAFmr6TAyHS48",
+            "title": "The Deadly Weapon"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/cyFkLR3YcEZU59XZ7",
+            "title": "Solo Leveling"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/uyf61BHWtMw2BbD68",
+            "title": "The Path to Power"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/WPkWeq5SLdUXeAgB7",
+            "title": "The Ultimate Hunter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Rin: Daughter of Mnemosyne",
+    "tag": "anime english",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/JjKG3uNPy2dD39Sn6",
+            "title": "Cat's Paw"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/SqnSWiHYnF8yhTZh8",
+            "title": "Memories of the Future"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/1NqGSVRfMvYJo3pd8",
+            "title": "The Fungi That Stinks of Death"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/z6v412atAxCTrP9e8",
+            "title": "Ghosts Are Always With You"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/Cf8TpFKqnWywovkd6",
+            "title": "Holy Nights Don't Shine Brightly"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/J2wfnQtVSrntpx83A",
+            "title": "The Wolf and the Young Girl"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Paatal Lok",
+    "tag": "crime-thriller hindi",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/6PKwTiHFvHdvf1xL9",
+            "title": "Bridges"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/6sX1WQqb1NFG2dpm9",
+            "title": "Lost and Found"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/Erv4huZ3zBXvi8rP7",
+            "title": "A History of Violence"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/wRizA34v12A8NkJr8",
+            "title": "Sleeper Cells"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/h3bPMARKyUL4Ge4D9",
+            "title": "Of Fathers and Sons"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/XSyBighnEdcWzU4KA",
+            "title": "The Past Is Prologue"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/BktLsznTbo2ZjEf19",
+            "title": "Badlands"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/V7qsTneaZXCCqqCB7",
+            "title": "Black Widow"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/MujCXvwS6qwjv9Zr9",
+            "title": "Swarg Ka Dwaar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Dark",
+    "tag": "sci-fi english",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/7X5gWgrjmAWeAj9t8",
+            "title": "Secrets"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/5148JLyTWyMhGq7n6",
+            "title": "Lies"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/NyPepzhGjisnVBaU8",
+            "title": "Past and Present"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/XjUCt7YvXDTWcypC6",
+            "title": "Double Lives"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/cVPmfVgX2BGc7kgY8",
+            "title": "Truths"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/BLjgq2Tva4CEHWB5A",
+            "title": "Sic Mundus Creatus Est"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/vc3XkoYtuNJsB3579",
+            "title": "Crossroads"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/micZHmQY2f9W4A2N6",
+            "title": "As You Sow, So You Shall Reap"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/onmkseseNB9nP1sx5",
+            "title": "Everything Is Now"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/j9w25CGumGvKX2vR8",
+            "title": "Alpha and Omega"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Dark Matter",
+    "tag": "sci-fi",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/DyzadJiW9drfVpGy7",
+            "title": "Are You Happy in Your Life?"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/HgXx3i3KZNY6qV4L6",
+            "title": "Trip of a Lifetime"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/eVGaucAXsVSDwQWB7",
+            "title": "The Box"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/vq4SV5ayiBWUXNKZ8",
+            "title": "The Corridor"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/T9W3SdFCeTJvsu6i9",
+            "title": "Worldless"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/jMdepiYGzi2ETMuy5",
+            "title": "Superposition"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/9C3R8vfNkSfdEH5y9",
+            "title": "In the Fires of Dead Stars"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/p8WahmqGDMWZbYG97",
+            "title": "Jupiter"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/K8gnStSdk1moGFNNA",
+            "title": "Entanglement"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "seriesName": "The Sopranos",
     "tag": "the-sopranos",
     "seasons": [
@@ -1823,7 +2243,7 @@
   },
   {
     "seriesName": "Death Note",
-    "tag": "anime",
+    "tag": "anime english",
     "seasons": [
       {
         "seasonNumber": 1,

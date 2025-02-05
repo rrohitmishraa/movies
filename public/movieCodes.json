@@ -16,11 +16,6 @@
       "status": "active"
     },
     {
-      "code": "ocag",
-      "expiryDate": "2025-06-31T23:59:59Z",
-      "status": "not"
-    },
-    {
       "code": "yudh",
       "expiryDate": "2025-08-02T23:59:59Z",
       "status": "active"
@@ -28,16 +23,6 @@
     {
       "code": "qwert",
       "expiryDate": "2025-08-02T23:59:59Z",
-      "status": "not"
-    },
-    {
-      "code": "tttt",
-      "expiryDate": "2025-08-31T23:59:59Z",
-      "status": "not"
-    },
-    {
-      "code": "rrrr",
-      "expiryDate": "2025-11-31T23:59:59Z",
       "status": "not"
     }
   ]
