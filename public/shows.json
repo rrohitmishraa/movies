@@ -1,7 +1,7 @@
 [
   {
-    "seriesName": "13 Reasons Why",
-    "tag": "tv-series",
+    "seriesName": "Attack on Titan",
+    "tag": "anime english",
     "seasons": [
       {
         "seasonNumber": 1,
@@ -9,80 +9,881 @@
           {
             "id": 1,
             "episode": "Episode 1",
-            "link": "https://photos.app.goo.gl/iNYUEMoCZY3sgL3i9",
+            "link": "https://photos.app.goo.gl/6FL9Kc7ZpcNZZZGs6",
+            "title": "To You, in 2000 Years: The Fall of Shiganshina Part 1"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/H1JNtMg5ys2Xraj4A",
+            "title": "That Day: The Fall of Shiganshina Part 2"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/y3FphiUx8KN374Ts9",
+            "title": "A Dim Light Amid Despair: Humanity's Comeback Part 1"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/2aBQTDd5NckUoinw9",
+            "title": "The Night of the Closing Ceremony: Humanity's Comeback Part 2"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/ds7uPN4VJLvCrjm97",
+            "title": "First Battle: The Struggle for Trost Part 1"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/frpuc1DjsTJgD5qY9",
+            "title": "The World the Girl Saw: The Struggle for Trost Part 2"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/qM68ZpNatTCHRFPn7",
+            "title": "Small Blade: The Struggle for Trost Part 3"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/eZ59rozFie5TcM8LA",
+            "title": "I Can Hear His Heartbeat: The Struggle for Trost Part 4"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/Jwnqyuvu4yannhRw9",
+            "title": "Whereabouts of His Left Arm: The Struggle for Trost Part 5"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/GA9J86cxPz7xH1aH7",
+            "title": "Response: The Struggle for Trost Part 6"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/kY2pGFCCAMpcwgvk7",
+            "title": "Idol: The Struggle for Trost Part 7"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/GpQ3oK54kZJY9HFm9",
+            "title": "Wound: The Struggle for Trost Part 8"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/AxcXx6MDxGftjiQP7",
+            "title": "Primal Desire: The Struggle for Trost Part 9"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/xyKMDQ5KwHi7uhav7",
+            "title": "Can't Look Into His Eyes Yet: Eve of the Counterattack Part 1"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/rMa1qefT3f5w41r7A",
+            "title": "Special Operations Squad: Eve of the Counterattack Part 2"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/GKKwVwoB9kcFPy9i6",
+            "title": "What Needs to Be Done Now: Eve of the Counterattack Part 3"
+          },
+          {
+            "id": 17,
+            "episode": "Episode 17",
+            "link": "https://photos.app.goo.gl/SQrLdWL8Ur3hU5un8",
+            "title": "Female Titan: The 57th Exterior Scouting Mission Part 1"
+          },
+          {
+            "id": 18,
+            "episode": "Episode 18",
+            "link": "https://photos.app.goo.gl/85RjrAUys6XUFgBb9",
+            "title": "Forest of Giant Trees: The 57th Exterior Scouting Mission Part 2"
+          },
+          {
+            "id": 19,
+            "episode": "Episode 19",
+            "link": "https://photos.app.goo.gl/CRxcACC6ckAVzRWR7",
+            "title": "Bite: The 57th Exterior Scouting Mission Part 3"
+          },
+          {
+            "id": 20,
+            "episode": "Episode 20",
+            "link": "https://photos.app.goo.gl/BrNXMo2UxpF2CEFu5",
+            "title": "Erwin Smith: The 57th Exterior Scouting Mission Part 4"
+          },
+          {
+            "id": 21,
+            "episode": "Episode 21",
+            "link": "https://photos.app.goo.gl/XMgsQzqLrbDyyPvZA",
+            "title": "Crushing Blow: The 57th Exterior Scouting Mission Part 5"
+          },
+          {
+            "id": 22,
+            "episode": "Episode 22",
+            "link": "https://photos.app.goo.gl/yosjdBzp3oHHbw8j8",
+            "title": "The Defeated: The 57th Exterior Scouting Mission Part 6"
+          },
+          {
+            "id": 23,
+            "episode": "Episode 23",
+            "link": "https://photos.app.goo.gl/EFVQsh2vbuozTkrL8",
+            "title": "Smile: Assault on Stohess District Part 1"
+          },
+          {
+            "id": 24,
+            "episode": "Episode 24",
+            "link": "https://photos.app.goo.gl/mWqqK8ovzKYovA3d9",
+            "title": "Mercy: Assault on Stohess District Part 2"
+          },
+          {
+            "id": 25,
+            "episode": "Episode 25",
+            "link": "https://photos.app.goo.gl/s4PbzxRTYPa2urm4A",
+            "title": "Wall: Assault on Stohess District Part 3"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/cU6VZdKvAzrveM4BA",
+            "title": "Beast Titan"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/kY1FR3fiXQRH5MXY9",
+            "title": "I'm Home"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/1h6WG4Pf3WViUbAy9",
+            "title": "Southwestward"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/fVV68ZBvAwahg9LD9",
+            "title": "Soldier"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/uLNjZnQn1XsDZw2h9",
+            "title": "Historia"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/FMArw89ZXDwjtYAZA",
+            "title": "Warrior"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/ywy7RBz4QfPui4ve9",
+            "title": "Close Combat"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/881heL4ecsbEqqat6",
+            "title": "The Hunters"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/uwJ4PuKutBz5y2Zv7",
+            "title": "Opening"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/gpczX8J1SJQjEnhq8",
+            "title": "Children"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/JzArW2hZPEnwb42d9",
+            "title": "Charge"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/vk48fVZq6gXDyDQV9",
+            "title": "Scream"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/iBBjCzVM1JDjpHSF8",
+            "title": "Smoke Signal"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/4m1Z9znqZV5CDQK38",
+            "title": "Pain"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/ZZ5n5vs2GYgQtBxC6",
+            "title": "Old Story"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/a4y6JBxVkjZGuKiw9",
+            "title": "Trust"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/DMfpsZDrZPP6yNaA9",
+            "title": "Reply"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/ur6hfgjWUQs5MzveA",
+            "title": "Sin"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/z65KKgKxSqD5TuQx8",
+            "title": "Wish"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/jrhMLHHCKeau47Bq9",
+            "title": "Outside the Walls of Orvud District"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/appNbmXgqwgE2RNCA",
+            "title": "Ruler of the Walls"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/QfYZgJRRG63q1wkx6",
+            "title": "Friends"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/S85tGHCKT8zvfcdS7",
+            "title": "Bystander"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/RJXyJ4VNgkg8gAHz9",
+            "title": "Night of the Battle to Retake the Wall"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/LgsbutYTKMYw7YZz7",
+            "title": "The Town Where Everything Began"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/FT12iSNGWMWw9Dyv6",
+            "title": "Thunder Spears"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/Dg6TVm9N9C3TjDSQ8",
+            "title": "Descent"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/uRcbdHRRozqe4e3W6",
+            "title": "Perfect Game"
+          },
+          {
+            "id": 17,
+            "episode": "Episode 17",
+            "link": "https://photos.app.goo.gl/MYjqM9P1gRvrXXtP7",
+            "title": "Hero"
+          },
+          {
+            "id": 18,
+            "episode": "Episode 18",
+            "link": "https://photos.app.goo.gl/MF9p7wYRaZmqRNA1A",
+            "title": "Midnight Sun"
+          },
+          {
+            "id": 19,
+            "episode": "Episode 19",
+            "link": "https://photos.app.goo.gl/8UbE1jNpSdmJHVvU8",
+            "title": "The Basement"
+          },
+          {
+            "id": 20,
+            "episode": "Episode 20",
+            "link": "https://photos.app.goo.gl/TNp35SXn4UZ7Afc36",
+            "title": "That Day"
+          },
+          {
+            "id": 21,
+            "episode": "Episode 21",
+            "link": "https://photos.app.goo.gl/qaL1Se9p4hTWaHJy5",
+            "title": "Attack Titan"
+          },
+          {
+            "id": 22,
+            "episode": "Episode 22",
+            "link": "https://photos.app.goo.gl/ghApg2ieU5Y5iqcm8",
+            "title": "The Other Side of the Wall"
+          }
+        ]
+      },
+      {
+        "seasonNumber": "4 - Part 1",
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/PLErf35QuxveJsgVA",
+            "title": "The Other Side of the Sea"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/FsDBxk5AGJ2du2oN7",
+            "title": "Midnight Train"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/cuPMGCy6cuS4X5Rj7",
+            "title": "The Door of Hope"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/fJu5TA2HTmTaWLVi9",
+            "title": "From One Hand to Another"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/kcz26vaRFEqdqUxFA",
+            "title": "Declaration of War"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/WRnHURMRNVxsnDe77",
+            "title": "The War Hammer Titan"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/JyVA5U2icncDYu6c6",
+            "title": "Assault"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/AecJguSPmXGxY2bb6",
+            "title": "Assassin’s Bullet"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/AiguBqRRQFkoEG6VA",
+            "title": "Brave Volunteers"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/xDWoBfJfPd9WzD8Z8",
+            "title": "A Sound Argument"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/utNTeb3j52C6bERv8",
+            "title": "Deceiver"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/sNPmvq5nfvTDHdeL7",
+            "title": "Guides"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/Nw7FF5pMHVt38yt87",
+            "title": "Children of the Forest"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/x24ujSpE8j34x4M19",
+            "title": "Savagery"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/5SSVmU3M5bN7qQAP7",
+            "title": "Sole Salvation"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/84n68ep4rRNohcpi7",
+            "title": "Above and Below"
+          }
+        ]
+      },
+      {
+        "seasonNumber": "4 - Part 2",
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 17",
+            "link": "https://photos.app.goo.gl/ykAR6kqwf7WRmpQJ6",
+            "title": "Judgment"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 18",
+            "link": "https://photos.app.goo.gl/kPpJ2pts4wB86D129",
+            "title": "Sneak Attack"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 19",
+            "link": "https://photos.app.goo.gl/QNKd6fWW14yzBEcR7",
+            "title": "Two Brothers"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 20",
+            "link": "https://photos.app.goo.gl/4Ews3aqWqw1VH4iX9",
+            "title": "Memories of the Future"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 21",
+            "link": "https://photos.app.goo.gl/Ww9EJPPTZ3jPm9je9",
+            "title": "From You, 2,000 Years Ago"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 22",
+            "link": "https://photos.app.goo.gl/SKa3CodpYM476vQE7",
+            "title": "Thaw"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 23",
+            "link": "https://photos.app.goo.gl/jobD2nCrvRQTbCiT6",
+            "title": "Sunset"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 24",
+            "link": "https://photos.app.goo.gl/JnLQK64oKkpXgSJZ6",
+            "title": "Pride"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 25",
+            "link": "https://photos.app.goo.gl/42qw68QrDtzvGP278",
+            "title": "Night of the End"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 26",
+            "link": "https://photos.app.goo.gl/UdrJHqwDVX6BP6Az6",
+            "title": "Traitor"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 27",
+            "link": "https://photos.app.goo.gl/gZ5vD4QR6gve2ayd8",
+            "title": "Retrospective"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 28",
+            "link": "https://photos.app.goo.gl/aHLz5KMq2VFZk9RQ8",
+            "title": "The Dawn of Humanity"
+          }
+        ]
+      },
+      {
+        "seasonNumber": "4 - Part 3",
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/6MiHVgjBRkhNGa3e6",
+            "title": "Judgment"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/W9FuYuSUDScwZ1bB7",
+            "title": "Sneak Attack"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "13 Reasons Why",
+    "tag": "english hindi",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/QkSgdYEZcKGmdRDr5",
             "title": "Tape 1, Side A"
           },
           {
             "id": 2,
             "episode": "Episode 2",
-            "link": "https://photos.app.goo.gl/eaBPgjetH1deErGH8",
+            "link": "https://photos.app.goo.gl/Bn1kjTAHHkvjN7AX6",
             "title": "Tape 1, Side B"
           },
           {
             "id": 3,
             "episode": "Episode 3",
-            "link": "https://photos.app.goo.gl/wsAmoDXTYwrM9SYH8",
+            "link": "https://photos.app.goo.gl/c6rQPMT7yvLbC8ch7",
             "title": "Tape 2, Side A"
           },
           {
             "id": 4,
             "episode": "Episode 4",
-            "link": "https://photos.app.goo.gl/PtqrHxR9TVZBN7t77",
+            "link": "https://photos.app.goo.gl/DZ954enkgs2XrznTA",
             "title": "Tape 2, Side B"
           },
           {
             "id": 5,
             "episode": "Episode 5",
-            "link": "https://photos.app.goo.gl/bUHGW4EhsQ9MdPgB9",
+            "link": "https://photos.app.goo.gl/g2BtG4jVjnt18ccTA",
             "title": "Tape 3, Side A"
           },
           {
             "id": 6,
             "episode": "Episode 6",
-            "link": "https://photos.app.goo.gl/rWjDkmTMsDun6bce9",
+            "link": "https://photos.app.goo.gl/n54TEEzcQfDQwcer6",
             "title": "Tape 3, Side B"
           },
           {
             "id": 7,
             "episode": "Episode 7",
-            "link": "https://photos.app.goo.gl/3sQq77Lyd45KDsBeA",
+            "link": "https://photos.app.goo.gl/f7ZecDVvUVBNiDgW8",
             "title": "Tape 4, Side A"
           },
           {
             "id": 8,
             "episode": "Episode 8",
-            "link": "https://photos.app.goo.gl/cuDr8uRu2ZHbQDYG6",
+            "link": "https://photos.app.goo.gl/cpisbE8gKT1j5i87A",
             "title": "Tape 4, Side B"
           },
           {
             "id": 9,
             "episode": "Episode 9",
-            "link": "https://photos.app.goo.gl/P3X9xYZoTtpGJB879",
+            "link": "https://photos.app.goo.gl/SBQHENsKaxkU4DNw6",
             "title": "Tape 5, Side A"
           },
           {
             "id": 10,
             "episode": "Episode 10",
-            "link": "https://photos.app.goo.gl/uZtbXdUdThV5Wr1k6",
+            "link": "https://photos.app.goo.gl/yBLW6FU7EnxqNKt97",
             "title": "Tape 5, Side B"
           },
           {
             "id": 11,
             "episode": "Episode 11",
-            "link": "https://photos.app.goo.gl/xowLwznJXxfaUMXd9",
+            "link": "https://photos.app.goo.gl/UtfeMLWANXjUvPs36",
             "title": "Tape 6, Side A"
           },
           {
             "id": 12,
             "episode": "Episode 12",
-            "link": "https://photos.app.goo.gl/nb7CHBeoLcFXZCC79",
+            "link": "https://photos.app.goo.gl/bWUTFM4nRxEuhhgx7",
             "title": "Tape 6, Side B"
           },
           {
             "id": 13,
             "episode": "Episode 13",
-            "link": "https://photos.app.goo.gl/6AE9EF1e1dmSApG19",
+            "link": "https://photos.app.goo.gl/akAWuBtYPXFdj1z7A",
             "title": "Tape 7, Side A"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/U9f83ZtcvJwRAJwRA",
+            "title": "The First Polaroid"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/bmNysZbnXLsG8fiF8",
+            "title": "Two Girls Kissing"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/Pf8HaJ6Ngk3Th9M8A",
+            "title": "The Drunk Slut"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/89erNWXSk4xXuZ439",
+            "title": "The Second Polaroid"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/o3efQnbJnC2XpHXi6",
+            "title": "The Chalk Machine"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/uLD4b8qsC3ot2H9b7",
+            "title": "The Smile at the End of the Dock"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/RHP8DthcxnhJDs9AA",
+            "title": "The Third Polaroid"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/eHMdqqy49WrFQych9",
+            "title": "The Little Girl"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/t5JsrSCkNTZCe67T9",
+            "title": "The Missing Page"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/Dmf4CU1GE33R3r3C7",
+            "title": "Smile, Bitches!"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/MwHDCaabaCGYfkAZ7",
+            "title": "Bryce + Chloe"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/L9UsBjAyfZ5rXCsu7",
+            "title": "The Box of Polaroids"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/sNr1nQVefw424hnk8",
+            "title": "Bye"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/LiQJXpBV9NqveiMU6",
+            "title": "Yeah. I'm the New Girl"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/Mg87a4odckWmXP9K8",
+            "title": "If You're Breathing, You're a Liar"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/hR7XvZBdZLKsLM8U8",
+            "title": "The Good Person Is Indistinguishable from the Bad"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/vJK1axiX13B8QSVo7",
+            "title": "Angry, Young and Man"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/DEj6Wz4pVpUmfg7w7",
+            "title": "Nobody's Clean"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/tt1dj2zfwbpLCEUu7",
+            "title": "You Can Tell the Heart of a Man by How He Grieves"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/S9QSvh4RnsZHKYbV8",
+            "title": "There Are a Few Things I Haven’t Told You"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/Vf233su5Vy2vyd1G6",
+            "title": "In High School, Even on a Good Day, It's Hard to Tell Who's on Your Side"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/HU1HEYgCFiHGdZea7",
+            "title": "Always Waiting for the Next Bad News"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/ExwxZjAmY8ZoSqqa9",
+            "title": "The World Closing In"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/Ygh3ZCo8oqdzD9Hu8",
+            "title": "There Are a Number of Problems with Clay Jensen"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/7pTNtAAhs9kVjPr59",
+            "title": "And Then the Hurricane Hit"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/nz3bCs5zvYYSerGe9",
+            "title": "Let the Dead Bury the Dead"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 4,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/K1YUcFbyEPC6wkz48",
+            "title": "Winter Break"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/z8KUGo78JrSN1iyD7",
+            "title": "College Tour"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/Vb2RHCcMRCrtqHpm7",
+            "title": "Valentine’s Day"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/w6NDtHMTCxTAhmnN8",
+            "title": "Senior Camping Trip"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/curPtmvt5ZCgLETr9",
+            "title": "House Party"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/3Pt6LvZYVGs2Tder9",
+            "title": "Thursday"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/UaoEyP9vye6SeyhPA",
+            "title": "College Interview"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/2qSwUab1T3LNnXkt5",
+            "title": "Acceptance/Rejection"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/da6ev1BUf6fnHr9Z9",
+            "title": "Prom"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/nZfFDQBk6cE691kG9",
+            "title": "Graduation"
           }
         ]
       }
@@ -280,6 +1081,59 @@
             "title": "Swarg Ka Dwaar"
           }
         ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/KstHbaLjYjZtFVFj8",
+            "title": "Head On"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/dSzUDGDQxM56KtRb9",
+            "title": "Kohima Calling"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/wEib59eU6gjqbkcT8",
+            "title": "Four Murders And A Funeral"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/XFPiCGZ7BwJKxENn7",
+            "title": "Missed Call"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/N4CD8y6mirPH64v8A",
+            "title": "Off Balance"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/e9CfHz8S8g1LMLvN6",
+            "title": "Of Mothers And Daughters"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/1V3oukDFzhSWWsp26",
+            "title": "Children Of Men"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/Q3ipeqrBzkkZiM7K7",
+            "title": "The Good Samaritan"
+          }
+        ]
       }
     ]
   },
@@ -349,6 +1203,112 @@
             "episode": "Episode 10",
             "link": "https://photos.app.goo.gl/j9w25CGumGvKX2vR8",
             "title": "Alpha and Omega"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/SPBx68gcDDSXJMEVA",
+            "title": "Beginnings and Endings"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/YJ7fLLqU4Gz8uAow7",
+            "title": "Dark Matter"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/YcpypkwfwHnF7AGU7",
+            "title": "Ghosts"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/wUF5EM7SeA4BsWPSA",
+            "title": "The Travelers"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/cBRYhQ7FacuZs4te9",
+            "title": "Lost and Found"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/HUm8MjjkDSoHZdcRA",
+            "title": "An Endless Cycle"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/tXFbMNL825SXcD3y5",
+            "title": "The White Devil"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/xiQPqrDMr6fN6JCA7",
+            "title": "Endings and Beginnings"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/PZ71mijxxjfXMMfc8",
+            "title": "Deja-vu"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/AtY8XgcyYFAjJWr66",
+            "title": "The Survivors"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/Bf1GNL85gcksckbk7",
+            "title": "Adam and Eva"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/xDchxescfr1A4Tzm9",
+            "title": "The Origin"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/tp2Jp2iH4Nntn9Fg6",
+            "title": "Life and Death"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/XTbcoLVb7zkn7emF6",
+            "title": "Light and Shadow"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/Uk1k625o56vr7Bwr8",
+            "title": "Between the Time"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/148r5jHyqUioHusp9",
+            "title": "The Paradise"
           }
         ]
       }
