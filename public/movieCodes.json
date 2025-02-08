@@ -23,12 +23,12 @@
     {
       "code": "qwert",
       "expiryDate": "2025-08-02T23:59:59Z",
-      "status": "not"
+      "status": "active"
     },
     {
       "code": "rabsa",
-      "expiryDate": "2025-08-10T23:59:59Z",
-      "status": "not"
+      "expiryDate": "2025-05-10T23:59:59Z",
+      "status": "active"
     }
   ]
 }

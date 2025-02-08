@@ -1,5 +1,141 @@
 [
   {
+    "seriesName": "Georgie & Mandy's First Marriage",
+    "tag": "english young-sheldon-spinoff",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/uR1JYSxTUzBndAFd6",
+            "title": "The 6:10 to Lubbock"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/NnpcnkoRDoqotbdn7",
+            "title": "Some New York Nonsense"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/4VxhEphCrCszi4WM7",
+            "title": "Secrets, Lies and a Chunk of Change"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/YcHiEcQLAi59tLwq9",
+            "title": "Todd's Mom"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/8VCeEwrDuN9sPFji7",
+            "title": "Thanksgiving"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/rktWngMJ1toBLHxg7",
+            "title": "A Regular Samaritan"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/abRhP4kJUzwAAtLd9",
+            "title": "An Old Mustang"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/TvYYgH5fCJFPws6X9",
+            "title": "Diet Crap"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/mkUNVzxByKWCN8m69",
+            "title": "New Episode (Title Unknown)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Your Friendly Neighborhood Spider-Man",
+    "tag": "english cartoon",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/vNm24v2QHaJ51LFz5",
+            "title": "Amazing Fantasy"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/z2jKBbge3XJv3j4r9",
+            "title": "The Parker Luck"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/CsMeWPHdWeKvwh3h6",
+            "title": "Secret Identity Crisis"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/1q6FVi3sGggPYgBPA",
+            "title": "Hitting the Big Time"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/zKYRD4y8EaJSSUCP8",
+            "title": "The Unicorn Unleashed"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "",
+            "title": "Duel with the Devil"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "",
+            "title": "Scorpion Rising"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "",
+            "title": "Tangled Web"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "",
+            "title": "Hero or Menace"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "",
+            "title": "If This Be My Destiny..."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "seriesName": "Attack on Titan",
     "tag": "anime english",
     "seasons": [
