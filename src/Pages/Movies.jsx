@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
 
 export default function Movies({ authorizeNavigation }) {
   const [movies, setMovies] = useState([]);
@@ -100,17 +99,17 @@ export default function Movies({ authorizeNavigation }) {
         </button>
 
         {/* Header */}
-        <motion.h1
+        <h1
           className="text-4xl font-bold text-center mb-8 text-gray-800"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           🎥 Movie Library
-        </motion.h1>
+        </h1>
 
         {/* Search Bar */}
-        <motion.div
+        <div
           className="flex items-center justify-center mb-10 relative"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -142,10 +141,10 @@ export default function Movies({ authorizeNavigation }) {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full sm:w-96 px-5 py-3 pl-12 rounded-full shadow-md bg-white text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
           />
-        </motion.div>
+        </div>
 
         {/* Movie Grid */}
-        <motion.div
+        <div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -157,7 +156,7 @@ export default function Movies({ authorizeNavigation }) {
         >
           {currentMovies.length > 0 ? (
             currentMovies.map((movie, index) => (
-              <motion.div
+              <div
                 key={`${movie.id}-${index}`} // Unique key
                 className="block h-[220px] p-4 bg-white rounded-lg border-4 border-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-200 cursor-pointer hover:border-red-300 relative"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -186,22 +185,22 @@ export default function Movies({ authorizeNavigation }) {
                     link_off
                   </span>
                 )}
-              </motion.div>
+              </div>
             ))
           ) : (
-            <motion.p
+            <p
               className="text-center text-gray-500 mt-8"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
               No movies found. Try searching something else!
-            </motion.p>
+            </p>
           )}
-        </motion.div>
+        </div>
 
         {/* Pagination */}
-        <motion.div
+        <div
           className="mt-8 flex flex-wrap justify-center items-center space-x-2 max-w-[800px] mx-auto"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -254,7 +253,7 @@ export default function Movies({ authorizeNavigation }) {
           >
             Last
           </button>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
