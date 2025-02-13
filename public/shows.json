@@ -1,5 +1,308 @@
 [
   {
+    "seriesName": "Code Black",
+    "tag": "english",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/EhG8R8tLLAnqzdbr9",
+            "title": "Pilot"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/fnadW9L1P1SNoi527",
+            "title": "We Plug Holes"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/XmFSbt6vVgMBuWio9",
+            "title": "Pre-Existing Conditions"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/5wq6Y1RxYgMRc7As6",
+            "title": "Sometimes It's a Zebra"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/BgabDRNmSwqrV5ov7",
+            "title": "Doctors With Borders"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/mjepjKsHbYeoXiBe8",
+            "title": "In Extremis"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/fk5pCaip5P86FFx67",
+            "title": "Buen Árbol"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/M88kg3XssC6vMbmy7",
+            "title": "You Are the Heart"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/ACVvTGpamAt9xhug9",
+            "title": "The Son Rises"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/tg5ArWmp6Jcga8AdA",
+            "title": "Cardiac Support"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/huExrZJHns1LLgve9",
+            "title": "Black Tag"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/rQ9g4gJ7JFute99p7",
+            "title": "The Fog of War"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/MrUmsDcCYbJjuwp99",
+            "title": "First Date"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/VqQbzvBqn75UHi768",
+            "title": "The Fifth Stage"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/eCY9K8stUinX9Kpu5",
+            "title": "Diagnosis of Exclusion"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/vXVDs4rcBJ38m2uUA",
+            "title": "Hail Mary"
+          },
+          {
+            "id": 17,
+            "episode": "Episode 17",
+            "link": "https://photos.app.goo.gl/JuYGntcfHFH9WEcA7",
+            "title": "Love Hurts"
+          },
+          {
+            "id": 18,
+            "episode": "Episode 18",
+            "link": "https://photos.app.goo.gl/s8YtxbApQoTd4RQy9",
+            "title": "Blood Sport"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/ogsjDeoW8puGVG4w9",
+            "title": "Second Year"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/9vqWNW9cmRZ7pKSu5",
+            "title": "Life and Limb"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/uN8WgEMcK9hg9wL7A",
+            "title": "Corporeal Form"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/nJNvErdUPQvc2dFX8",
+            "title": "Demons and Angels"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/pyRGZLUrjYFKwArX7",
+            "title": "Landslide"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/9bjUu7RSuXaRCHWMA",
+            "title": "Hero Complex"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/Wyao9xgqKM4WdZvc6",
+            "title": "What Lies Beneath"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/fpKwz45EADt2j78q6",
+            "title": "1.0 Bodies"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/zNG6XZxu4j95wxRLA",
+            "title": "Sleight of Hand"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/9i6GVPd9LfCnPVbD7",
+            "title": "Ave Maria"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/y3fweub3CQnSU6AY7",
+            "title": "Exodus"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/KT4hGMuqRGfTCAxc6",
+            "title": "One in a Million"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/NSd1B5o9cvAHSuZN6",
+            "title": "Unfinished Business"
+          },
+          {
+            "id": 14,
+            "episode": "Episode 14",
+            "link": "https://photos.app.goo.gl/J8hGX7VzVEerfqvW6",
+            "title": "Vertigo"
+          },
+          {
+            "id": 15,
+            "episode": "Episode 15",
+            "link": "https://photos.app.goo.gl/r99rCq9kNJWTvPaUA",
+            "title": "The Devil's Workshop"
+          },
+          {
+            "id": 16,
+            "episode": "Episode 16",
+            "link": "https://photos.app.goo.gl/umRhCTWH1WsY2oVu6",
+            "title": "Fallen Angels"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 3,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/88SM3MimPA6SsEXk6",
+            "title": "Third Year"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/XqjjaHx6WNBMNAF5A",
+            "title": "Better Angels"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/GEobxfcfgmH3CVBJ7",
+            "title": "La Familia"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/HwEQiEEMn9seyQPw5",
+            "title": "The Same As Air"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/Zkn5XBRXYQWRo29u6",
+            "title": "Cabin Pressure"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/PrPhRLNyfK8zKzm19",
+            "title": "Hell's Heart"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/Tg9q9yPzfS95MFoz6",
+            "title": "Step Up"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/TYhJB3XHgRwSEEDRA",
+            "title": "Home Stays Home"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/6T9FuL3R5ZKMqEds6",
+            "title": "Only Human"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/drLyNj4YMFfZGmja7",
+            "title": "Change of Heart"
+          },
+          {
+            "id": 11,
+            "episode": "Episode 11",
+            "link": "https://photos.app.goo.gl/UZsbdUXmCBosUgR27",
+            "title": "One of Our Own"
+          },
+          {
+            "id": 12,
+            "episode": "Episode 12",
+            "link": "https://photos.app.goo.gl/W6beiCkrmkgvETjB7",
+            "title": "As Night Comes and I’m Breathing"
+          },
+          {
+            "id": 13,
+            "episode": "Episode 13",
+            "link": "https://photos.app.goo.gl/Qd1CcrzWPkdJBMgx8",
+            "title": "The Business of Saving Lives"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "seriesName": "Cobra Kai",
     "tag": "english",
     "seasons": [
