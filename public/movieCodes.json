@@ -29,6 +29,11 @@
       "code": "rabsa",
       "expiryDate": "2025-05-10T23:59:59Z",
       "status": "active"
+    },
+    {
+      "code": "rrthu",
+      "expiryDate": "2025-08-13T23:59:59Z",
+      "status": "active"
     }
   ]
 }
