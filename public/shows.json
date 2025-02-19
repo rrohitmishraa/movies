@@ -1,5 +1,147 @@
 [
   {
+    "seriesName": "Carol & The End of The World",
+    "tag": "english spanish",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/LiPRv1MuE48VVbP96",
+            "title": "Now Is the Time"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/Gjh9NkPWRmAzVqMk6",
+            "title": "Nothing Is Yours Except Yourself"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/6Z6q7aXukZG1tCNu5",
+            "title": "Say Yes to Everything"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/xM5oMen3M91roXBD9",
+            "title": "So Many Friends, So Much Family"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/9QiJePFQXBgXyTb18",
+            "title": "All Your Decisions Are Meaningless"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/qkdwS78wwrGL53sK6",
+            "title": "Everything You Love Will Vanish"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/zkbDgau2DNj7AFRG9",
+            "title": "People Aren’t All Bad"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/DhnqBH47nAC8QfKb8",
+            "title": "If Only I Had Been True"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/ak3cv3yukBonVaWR6",
+            "title": "Carol & the End of the World"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/dnNVSgp4n5otPEHQA",
+            "title": "One Last Thing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "seriesName": "Band of Brothers",
+    "tag": "english",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "episode": "Episode 1",
+            "link": "https://photos.app.goo.gl/GJWXuzK6Wu3rR7Jw8",
+            "title": "Currahee"
+          },
+          {
+            "id": 2,
+            "episode": "Episode 2",
+            "link": "https://photos.app.goo.gl/eDbo8AYNwAhYuigW8",
+            "title": "Day of Days"
+          },
+          {
+            "id": 3,
+            "episode": "Episode 3",
+            "link": "https://photos.app.goo.gl/43dUHMtRBhTw7i6M7",
+            "title": "Carentan"
+          },
+          {
+            "id": 4,
+            "episode": "Episode 4",
+            "link": "https://photos.app.goo.gl/eKHS31LsZr2K2dn16",
+            "title": "Replacements"
+          },
+          {
+            "id": 5,
+            "episode": "Episode 5",
+            "link": "https://photos.app.goo.gl/WLPdjBjYsUoPcsTJ9",
+            "title": "Crossroads"
+          },
+          {
+            "id": 6,
+            "episode": "Episode 6",
+            "link": "https://photos.app.goo.gl/61Yx5A5JAo6aq9zz5",
+            "title": "Bastogne"
+          },
+          {
+            "id": 7,
+            "episode": "Episode 7",
+            "link": "https://photos.app.goo.gl/UntbajNERWnSDF5M9",
+            "title": "The Breaking Point"
+          },
+          {
+            "id": 8,
+            "episode": "Episode 8",
+            "link": "https://photos.app.goo.gl/ah9dVqXtRSwQEGrC8",
+            "title": "The Last Patrol"
+          },
+          {
+            "id": 9,
+            "episode": "Episode 9",
+            "link": "https://photos.app.goo.gl/5CWRbexLkhhE4dut7",
+            "title": "Why We Fight"
+          },
+          {
+            "id": 10,
+            "episode": "Episode 10",
+            "link": "https://photos.app.goo.gl/yZCtAxrqDrs6s7t86",
+            "title": "Points"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "seriesName": "Code Black",
     "tag": "english",
     "seasons": [
