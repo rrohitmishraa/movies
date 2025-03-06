@@ -1,5 +1,66 @@
 [
   {
+    "seriesName": "One Piece",
+    "tag": "english anime",
+    "seasons": [[]]
+  },
+  {
+    "seriesName": "One Piece",
+    "tag": "english",
+    "seasons": [
+      [
+        {
+          "id": 1,
+          "episode": "Episode 1",
+          "link": "https://photos.app.goo.gl/HP5jnUeBHBufgT3q8",
+          "title": "Romance Dawn"
+        },
+        {
+          "id": 2,
+          "episode": "Episode 2",
+          "link": "https://photos.app.goo.gl/tUz34WftV5zSeWm3A",
+          "title": "The Man in the Straw Hat"
+        },
+        {
+          "id": 3,
+          "episode": "Episode 3",
+          "link": "https://photos.app.goo.gl/BhU3w6ud2w9q5FBp8",
+          "title": "Tell No Tales"
+        },
+        {
+          "id": 4,
+          "episode": "Episode 4",
+          "link": "https://photos.app.goo.gl/T27QrLUBqty5M3ss5",
+          "title": "The Pirates Are Coming"
+        },
+        {
+          "id": 5,
+          "episode": "Episode 5",
+          "link": "https://photos.app.goo.gl/Mt9LuF6q8hh6XofB9",
+          "title": "Eat at Baratie!"
+        },
+        {
+          "id": 6,
+          "episode": "Episode 6",
+          "link": "https://photos.app.goo.gl/BmJNHuLTBBaX1fmQ8",
+          "title": "The Chef and the Chore Boy"
+        },
+        {
+          "id": 7,
+          "episode": "Episode 7",
+          "link": "https://photos.app.goo.gl/SgaDFuadnBaTQYTG6",
+          "title": "The Girl with the Sawfish Tattoo"
+        },
+        {
+          "id": 8,
+          "episode": "Episode 8",
+          "link": "https://photos.app.goo.gl/qyV1jfYEHCqD6m669",
+          "title": "Worst in the East"
+        }
+      ]
+    ]
+  },
+  {
     "seriesName": "Four Years Later",
     "tag": "english, hindi",
     "seasons": [
