@@ -12,7 +12,7 @@ export default function Home({ authorizeNavigation }) {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [submitPopupContent, setSubmitPopupContent] = useState("");
   const [showSubmitPopup, setShowSubmitPopup] = useState(false);
-  const [predefinedRoutes, setPredefinedRoutes] = useState([]);
+  // const [predefinedRoutes, setPredefinedRoutes] = useState([]);
   const [feedback, setFeedback] = useState({
     suggestions: "",
     name: "",
@@ -56,7 +56,7 @@ export default function Home({ authorizeNavigation }) {
 
       // Check if the query matches any movie code
       const matchedCode = movieCodesData.movieCodes.find(
-        (code) => code.code.toLowerCase() === trimmedQuery
+        (code) => code.code.toLowerCase() === trimmedQuery,
       );
 
       if (matchedCode) {
@@ -79,7 +79,7 @@ export default function Home({ authorizeNavigation }) {
       } else {
         // Perform a dictionary search if the query doesn't match any movie code
         const response = await fetch(
-          `https://api.dictionaryapi.dev/api/v2/entries/en/${trimmedQuery}`
+          `https://api.dictionaryapi.dev/api/v2/entries/en/${trimmedQuery}`,
         );
         const data = await response.json();
 
@@ -138,7 +138,7 @@ export default function Home({ authorizeNavigation }) {
     } catch (error) {
       console.error("Error submitting feedback:", error);
       setSubmitPopupContent(
-        "Failed to submit feedback. Please try again later."
+        "Failed to submit feedback. Please try again later.",
       );
       setShowSubmitPopup(true);
     } finally {
