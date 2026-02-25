@@ -12,7 +12,7 @@ export default function Home({ authorizeNavigation }) {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [submitPopupContent, setSubmitPopupContent] = useState("");
   const [showSubmitPopup, setShowSubmitPopup] = useState(false);
-  // const [predefinedRoutes, setPredefinedRoutes] = useState([]);
+  const [, setPredefinedRoutes] = useState([]);
   const [feedback, setFeedback] = useState({
     suggestions: "",
     name: "",
