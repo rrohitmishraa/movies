@@ -14,26 +14,6 @@
       "code": "rohit",
       "expiryDate": "5025-10-31T23:59:59Z",
       "status": "active"
-    },
-    {
-      "code": "yudh",
-      "expiryDate": "2025-08-02T23:59:59Z",
-      "status": "active"
-    },
-    {
-      "code": "qwert",
-      "expiryDate": "2025-08-02T23:59:59Z",
-      "status": "active"
-    },
-    {
-      "code": "rabsa",
-      "expiryDate": "2025-05-10T23:59:59Z",
-      "status": "active"
-    },
-    {
-      "code": "rrthu",
-      "expiryDate": "2025-08-13T23:59:59Z",
-      "status": "active"
     }
   ]
 }
