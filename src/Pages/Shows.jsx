@@ -3,58 +3,62 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function Shows() {
+  const navigate = useNavigate();
+
   const [shows, setShows] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSeries, setSelectedSeries] = useState(null);
   const [selectedSeason, setSelectedSeason] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const [seriesPerPage] = useState(6);
-  const navigate = useNavigate();
 
+  const seriesPerPage = 6;
+
+  // Fetch shows and store original index
   useEffect(() => {
     fetch("/shows.json")
-      .then((response) => response.json())
-      .then((data) => setShows(data))
-      .catch((error) => console.error("Error fetching shows:", error));
+      .then((res) => res.json())
+      .then((data) => {
+        const cleanData = data
+          .filter((s) => s.seriesName && s.seriesName.trim() !== "")
+          .map((show, index) => ({
+            ...show,
+            originalIndex: index + 1,
+          }));
+
+        setShows(cleanData);
+      })
+      .catch((err) => console.error("Error fetching shows:", err));
   }, []);
 
+  // Reset page when searching
   useEffect(() => {
-    if (shows.length > 0 && !selectedSeries) {
-      const defaultSeries = shows[0];
-      setSelectedSeries(defaultSeries);
-      setSelectedSeason(defaultSeries.seasons[0]);
-    }
-  }, [shows, selectedSeries]);
+    setCurrentPage(1);
+  }, [searchTerm]);
 
-  useEffect(() => {
-    if (
-      selectedSeries &&
-      selectedSeries.seasons.length > 0 &&
-      !selectedSeason
-    ) {
-      setSelectedSeason(selectedSeries.seasons[0]);
-    }
-  }, [selectedSeries, selectedSeason]);
+  // Filter logic (same structure as Movies)
+  const filteredShows = shows.filter((show) => {
+    const term = searchTerm.toLowerCase();
 
-  const filteredShows = shows.filter(
-    (show) =>
-      show.seriesName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      show.tag.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      show.seasons.some((season) =>
-        season.episodes.some(
+    return (
+      show.seriesName.toLowerCase().includes(term) ||
+      show.tag?.toLowerCase().includes(term) ||
+      show.seasons?.some((season) =>
+        season.episodes?.some(
           (episode) =>
-            episode.episode.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            episode.title.toLowerCase().includes(searchTerm.toLowerCase())
-        )
+            episode.episode?.toLowerCase().includes(term) ||
+            episode.title?.toLowerCase().includes(term),
+        ),
       )
-  );
+    );
+  });
 
-  // Get current series
+  // Pagination
   const indexOfLastSeries = currentPage * seriesPerPage;
   const indexOfFirstSeries = indexOfLastSeries - seriesPerPage;
+
   const currentSeries = filteredShows.slice(
     indexOfFirstSeries,
-    indexOfLastSeries
+    indexOfLastSeries,
   );
 
   const totalPages = Math.ceil(filteredShows.length / seriesPerPage);
@@ -63,212 +67,178 @@ export default function Shows() {
     setCurrentPage(pageNumber);
   };
 
-  const renderPagination = () => {
-    const pages = [];
-    for (let i = 1; i <= totalPages; i++) {
-      pages.push(
-        <button
-          key={i}
-          onClick={() => handlePageChange(i)}
-          className={`px-3 py-2 rounded-md ${
-            currentPage === i
-              ? "bg-red-500 text-white"
-              : "bg-gray-200 text-gray-800 hover:bg-red-400"
-          }`}
-        >
-          {i}
-        </button>
-      );
-    }
-
-    return (
-      <div className="flex justify-center items-center flex-wrap gap-2 mt-6">
-        <button
-          onClick={() => handlePageChange(1)}
-          disabled={currentPage === 1}
-          className={`px-3 py-2 rounded ${
-            currentPage === 1 ? "bg-gray-300" : "bg-gray-200 hover:bg-gray-300"
-          }`}
-        >
-          First
-        </button>
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className={`px-3 py-2 rounded ${
-            currentPage === 1 ? "bg-gray-300" : "bg-gray-200 hover:bg-gray-300"
-          }`}
-        >
-          Previous
-        </button>
-        {pages}
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className={`px-3 py-2 rounded ${
-            currentPage === totalPages
-              ? "bg-gray-300"
-              : "bg-gray-200 hover:bg-gray-300"
-          }`}
-        >
-          Next
-        </button>
-        <button
-          onClick={() => handlePageChange(totalPages)}
-          disabled={currentPage === totalPages}
-          className={`px-3 py-2 rounded ${
-            currentPage === totalPages
-              ? "bg-gray-300"
-              : "bg-gray-200 hover:bg-gray-300"
-          }`}
-        >
-          Last
-        </button>
-      </div>
-    );
-  };
-
   return (
-    <div className="bg-gray-100 text-gray-900 p-4 sm:p-6">
-      <div className="max-w-5xl mx-auto relative">
-        <button
-          onClick={() => navigate("/movies")}
-          className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 transition"
-        >
-          Movies
-        </button>
-        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-800">
-          📺 Show Library
-        </h1>
+    <div className="min-h-screen bg-brand-soft px-6 py-14">
+      <div className="max-w-7xl mx-auto">
+        {/* HEADER */}
+        <div className="text-center mb-12">
+          <h1 className="text-5xl sm:text-6xl font-extrabold">Show Library</h1>
 
-        <div className="relative mb-6 sm:mb-10">
-          <input
-            type="text"
-            placeholder="Search shows..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full sm:w-96 mx-auto block px-5 py-3 rounded-full shadow-md bg-white text-gray-700 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition"
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute top-3 left-3 w-6 h-6 text-gray-400 cursor-pointer"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            onClick={() => navigate("/")}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M8 16l-4-4m0 0l4-4m-4 4h16"
-            />
-          </svg>
+          <div className="mt-8 flex justify-center gap-4">
+            <button
+              onClick={() => navigate("/movies")}
+              className="bg-brand-gradient text-white px-6 py-3 rounded-full shadow-md hover:scale-105 transition"
+            >
+              Movies
+            </button>
+          </div>
         </div>
 
-        <div className="space-y-6">
-          <h2 className="text-2xl font-bold mb-4">Series</h2>
-          <motion.div className="w-full flex flex-wrap gap-6">
-            {currentSeries.map((show, index) => (
+        {/* SEARCH */}
+        <div className="flex justify-center mb-14">
+          <div className="relative w-full max-w-2xl">
+            <button
+              onClick={() => navigate("/")}
+              className="absolute left-5 top-1/2 -translate-y-1/2 text-sm font-medium text-brand-blue"
+            >
+              ← Back
+            </button>
+
+            <input
+              type="text"
+              placeholder="Search shows, tags, or episodes..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-24 pr-24 py-5 rounded-full border border-gray-200 shadow-md text-lg focus:outline-none focus:ring-4 focus:ring-brand-softBlue focus:border-brand-blue transition"
+            />
+
+            {searchTerm && (
+              <button
+                onClick={() => setSearchTerm("")}
+                className="absolute right-5 top-1/2 -translate-y-1/2 text-sm font-medium text-gray-500"
+              >
+                Clear ✕
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* SERIES GRID */}
+        {currentSeries.length > 0 ? (
+          <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+            {currentSeries.map((show) => (
               <motion.div
                 key={show.seriesName}
-                className={`flex-grow basis-1/2 sm:basis-1/3 lg:basis-1/4 bg-white p-6 rounded-lg border-0 shadow-lg ${
-                  selectedSeries === show
-                    ? "border-red-500 shadow-xl ring-2 ring-red-400"
-                    : "hover:shadow-xl hover:border-red-300"
-                } cursor-pointer`}
+                className={`bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-2 transition cursor-pointer border border-gray-100 ${
+                  selectedSeries === show ? "ring-2 ring-brand-blue" : ""
+                }`}
                 onClick={() => {
                   setSelectedSeries(show);
                   setSelectedSeason(null);
                 }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.03 }}
               >
-                <span className="top-2 left-3 text-xs font-semibold text-gray-500 bg-gray-200 rounded-[6px] h-[25px] w-[40px] flex justify-center items-center">
-                  {indexOfFirstSeries + index + 1}
-                </span>
-                <h2 className="text-xl font-medium text-gray-800 hover:text-red-400 mt-6 mb-2 border-b border-gray-300 pb-2">
-                  {show.seriesName}
-                </h2>
-                <p className="text-gray-600 text-xs italic mt-2">#{show.tag}</p>
+                <div className="text-xs text-gray-400 mb-3">
+                  #{show.originalIndex}
+                </div>
+
+                <h2 className="text-xl font-bold mb-4">{show.seriesName}</h2>
+
+                <p className="text-xs text-gray-500">#{show.tag}</p>
               </motion.div>
             ))}
           </motion.div>
+        ) : (
+          <p className="text-center text-gray-500">No shows found.</p>
+        )}
 
-          {renderPagination()}
+        {/* PAGINATION */}
+        {totalPages > 1 && (
+          <div className="mt-16 flex justify-center gap-4 flex-wrap">
+            <button
+              onClick={() => handlePageChange(1)}
+              disabled={currentPage === 1}
+              className="px-4 py-2 bg-gray-200 rounded disabled:opacity-40"
+            >
+              First
+            </button>
 
-          {/* Seasons Section */}
-          {selectedSeries && (
-            <div>
-              <h2 className="text-2xl font-bold mb-4 mt-6">
-                {selectedSeries.seriesName}
-              </h2>
-              <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {selectedSeries.seasons.map((season, index) => (
-                  <motion.div
-                    key={index}
-                    className={`p-6 bg-white rounded-lg border-0 shadow-lg ${
-                      selectedSeason === season
-                        ? "border-red-500 shadow-xl ring-2 ring-red-400"
-                        : "hover:shadow-xl hover:border-red-300"
-                    } cursor-pointer`}
-                    onClick={() => setSelectedSeason(season)}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <h3 className="text-base sm:text-lg font-medium text-gray-800 hover:text-red-400">
-                      Season {season.seasonNumber}
-                    </h3>
-                  </motion.div>
-                ))}
-              </motion.div>
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="px-4 py-2 bg-gray-200 rounded disabled:opacity-40"
+            >
+              Previous
+            </button>
+
+            <span className="px-4 py-2 font-medium">
+              Page {currentPage} of {totalPages}
+            </span>
+
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 bg-gray-200 rounded disabled:opacity-40"
+            >
+              Next
+            </button>
+
+            <button
+              onClick={() => handlePageChange(totalPages)}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 bg-gray-200 rounded disabled:opacity-40"
+            >
+              Last
+            </button>
+          </div>
+        )}
+
+        {/* SEASONS */}
+        {selectedSeries && (
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold mb-6">
+              {selectedSeries.seriesName}
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {selectedSeries.seasons.map((season, index) => (
+                <div
+                  key={index}
+                  className={`bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition cursor-pointer border ${
+                    selectedSeason === season
+                      ? "ring-2 ring-brand-blue"
+                      : "border-gray-100"
+                  }`}
+                  onClick={() => setSelectedSeason(season)}
+                >
+                  <h3 className="font-semibold text-lg">
+                    Season {season.seasonNumber}
+                  </h3>
+                </div>
+              ))}
             </div>
-          )}
+          </div>
+        )}
 
-          {/* Episodes Section */}
-          {selectedSeason && (
-            <div>
-              <h2 className="text-2xl font-bold mb-4 mt-6">
-                Season {selectedSeason.seasonNumber}
-              </h2>
-              <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {selectedSeason.episodes.map((episode) => (
-                  <motion.div
-                    key={episode.id}
-                    className="p-6 bg-white rounded-lg border-0 shadow-lg hover:shadow-xl hover:border-red-300"
-                    whileHover={{ scale: 1.05 }}
+        {/* EPISODES */}
+        {selectedSeason && (
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold mb-6">
+              Season {selectedSeason.seasonNumber}
+            </h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {selectedSeason.episodes.map((episode) => (
+                <div
+                  key={episode.id}
+                  className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition border border-gray-100"
+                >
+                  <a
+                    href={episode.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
                   >
-                    <a
-                      href={episode.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-base sm:text-lg font-medium text-gray-800 hover:text-red-400 relative"
-                    >
-                      {!episode.link && (
-                        <span
-                          className="material-icons-outlined text-gray-500 absolute bottom-4 right-4"
-                          title="No link available"
-                        >
-                          link_off
-                        </span>
-                      )}
-                      <span className="text-gray-600 text-xs">
-                        #{episode.episode}
-                      </span>
-                      <br />
-                      <span className="font-medium text-gray-800">
-                        {episode.title}
-                      </span>
-                    </a>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          )}
-        </div>
+                    <span className="text-xs text-gray-400">
+                      #{episode.episode}
+                    </span>
 
-        {filteredShows.length === 0 && (
-          <p className="text-center text-gray-500 mt-8">
-            No shows found. Try searching something else!
-          </p>
+                    <div className="font-semibold mt-2">{episode.title}</div>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
       </div>
     </div>

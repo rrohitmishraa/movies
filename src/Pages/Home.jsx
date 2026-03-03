@@ -1,327 +1,129 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import PopupModal from "../components/PopupModal";
+import SearchBar from "../components/SearchBar";
+import FeedbackWidget from "../components/FeedbackWidget";
 
 export default function Home({ authorizeNavigation }) {
-  const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [showPopup, setShowPopup] = useState(false);
   const [popupContent, setPopupContent] = useState("");
-  const [showFeedbackForm, setShowFeedbackForm] = useState(false);
-  const [submitPopupContent, setSubmitPopupContent] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
+  const [submitPopupContent] = useState("");
   const [showSubmitPopup, setShowSubmitPopup] = useState(false);
-  const [, setPredefinedRoutes] = useState([]);
+  const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [feedback, setFeedback] = useState({
     suggestions: "",
     name: "",
-    ip: "",
   });
+
   const navigate = useNavigate();
-
-  // Fetch movie codes from the JSON file
-  useEffect(() => {
-    fetch("/movieCodes.json")
-      .then((response) => response.json())
-      .then((data) => setPredefinedRoutes(data.movieCodes))
-      .catch((error) => console.error("Error loading movie codes:", error));
-  }, []);
-
-  const isCodeExpired = (expiryDate) => {
-    const currentDate = new Date();
-    const expiry = new Date(expiryDate);
-
-    // Log the current and expiry date to debug
-    console.log("Current Date:", currentDate.toISOString()); // Logs in ISO format
-    console.log("Expiry Date:", expiry.toISOString()); // Logs in ISO format
-
-    // Ensure that the expiry date is a valid date before comparing
-    if (isNaN(expiry)) {
-      console.error("Invalid expiry date:", expiryDate);
-      return true; // If invalid, consider it expired
-    }
-
-    // Compare the current date with the expiry date
-    return currentDate > expiry;
-  };
 
   const handleSearch = async () => {
     const trimmedQuery = searchQuery.trim().toLowerCase();
+    if (!trimmedQuery) return;
 
     try {
-      // Fetch movie codes from the JSON file
-      const movieCodesResponse = await fetch("/movieCodes.json");
-      const movieCodesData = await movieCodesResponse.json();
+      const res = await fetch("/movieCodes.json");
+      const data = await res.json();
 
-      // Check if the query matches any movie code
-      const matchedCode = movieCodesData.movieCodes.find(
+      const matchedCode = data.movieCodes.find(
         (code) => code.code.toLowerCase() === trimmedQuery,
       );
 
       if (matchedCode) {
-        // If the code is found, check if it's expired
-        const isExpired = isCodeExpired(matchedCode.expiryDate);
-
-        // Log the result of expiry check for debugging
-        console.log(`Is code "${matchedCode.code}" expired? ${isExpired}`);
-
-        if (isExpired) {
-          setPopupContent("This code has expired.");
-        } else {
-          // Authorize navigation and navigate to the corresponding page
-          authorizeNavigation();
-          navigate(`/${matchedCode.code}`);
-        }
-      } else if (trimmedQuery === "wallpapers") {
-        // Open the link for wallpapers
-        window.open("https://photos.app.goo.gl/sxpqFZkwpoJxqMD36");
+        authorizeNavigation();
+        navigate(`/${matchedCode.code}`);
       } else {
-        // Perform a dictionary search if the query doesn't match any movie code
-        const response = await fetch(
+        const dictRes = await fetch(
           `https://api.dictionaryapi.dev/api/v2/entries/en/${trimmedQuery}`,
         );
-        const data = await response.json();
+        const dictData = await dictRes.json();
 
-        if (data.title) {
+        if (dictData.title) {
           setPopupContent("Word not found!");
         } else {
-          setPopupContent(data[0].meanings[0].definitions[0].definition);
+          setPopupContent(dictData[0].meanings[0].definitions[0].definition);
         }
+
+        setShowPopup(true);
       }
-    } catch (error) {
-      setPopupContent("An error occurred while searching.");
-    }
-
-    setShowPopup(true);
-  };
-
-  const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
-      handleSearch();
-    }
-  };
-
-  const handleOutsideClick = (e) => {
-    if (e.target.id === "popup-container") {
-      setShowPopup(false);
-    }
-  };
-
-  const handleFeedbackSubmit = async () => {
-    try {
-      setLoading(true); // Set loading to true
-      const ipResponse = await fetch("https://api.ipify.org/?format=json");
-      const ipData = await ipResponse.json();
-
-      const IP = ipData.ip;
-
-      // Add the IP address to the feedback object
-      const feedbackWithIp = {
-        ...feedback,
-        ipAddress: IP,
-      };
-
-      await fetch(`https://movies-server-xfjy.onrender.com/feedback`, {
-        // await fetch(`http://localhost:5001/feedback`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(feedbackWithIp),
-      });
-
-      setSubmitPopupContent("Feedback submitted successfully!");
-      setShowSubmitPopup(true);
-      setFeedback({ suggestions: "", name: "", ip: "" });
-      setShowFeedbackForm(false);
-    } catch (error) {
-      console.error("Error submitting feedback:", error);
-      setSubmitPopupContent(
-        "Failed to submit feedback. Please try again later.",
-      );
-      setShowSubmitPopup(true);
-    } finally {
-      setLoading(false); // Reset loading state
+    } catch (err) {
+      setPopupContent("Something went wrong.");
+      setShowPopup(true);
     }
   };
 
   return (
-    <div
-      className="flex flex-col items-center justify-center h-screen bg-gray-100 px-4"
-      onClick={handleOutsideClick}
-    >
-      {/* Header */}
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-pink-50 via-white to-blue-50 text-gray-900">
       <Header />
 
-      {/* Logo */}
-      <div>
-        <img
-          src="logo.png"
-          alt="Logo"
-          className="h-32 sm:h-40 object-contain"
-        />
-      </div>
+      <main className="flex-1 flex flex-col items-center justify-center px-6 text-center">
+        {/* Big Playful Heading */}
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight"
+        >
+          Type it.
+          <br />
+          <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">
+            Find it.
+          </span>
+        </motion.h1>
 
-      {/* Search Bar */}
-      <div className="w-full max-w-md">
-        <div className="flex items-center px-4 py-2 bg-white rounded-full shadow-md">
-          <input
-            type="text"
-            className="flex-grow p-2 text-sm outline-none text-gray-700 placeholder-gray-500"
-            placeholder="Search anything"
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="mt-6 text-lg sm:text-xl text-gray-600 max-w-xl"
+        >
+          Search any word — instantly unlock results.
+        </motion.p>
+
+        {/* Dominant Search Area */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="mt-12 w-full max-w-2xl"
+        >
+          <SearchBar
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onSearch={handleSearch}
+            onKeyPress={(e) => e.key === "Enter" && handleSearch()}
           />
-        </div>
+        </motion.div>
+      </main>
 
-        {/* Search Button */}
-        <div className="flex justify-center mt-4">
-          <button
-            className="px-6 py-2 text-base text-white bg-red-400 rounded-lg hover:bg-red-600 transition-all"
-            onClick={handleSearch}
-          >
-            Search
-          </button>
-        </div>
-      </div>
-
-      {/* Popup */}
       {showPopup && (
-        <motion.div
-          id="popup-container"
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -50 }}
-          transition={{
-            type: "spring",
-            damping: 25,
-            stiffness: 300,
-            duration: 0.5,
-          }}
-        >
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-xs w-full mx-4">
-            <h3 className="text-center text-xl font-semibold text-gray-800">
-              Search Result
-            </h3>
-            <p className="mt-2 text-center text-gray-700">{popupContent}</p>
-            <button
-              className="mt-4 px-4 py-2 w-full bg-red-500 text-white rounded-lg hover:bg-red-700 transition-all"
-              onClick={() => setShowPopup(false)}
-            >
-              Close
-            </button>
-          </div>
-        </motion.div>
+        <PopupModal
+          title="Result"
+          content={popupContent}
+          onClose={() => setShowPopup(false)}
+        />
       )}
 
-      {/* Submit Popup */}
       {showSubmitPopup && (
-        <motion.div
-          id="popup-container"
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -50 }}
-          transition={{
-            type: "spring",
-            damping: 25,
-            stiffness: 300,
-            duration: 0.5,
-          }}
-        >
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-xs w-full mx-4">
-            <h3 className="text-center text-xl font-semibold text-gray-800">
-              THANKS
-            </h3>
-            <p className="mt-2 text-center text-gray-700">
-              {submitPopupContent}
-            </p>
-            <button
-              className="mt-4 px-4 py-2 w-full bg-red-500 text-white rounded-lg hover:bg-red-700 transition-all"
-              onClick={() => setShowSubmitPopup(false)}
-            >
-              Close
-            </button>
-          </div>
-        </motion.div>
+        <PopupModal
+          title="Thanks"
+          content={submitPopupContent}
+          onClose={() => setShowSubmitPopup(false)}
+        />
       )}
 
-      {/* Feedback Button and Form */}
-      <motion.div
-        className="fixed bottom-4 right-4"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
-        onClick={(e) => e.stopPropagation()} // Prevent triggering outside click handler
-      >
-        {!showFeedbackForm && (
-          <button
-            className="absolute bg-blue-500 bottom-0 right-0 cursor-pointer text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all"
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowFeedbackForm(true);
-            }}
-          >
-            Feedback
-          </button>
-        )}
+      <FeedbackWidget
+        showForm={showFeedbackForm}
+        setShowForm={setShowFeedbackForm}
+        feedback={feedback}
+        setFeedback={setFeedback}
+        onSubmit={() => {}}
+      />
 
-        {showFeedbackForm && (
-          <motion.div
-            className="bg-white p-4 rounded-lg shadow-lg w-80"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              Feedback Form
-            </h3>
-            <textarea
-              className="w-full p-2 border rounded-md mb-2"
-              placeholder="Enter your suggestions"
-              value={feedback.suggestions}
-              onChange={(e) =>
-                setFeedback({ ...feedback, suggestions: e.target.value })
-              }
-            />
-            <input
-              type="text"
-              className="w-full p-2 border rounded-md mb-4"
-              placeholder="Your Name"
-              value={feedback.name}
-              onChange={(e) =>
-                setFeedback({ ...feedback, name: e.target.value })
-              }
-            />
-            <div className="flex justify-between">
-              <button
-                className="bg-gray-300 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-400 transition-all"
-                onClick={() => setShowFeedbackForm(false)}
-              >
-                Cancel
-              </button>
-              <button
-                className={`bg-green-500 text-white px-4 py-2 rounded-md transition-all ${
-                  loading
-                    ? "opacity-50 cursor-not-allowed"
-                    : "hover:bg-green-700"
-                }`}
-                onClick={handleFeedbackSubmit}
-                disabled={loading} // Disable button when loading
-              >
-                {loading ? "Sending..." : "Submit"}
-              </button>
-            </div>
-          </motion.div>
-        )}
-      </motion.div>
-
-      {/* Footer */}
       <Footer />
     </div>
   );
