@@ -13,11 +13,15 @@ export default function TwentySix() {
 
   // Fetch movies and store original index
   useEffect(() => {
-    fetch("/twentysix.json")
+    fetch(
+      `https://myjson.unlinkly.com/api/sheet/1ejPpiDw_eEWovr05C-G0NTwe3ll8996gzfCWm0nzbjg/TwentySix?t=${Date.now()}`,
+    )
       .then((res) => res.json())
-      .then((data) => {
+      .then((json) => {
+        const data = Array.isArray(json) ? json : json?.data || [];
+
         const cleanData = data
-          .filter((m) => m.name && m.name.trim() !== "")
+          .filter((m) => m.name && String(m.name).trim() !== "")
           .map((movie, index) => ({
             ...movie,
             originalIndex: index + 1,
@@ -38,8 +42,10 @@ export default function TwentySix() {
     const term = searchTerm.toLowerCase();
 
     return (
-      movie.name.toLowerCase().includes(term) ||
-      movie.tags?.toLowerCase().includes(term)
+      String(movie.name).toLowerCase().includes(term) ||
+      String(movie.tags || "")
+        .toLowerCase()
+        .includes(term)
     );
   });
 

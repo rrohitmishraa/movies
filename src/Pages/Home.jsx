@@ -26,11 +26,14 @@ export default function Home({ authorizeNavigation }) {
     if (!trimmedQuery) return;
 
     try {
-      const res = await fetch("/movieCodes.json");
-      const data = await res.json();
+      const res = await fetch(
+        `https://myjson.unlinkly.com/api/sheet/1ejPpiDw_eEWovr05C-G0NTwe3ll8996gzfCWm0nzbjg/Codes?t=${Date.now()}`,
+      );
+      const json = await res.json();
+      const data = Array.isArray(json) ? json : json?.data || [];
 
-      const matchedCode = data.movieCodes.find(
-        (code) => code.code.toLowerCase() === trimmedQuery,
+      const matchedCode = data.find(
+        (code) => String(code.code).toLowerCase() === trimmedQuery,
       );
 
       if (matchedCode) {

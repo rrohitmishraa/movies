@@ -10,18 +10,34 @@ export default function Movies() {
 
   const moviesPerPage = 20;
 
-  // Fetch movies
+  // Fetch movies from YOUR API
   useEffect(() => {
-    fetch("/movies.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const cleanData = data.filter((m) => m.name && m.name.trim() !== "");
+    const fetchMovies = async () => {
+      try {
+        const res = await fetch(
+          `https://myjson.unlinkly.com/api/sheet/1ejPpiDw_eEWovr05C-G0NTwe3ll8996gzfCWm0nzbjg/Movies?t=${Date.now()}`,
+          { cache: "no-store" },
+        );
+
+        const json = await res.json();
+
+        // handle both formats (you learned this the hard way 😏)
+        const data = Array.isArray(json) ? json : json.data;
+
+        const cleanData = data
+          .filter((m) => m.name && m.name.trim() !== "")
+          .reverse();
+
         setMovies(cleanData);
-      })
-      .catch((err) => console.error("Error loading movies:", err));
+      } catch (err) {
+        console.error("Error loading movies:", err);
+      }
+    };
+
+    fetchMovies();
   }, []);
 
-  // Reset page when search changes (including clear)
+  // Reset page when search changes
   useEffect(() => {
     setCurrentPage(1);
   }, [searchTerm]);
@@ -31,7 +47,7 @@ export default function Movies() {
     const term = searchTerm.toLowerCase();
 
     return (
-      movie.name.toLowerCase().includes(term) ||
+      movie.name?.toLowerCase().includes(term) ||
       movie.tags?.toLowerCase().includes(term)
     );
   });
@@ -52,9 +68,8 @@ export default function Movies() {
   };
 
   const handleCardClick = (url) => {
-    if (url) {
-      window.open(url, "_blank", "noopener,noreferrer");
-    }
+    if (!url || !url.startsWith("http")) return;
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -107,7 +122,6 @@ export default function Movies() {
         {currentMovies.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
             {currentMovies.map((movie) => {
-              // 🔥 ORIGINAL INDEX FROM FULL MOVIES ARRAY
               const originalIndex =
                 movies.findIndex((m) => m.id === movie.id) + 1;
 
