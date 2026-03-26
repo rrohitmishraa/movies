@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Movies() {
@@ -19,12 +19,26 @@ export default function Movies() {
           { cache: "no-store" },
         );
 
-        const json = await res.json();
+        const text = await res.text();
 
-        // handle both formats (you learned this the hard way 😏)
-        const data = Array.isArray(json) ? json : json.data;
+        let json;
+        try {
+          json = JSON.parse(text);
+        } catch (e) {
+          console.error("Invalid JSON response:", text);
+          return;
+        }
+
+        const data = Array.isArray(json) ? json : json?.data || [];
 
         const cleanData = data
+          .map((m, index) => ({
+            ...m,
+            name: m.name || "",
+            url: m.url || m["url_"] || m["url "] || "",
+            tags: m.tags || "",
+            originalIndex: index + 1,
+          }))
           .filter((m) => m.name && m.name.trim() !== "")
           .reverse();
 
@@ -47,8 +61,12 @@ export default function Movies() {
     const term = searchTerm.toLowerCase();
 
     return (
-      movie.name?.toLowerCase().includes(term) ||
-      movie.tags?.toLowerCase().includes(term)
+      String(movie.name || "")
+        .toLowerCase()
+        .includes(term) ||
+      String(movie.tags || "")
+        .toLowerCase()
+        .includes(term)
     );
   });
 
@@ -68,8 +86,11 @@ export default function Movies() {
   };
 
   const handleCardClick = (url) => {
-    if (!url || !url.startsWith("http")) return;
-    window.open(url, "_blank", "noopener,noreferrer");
+    const cleanUrl = String(url || "").trim();
+
+    if (!cleanUrl || !cleanUrl.startsWith("http")) return;
+
+    window.open(cleanUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -122,9 +143,6 @@ export default function Movies() {
         {currentMovies.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
             {currentMovies.map((movie) => {
-              const originalIndex =
-                movies.findIndex((m) => m.id === movie.id) + 1;
-
               return (
                 <div
                   key={movie.id}
@@ -132,7 +150,7 @@ export default function Movies() {
                   className="bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-2 transition cursor-pointer border border-gray-100"
                 >
                   <div className="text-xs text-gray-400 mb-3">
-                    #{originalIndex}
+                    #{movie.originalIndex}
                   </div>
 
                   <h2 className="text-xl font-bold mb-4">{movie.name}</h2>

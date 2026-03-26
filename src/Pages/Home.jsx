@@ -7,7 +7,7 @@ import PopupModal from "../components/PopupModal";
 import SearchBar from "../components/SearchBar";
 import FeedbackWidget from "../components/FeedbackWidget";
 
-export default function Home({ authorizeNavigation }) {
+export default function Home({ authorizeNavigation, predefinedCodes }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [popupContent, setPopupContent] = useState("");
   const [showPopup, setShowPopup] = useState(false);
@@ -26,13 +26,13 @@ export default function Home({ authorizeNavigation }) {
     if (!trimmedQuery) return;
 
     try {
-      const res = await fetch(
-        `https://myjson.unlinkly.com/api/sheet/1ejPpiDw_eEWovr05C-G0NTwe3ll8996gzfCWm0nzbjg/Codes?t=${Date.now()}`,
-      );
-      const json = await res.json();
-      const data = Array.isArray(json) ? json : json?.data || [];
+      if (!predefinedCodes || predefinedCodes.length === 0) {
+        setPopupContent("Loading codes, try again...");
+        setShowPopup(true);
+        return;
+      }
 
-      const matchedCode = data.find(
+      const matchedCode = predefinedCodes.find(
         (code) => String(code.code).toLowerCase() === trimmedQuery,
       );
 

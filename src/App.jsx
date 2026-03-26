@@ -21,12 +21,42 @@ export default function App() {
     setIsAuthorized(true);
   };
 
-  // Fetch movie codes from the JSON file
+  // Fetch movie codes from the remote sheet
   useEffect(() => {
-    fetch("/movieCodes.json")
-      .then((response) => response.json())
-      .then((data) => setPredefinedCodes(data.movieCodes)) // Set predefined codes with expiryDate
-      .catch((error) => console.error("Error loading movie codes:", error));
+    const fetchCodes = async () => {
+      try {
+        const res = await fetch(
+          `https://myjson.unlinkly.com/api/sheet/1ejPpiDw_eEWovr05C-G0NTwe3ll8996gzfCWm0nzbjg/Codes?t=${Date.now()}`,
+          { cache: "no-store" },
+        );
+
+        const text = await res.text();
+
+        let json;
+        try {
+          json = JSON.parse(text);
+        } catch (e) {
+          console.error("Invalid JSON response:", text);
+          return;
+        }
+
+        const data = Array.isArray(json) ? json : json?.data || [];
+
+        const cleanCodes = data
+          .map((c) => ({
+            code: String(c.code || "").trim(),
+            expiryDate: c.expirydate || c.expiryDate || "",
+            status: c.status || "",
+          }))
+          .filter((c) => c.code && c.expiryDate);
+
+        setPredefinedCodes(cleanCodes);
+      } catch (error) {
+        console.error("Error loading movie codes:", error);
+      }
+    };
+
+    fetchCodes();
   }, []);
 
   return (
@@ -34,7 +64,12 @@ export default function App() {
       <Routes>
         <Route
           path="/"
-          element={<Home authorizeNavigation={authorizeNavigation} />}
+          element={
+            <Home
+              authorizeNavigation={authorizeNavigation}
+              predefinedCodes={predefinedCodes}
+            />
+          }
         />
         <Route
           path="/movies"
