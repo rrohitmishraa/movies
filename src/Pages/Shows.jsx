@@ -68,40 +68,108 @@ export default function Shows() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-soft px-6 py-14">
+    <div className="min-h-screen bg-white px-6 py-16">
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl sm:text-6xl font-extrabold">Show Library</h1>
-
-          <div className="mt-8 flex justify-center gap-4">
-            <button
-              onClick={() => navigate("/movies")}
-              className="bg-brand-gradient text-white px-6 py-3 rounded-full shadow-md hover:scale-105 transition"
-            >
-              Movies
-            </button>
+        <div className="mb-16 flex flex-col lg:flex-row justify-between items-start gap-10">
+          <div>
+            <h1 className="text-6xl sm:text-7xl font-light tracking-tight">
+              JUST <span className="font-black">SHOWS</span>
+            </h1>
+            <p className="mt-6 text-gray-500 max-w-xl leading-relaxed">
+              A structured archive of series. Navigate seasons, explore
+              episodes.
+            </p>
           </div>
+          <div className="text-right">
+            <div className="text-xs tracking-widest text-gray-400">
+              TOTAL SHOWS
+            </div>
+            <div className="text-4xl font-semibold mt-2">
+              {shows.length.toLocaleString()}
+            </div>
+            <div className="mt-6">
+              <button
+                onClick={() => navigate("/movies")}
+                className="text-xs tracking-widest border border-gray-300 px-4 py-2 text-gray-600 hover:border-red-500 hover:text-red-500 transition"
+              >
+                VIEW MOVIES →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* PAGES INDEX */}
+        <div className="mb-10 border-t border-gray-200 pt-6 text-xs text-gray-500 flex flex-wrap gap-4">
+          <span className="text-red-500">PAGES:</span>
+          {totalPages > 1 &&
+            (() => {
+              const visibleCount = 3;
+              const start = Math.max(2, currentPage - 1);
+              const end = Math.min(totalPages - 1, start + visibleCount - 1);
+              return (
+                <>
+                  <button
+                    onClick={() => handlePageChange(1)}
+                    className={
+                      currentPage === 1
+                        ? "text-red-500 font-semibold"
+                        : "text-gray-500 hover:text-red-500"
+                    }
+                  >
+                    1
+                  </button>
+                  {start > 2 && <span className="text-gray-400">...</span>}
+                  {Array.from(
+                    { length: end - start + 1 },
+                    (_, i) => start + i,
+                  ).map((page) => (
+                    <button
+                      key={page}
+                      onClick={() => handlePageChange(page)}
+                      className={
+                        currentPage === page
+                          ? "text-red-500 font-semibold"
+                          : "text-gray-500 hover:text-red-500"
+                      }
+                    >
+                      {page}
+                    </button>
+                  ))}
+                  {end < totalPages - 1 && (
+                    <span className="text-gray-400">...</span>
+                  )}
+                  <button
+                    onClick={() => handlePageChange(totalPages)}
+                    className={
+                      currentPage === totalPages
+                        ? "text-red-500 font-semibold"
+                        : "text-gray-500 hover:text-red-500"
+                    }
+                  >
+                    {totalPages}
+                  </button>
+                </>
+              );
+            })()}
         </div>
 
         {/* SEARCH */}
         <div className="flex justify-center mb-14">
-          <div className="relative w-full max-w-2xl">
+          <div className="relative w-full">
             <button
               onClick={() => navigate("/")}
-              className="absolute left-5 top-1/2 -translate-y-1/2 text-sm font-medium text-brand-blue"
+              className="absolute left-5 top-1/2 -translate-y-1/2 text-sm font-medium text-red-500"
             >
               ← Back
             </button>
-
             <input
               type="text"
               placeholder="Search shows, tags, or episodes..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-24 pr-24 py-5 rounded-full border border-gray-200 shadow-md text-lg focus:outline-none focus:ring-4 focus:ring-brand-softBlue focus:border-brand-blue transition"
+              className="w-full pl-24 pr-24 py-4 border border-gray-200 text-lg focus:outline-none focus:border-red-500 transition"
             />
-
             {searchTerm && (
               <button
                 onClick={() => setSearchTerm("")}
@@ -119,8 +187,8 @@ export default function Shows() {
             {currentSeries.map((show) => (
               <motion.div
                 key={show.seriesName}
-                className={`bg-white rounded-3xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-2 transition cursor-pointer border border-gray-100 ${
-                  selectedSeries === show ? "ring-2 ring-brand-blue" : ""
+                className={`bg-gray-50 p-8 transition border border-gray-200 hover:border-red-500 hover:-translate-y-1 cursor-pointer flex flex-col min-h-[220px] ${
+                  selectedSeries === show ? "ring-2 ring-red-500" : ""
                 }`}
                 onClick={() => {
                   setSelectedSeries(show);
@@ -128,59 +196,27 @@ export default function Shows() {
                 }}
                 whileHover={{ scale: 1.03 }}
               >
-                <div className="text-xs text-gray-400 mb-3">
-                  #{show.originalIndex}
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-[11px] tracking-widest text-gray-400">
+                    SHW. #{show.originalIndex}
+                  </span>
+                  {show.tag && (
+                    <span className="text-[10px] px-2 py-1 bg-gray-200 text-gray-600 tracking-wide">
+                      {show.tag.toUpperCase()}
+                    </span>
+                  )}
                 </div>
-
-                <h2 className="text-xl font-bold mb-4">{show.seriesName}</h2>
-
-                <p className="text-xs text-gray-500">#{show.tag}</p>
+                <h2 className="text-3xl font-semibold tracking-tight leading-tight">
+                  {show.seriesName}
+                </h2>
+                <div className="mt-auto text-xs text-gray-400 tracking-widest">
+                  SELECT →
+                </div>
               </motion.div>
             ))}
           </motion.div>
         ) : (
           <p className="text-center text-gray-500">No shows found.</p>
-        )}
-
-        {/* PAGINATION */}
-        {totalPages > 1 && (
-          <div className="mt-16 flex justify-center gap-4 flex-wrap">
-            <button
-              onClick={() => handlePageChange(1)}
-              disabled={currentPage === 1}
-              className="px-4 py-2 bg-gray-200 rounded disabled:opacity-40"
-            >
-              First
-            </button>
-
-            <button
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-              className="px-4 py-2 bg-gray-200 rounded disabled:opacity-40"
-            >
-              Previous
-            </button>
-
-            <span className="px-4 py-2 font-medium">
-              Page {currentPage} of {totalPages}
-            </span>
-
-            <button
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-              className="px-4 py-2 bg-gray-200 rounded disabled:opacity-40"
-            >
-              Next
-            </button>
-
-            <button
-              onClick={() => handlePageChange(totalPages)}
-              disabled={currentPage === totalPages}
-              className="px-4 py-2 bg-gray-200 rounded disabled:opacity-40"
-            >
-              Last
-            </button>
-          </div>
         )}
 
         {/* SEASONS */}
@@ -189,21 +225,28 @@ export default function Shows() {
             <h2 className="text-3xl font-bold mb-6">
               {selectedSeries.seriesName}
             </h2>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {selectedSeries.seasons.map((season, index) => (
                 <div
                   key={index}
-                  className={`bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition cursor-pointer border ${
-                    selectedSeason === season
-                      ? "ring-2 ring-brand-blue"
-                      : "border-gray-100"
+                  className={`bg-gray-50 p-6 transition border border-gray-200 hover:border-red-500 hover:-translate-y-1 cursor-pointer flex flex-col min-h-[140px] ${
+                    selectedSeason === season ? "ring-2 ring-red-500" : ""
                   }`}
                   onClick={() => setSelectedSeason(season)}
                 >
-                  <h3 className="font-semibold text-lg">
-                    Season {season.seasonNumber}
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-[11px] tracking-widest text-gray-400">
+                      SEASON
+                    </span>
+                  </div>
+
+                  <h3 className="text-2xl font-semibold tracking-tight">
+                    {season.seasonNumber}
                   </h3>
+
+                  <div className="mt-auto text-xs text-gray-400 tracking-widest">
+                    SELECT →
+                  </div>
                 </div>
               ))}
             </div>
@@ -216,30 +259,52 @@ export default function Shows() {
             <h2 className="text-3xl font-bold mb-6">
               Season {selectedSeason.seasonNumber}
             </h2>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {selectedSeason.episodes.map((episode) => (
                 <div
                   key={episode.id}
-                  className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition border border-gray-100"
+                  className="bg-gray-50 p-6 transition border border-gray-200 hover:border-red-500 hover:-translate-y-1 flex flex-col min-h-[160px]"
                 >
-                  <a
-                    href={episode.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <span className="text-xs text-gray-400">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-[11px] tracking-widest text-gray-400">
                       #{episode.episode}
                     </span>
+                  </div>
 
-                    <div className="font-semibold mt-2">{episode.title}</div>
-                  </a>
+                  <h3 className="text-lg font-semibold leading-snug">
+                    {episode.title}
+                  </h3>
+
+                  <div className="mt-auto">
+                    <a
+                      href={episode.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-red-500 tracking-widest"
+                    >
+                      WATCH →
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         )}
+
+        <footer className="w-full border-t border-gray-200 mt-20 px-6 py-8 text-xs text-gray-400">
+          <div className="max-w-7xl mx-auto flex justify-between items-center">
+            <div className="flex flex-col">
+              <span className="text-red-500 font-semibold tracking-widest">
+                BY UNLINKLY
+              </span>
+              <span className="mt-2 opacity-70">© 2026 UNLINKLY.COM</span>
+            </div>
+
+            <div className="flex gap-8 tracking-wide">
+              <span>MADE FOR ME</span>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
