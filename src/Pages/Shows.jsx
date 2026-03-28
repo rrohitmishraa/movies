@@ -1,6 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+
+// components
+import Footer from "../components/Footer";
+import SearchBar from "../components/SearchBar";
+import Pagination from "../components/Pagination";
+import Grid from "../components/Grid";
 
 export default function Shows() {
   const navigate = useNavigate();
@@ -35,6 +40,12 @@ export default function Shows() {
     setCurrentPage(1);
   }, [searchTerm]);
 
+  useEffect(() => {
+    if (selectedSeries && selectedSeries.seasons?.length > 0) {
+      setSelectedSeason(selectedSeries.seasons[0]);
+    }
+  }, [selectedSeries]);
+
   // Filter logic (same structure as Movies)
   const filteredShows = shows.filter((show) => {
     const term = searchTerm.toLowerCase();
@@ -65,159 +76,81 @@ export default function Shows() {
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className="min-h-screen bg-white px-6 py-16">
+    <div className="min-h-screen bg-white px-4 sm:px-6 md:px-8 py-10 sm:py-14 md:py-16">
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
-        <div className="mb-16 flex flex-col lg:flex-row justify-between items-start gap-10">
+        <div className="mb-10 sm:mb-14 md:mb-16 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8 md:gap-10">
           <div>
-            <h1 className="text-6xl sm:text-7xl font-light tracking-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
               JUST <span className="font-black">SHOWS</span>
             </h1>
-            <p className="mt-6 text-gray-500 max-w-xl leading-relaxed">
+            <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base text-gray-500 max-w-xl leading-relaxed">
               A structured archive of series. Navigate seasons, explore
               episodes.
             </p>
           </div>
-          <div className="text-right">
-            <div className="text-xs tracking-widest text-gray-400">
-              TOTAL SHOWS
+          <div className="w-full lg:w-auto flex justify-between items-center lg:flex-col lg:items-end">
+            <div>
+              <div className="text-xs tracking-widest text-gray-400">
+                TOTAL SHOWS
+              </div>
+              <div className="text-4xl font-semibold mt-1 lg:mt-2">
+                {shows.length.toLocaleString()}
+              </div>
             </div>
-            <div className="text-4xl font-semibold mt-2">
-              {shows.length.toLocaleString()}
-            </div>
-            <div className="mt-6">
-              <button
-                onClick={() => navigate("/movies")}
-                className="text-xs tracking-widest border border-gray-300 px-4 py-2 text-gray-600 hover:border-red-500 hover:text-red-500 transition"
-              >
-                VIEW MOVIES →
-              </button>
-            </div>
+            <button
+              onClick={() => navigate("/movies")}
+              className="text-xs tracking-widest border border-gray-300 px-4 py-2 text-gray-600 hover:border-red-500 hover:text-red-500 transition lg:mt-6"
+            >
+              VIEW MOVIES →
+            </button>
           </div>
-        </div>
-
-        {/* PAGES INDEX */}
-        <div className="mb-10 border-t border-gray-200 pt-6 text-xs text-gray-500 flex flex-wrap gap-4">
-          <span className="text-red-500">PAGES:</span>
-          {totalPages > 1 &&
-            (() => {
-              const visibleCount = 3;
-              const start = Math.max(2, currentPage - 1);
-              const end = Math.min(totalPages - 1, start + visibleCount - 1);
-              return (
-                <>
-                  <button
-                    onClick={() => handlePageChange(1)}
-                    className={
-                      currentPage === 1
-                        ? "text-red-500 font-semibold"
-                        : "text-gray-500 hover:text-red-500"
-                    }
-                  >
-                    1
-                  </button>
-                  {start > 2 && <span className="text-gray-400">...</span>}
-                  {Array.from(
-                    { length: end - start + 1 },
-                    (_, i) => start + i,
-                  ).map((page) => (
-                    <button
-                      key={page}
-                      onClick={() => handlePageChange(page)}
-                      className={
-                        currentPage === page
-                          ? "text-red-500 font-semibold"
-                          : "text-gray-500 hover:text-red-500"
-                      }
-                    >
-                      {page}
-                    </button>
-                  ))}
-                  {end < totalPages - 1 && (
-                    <span className="text-gray-400">...</span>
-                  )}
-                  <button
-                    onClick={() => handlePageChange(totalPages)}
-                    className={
-                      currentPage === totalPages
-                        ? "text-red-500 font-semibold"
-                        : "text-gray-500 hover:text-red-500"
-                    }
-                  >
-                    {totalPages}
-                  </button>
-                </>
-              );
-            })()}
         </div>
 
         {/* SEARCH */}
-        <div className="flex justify-center mb-14">
-          <div className="relative w-full">
-            <button
-              onClick={() => navigate("/")}
-              className="absolute left-5 top-1/2 -translate-y-1/2 text-sm font-medium text-red-500"
-            >
-              ← Back
-            </button>
-            <input
-              type="text"
-              placeholder="Search shows, tags, or episodes..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-24 pr-24 py-4 border border-gray-200 text-lg focus:outline-none focus:border-red-500 transition"
-            />
-            {searchTerm && (
-              <button
-                onClick={() => setSearchTerm("")}
-                className="absolute right-5 top-1/2 -translate-y-1/2 text-sm font-medium text-gray-500"
-              >
-                Clear ✕
-              </button>
-            )}
-          </div>
+        <div className="mb-8 sm:mb-10 md:mb-12">
+          <SearchBar
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            placeholder="Search show or tag..."
+            showButton={false}
+            showBack={true}
+          />
         </div>
 
         {/* SERIES GRID */}
-        {currentSeries.length > 0 ? (
-          <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            {currentSeries.map((show) => (
-              <motion.div
-                key={show.seriesName}
-                className={`bg-gray-50 p-8 transition border border-gray-200 hover:border-red-500 hover:-translate-y-1 cursor-pointer flex flex-col min-h-[220px] ${
-                  selectedSeries === show ? "ring-2 ring-red-500" : ""
-                }`}
-                onClick={() => {
-                  setSelectedSeries(show);
-                  setSelectedSeason(null);
-                }}
-                whileHover={{ scale: 1.03 }}
-              >
-                <div className="flex items-center justify-between mb-6">
-                  <span className="text-[11px] tracking-widest text-gray-400">
-                    SHW. #{show.originalIndex}
-                  </span>
-                  {show.tag && (
-                    <span className="text-[10px] px-2 py-1 bg-gray-200 text-gray-600 tracking-wide">
-                      {show.tag.toUpperCase()}
-                    </span>
-                  )}
-                </div>
-                <h2 className="text-3xl font-semibold tracking-tight leading-tight">
-                  {show.seriesName}
-                </h2>
-                <div className="mt-auto text-xs text-gray-400 tracking-widest">
-                  SELECT →
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        ) : (
-          <p className="text-center text-gray-500">No shows found.</p>
-        )}
+        <Grid
+          items={currentSeries.map((show) => ({
+            title: show.seriesName,
+            index: show.originalIndex,
+            tag: show.tag,
+            meta: `${show.seasons?.length || 0} SEASONS • ${
+              show.seasons?.reduce(
+                (acc, s) => acc + (s.episodes?.length || 0),
+                0,
+              ) || 0
+            } EPISODES`,
+            onClick: () => {
+              setSelectedSeries(show);
+              setSelectedSeason(null);
+            },
+            onTagClick: (tag) => {
+              const clean = tag.replace("#", "").toLowerCase();
+              setSearchTerm(clean);
+            },
+            actionLabel: "SELECT",
+          }))}
+        />
+
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
 
         {/* SEASONS */}
         {selectedSeries && (
@@ -225,29 +158,22 @@ export default function Shows() {
             <h2 className="text-3xl font-bold mb-6">
               {selectedSeries.seriesName}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="flex gap-3 overflow-x-auto pb-2">
               {selectedSeries.seasons.map((season, index) => (
-                <div
+                <button
                   key={index}
-                  className={`bg-gray-50 p-6 transition border border-gray-200 hover:border-red-500 hover:-translate-y-1 cursor-pointer flex flex-col min-h-[140px] ${
-                    selectedSeason === season ? "ring-2 ring-red-500" : ""
-                  }`}
                   onClick={() => setSelectedSeason(season)}
+                  className={`
+                    px-4 py-2 text-xs tracking-widest border whitespace-nowrap transition
+                    ${
+                      selectedSeason === season
+                        ? "bg-red-500 text-white border-red-500"
+                        : "border-gray-300 text-gray-600 hover:border-red-500 hover:text-red-500"
+                    }
+                  `}
                 >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-[11px] tracking-widest text-gray-400">
-                      SEASON
-                    </span>
-                  </div>
-
-                  <h3 className="text-2xl font-semibold tracking-tight">
-                    {season.seasonNumber}
-                  </h3>
-
-                  <div className="mt-auto text-xs text-gray-400 tracking-widest">
-                    SELECT →
-                  </div>
-                </div>
+                  S{season.seasonNumber}
+                </button>
               ))}
             </div>
           </div>
@@ -259,52 +185,18 @@ export default function Shows() {
             <h2 className="text-3xl font-bold mb-6">
               Season {selectedSeason.seasonNumber}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-              {selectedSeason.episodes.map((episode) => (
-                <div
-                  key={episode.id}
-                  className="bg-gray-50 p-6 transition border border-gray-200 hover:border-red-500 hover:-translate-y-1 flex flex-col min-h-[160px]"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-[11px] tracking-widest text-gray-400">
-                      #{episode.episode}
-                    </span>
-                  </div>
-
-                  <h3 className="text-lg font-semibold leading-snug">
-                    {episode.title}
-                  </h3>
-
-                  <div className="mt-auto">
-                    <a
-                      href={episode.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-red-500 tracking-widest"
-                    >
-                      WATCH →
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <Grid
+              items={selectedSeason.episodes.map((episode) => ({
+                title: episode.title,
+                index: episode.episode,
+                onClick: () => window.open(episode.link, "_blank"),
+                actionLabel: "WATCH",
+              }))}
+            />
           </div>
         )}
 
-        <footer className="w-full border-t border-gray-200 mt-20 px-6 py-8 text-xs text-gray-400">
-          <div className="max-w-7xl mx-auto flex justify-between items-center">
-            <div className="flex flex-col">
-              <span className="text-red-500 font-semibold tracking-widest">
-                BY UNLINKLY
-              </span>
-              <span className="mt-2 opacity-70">© 2026 UNLINKLY.COM</span>
-            </div>
-
-            <div className="flex gap-8 tracking-wide">
-              <span>MADE FOR ME</span>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   );
