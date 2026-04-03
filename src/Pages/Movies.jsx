@@ -41,7 +41,7 @@ export default function Movies() {
           .map((m, index) => ({
             ...m,
             name: m.name || "",
-            url: m.url || m["url_"] || m["url "] || "",
+            url: m.url || "",
             tags: m.tags || "",
           }))
           .filter((m) => m.name && m.name.trim() !== "")
@@ -103,12 +103,18 @@ export default function Movies() {
     const originalIndex =
       movies.findIndex((m) => String(m.id) === String(movie.id)) + 1;
 
+    const cleanUrl = String(movie.url || "").trim();
+    const isBroken = !cleanUrl || !cleanUrl.startsWith("http");
+
     return {
       title: movie.name,
       index: originalIndex,
       tag: movie.tags?.split(",")[0],
-      onClick: () => handleCardClick(movie.url),
-      actionLabel: "WATCH",
+      isBroken,
+      onClick: () => {
+        if (!isBroken) handleCardClick(movie.url);
+      },
+      actionLabel: isBroken ? "BROKEN" : "WATCH",
       onTagClick: (tag) => {
         const clean = tag.replace("#", "").toLowerCase();
         setSearchTerm(clean);

@@ -41,7 +41,7 @@ export default function TwentySix() {
           .map((m, index) => ({
             ...m,
             name: m.name || "",
-            url: m.url || m["url_"] || m["url "] || "",
+            url: m.url || "",
             tags: m.tags || "",
           }))
           .filter((m) => m.name && m.name.trim() !== "")

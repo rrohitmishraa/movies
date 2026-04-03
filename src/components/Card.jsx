@@ -1,10 +1,12 @@
 import React from "react";
+import { Link2Off } from "lucide-react";
 
 export default function Card({
   title,
   index,
   tag,
   meta,
+  isBroken = false,
   onClick,
   onTagClick,
   actionLabel = "VIEW",
@@ -12,8 +14,13 @@ export default function Card({
   return (
     <div
       onClick={onClick}
-      className="flex items-start justify-between border-b border-gray-200/70 py-4 sm:bg-gray-50 sm:p-5 md:p-8 sm:transition sm:border sm:border-gray-200 sm:hover:border-red-500 sm:hover:-translate-y-1 sm:flex-col sm:items-stretch sm:min-h-[220px] md:min-h-[260px] cursor-pointer"
+      className="relative flex items-start justify-between border-b border-gray-200/70 py-4 sm:bg-gray-50 sm:p-5 md:p-8 sm:transition sm:border sm:border-gray-200 sm:hover:border-red-500 sm:hover:-translate-y-1 sm:flex-col sm:items-stretch sm:min-h-[220px] md:min-h-[260px] cursor-pointer"
     >
+      {isBroken && (
+        <div className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-7 h-7 flex items-center justify-center shadow-md ring-2 ring-white">
+          <Link2Off size={16} strokeWidth={2.5} />
+        </div>
+      )}
       {/* LEFT CONTENT */}
       <div className="flex flex-col sm:block flex-1 pr-4 gap-0.5 sm:gap-1">
         {/* Desktop meta */}
